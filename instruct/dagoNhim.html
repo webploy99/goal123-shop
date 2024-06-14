@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">ĐÁ GÀ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Gà Nhím Là Gà Gì? Thông Tin Giới Gà Nhím</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">  JUNE 1, 2024</a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/512.jpg" alt="">
+                    </div>  
+                    <p class="pt-2"><a class="text-blue-400 font-normal hover:text-black">Gà nhím là gà gì</a>, tài năng của chúng ra sao, giá bán như thế nào? Là những câu hỏi mà dạo gần đây chúng tôi nhận được rất nhiều từ phía bạn đọc. Cũng có chung thắc mắc như vậy nên Goal123 đã quyết định tìm hiểu từ nhiều nguồn khác nhau để tổng hợp lại những thông tin chọn lọc nhất về gà nhím để gửi tới các bạn trong bài viết dưới đây. Xin mời các bạn cùng theo dõi nhé. </p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Giới thiệu chung về gà nhím</h3>
+                    <div class="*:pb-3">
+                        <p>Điểm khác biệt lớn nhất của gà nhím so với các loại gà khác là ở bộ lông. Lúc thức thì không có gì đặc biệt cả, lông vẫn mà mượt như bình thường. Nhưng đến khi chúng ngủ thì chuyện lạ sẽ xảy ra. Toàn bộ lông của chúng sẽ dựng đứng lên. Nhìn trong bóng tối nếu không tinh mắt thì có thể nhầm với loài nhím. </p>
+                        <p>Đặc biệt là thế nhưng mấy người đã được nhìn thấy loại gà này ở ngoài đời thực. Ngay cả hình ảnh cũng không được chia sẻ rộng rãi. Càng làm cho những người có thú chơi gà độc, gà lạ thêm tò mò. </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex justify-center items-center">
+                            <img src="/image/512.jpg" alt="">
+                        </div>
+                        <p class="text-sm italic">Gà nhím với bộ lông đặc biệt</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Vì sao gà lông nhím nổi tiếng?</h3>
+                    <p class="pb-3">Không biết tài năng ra sao, chỉ với bộ lông mà có thể làm xôn xao cả giới gà đá. liệu đây có phải sự thổi phồng nhằm mục đích nâng giá của những người đang sở hữu gà nhím? Hay giống gà này thực sự có tài? Hãy cùng chúng tôi tìm hiểu chi tiết nhé.</p>
+                    <h4 class="my-2 text-xl font-bold">Gà nhím vô cùng hiếm gặp</h4>
+                    <p class="pb-3">Cái này thì công nhận nha, vì hàng nghìn thậm chí chục nghìn con gà may ra mới xuất hiện một con có lông nhím. Cơ hội sở hữu loại gà này cũng do đó mà càng trở nên khó khăn. Phàm là những con gà độc lạ, hiếm gặp thì đều có khả năng gọi là linh kê, thần kê nếu không thì cũng là quý kê. Trước đây trong kinh kê chỉ nhắc tới 33 loại thần kê nhưng hiện nay có rất nhiều loại gà mới xuất hiện. Những loại gà này đều có nhiều điểm đáng chú ý, có tài năng. Có lẽ danh sách gà quý hiện nay đã vượt xa con số 33. </p>
+                    <h4 class="my-2 text-xl font-bold">Gà nhím được mệnh danh là quái kê</h4>
+                    <p class="pb-3">Người ta gọi gà nhím là quái kê. Vì chưa chắc chúng đã có đủ khả năng để trở thành linh kê hay thần kê. Nguyên cái bộ lông không giống bất cứ con gà nào cũng đủ để thành quái kê rồi. Chưa biết là khả năng có đá được hay không nhưng mua về làm cảnh thôi cũng đủ thu hút sự chú ý của mọi người. Với những đại gia nhiều tiền yêu thích sưu tập gà lạ. Thì việc bỏ ra một số tiền khủng để sở hữu hàng “độc” như gà lông nhím cũng không phải chuyện lạ.</p>
+                    <div class="text-center">
+                        <div class="flex justify-center items-center">
+                            <img src="/image/513.webp" alt="">
+                        </div>
+                        <p class="text-sm italic">Giống gà lông nhím đặc biệt</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Gà nhím sở hữu những ngón đòn độc đáo</h4>
+                    <div class="*:pb-3">
+                        <p>Quan trọng nhất đối với một con gà chọi đó là khả năng ra đòn đánh. Theo những người đã có kinh nghiệm sở hữu loại gà này thì chúng có những ngón đòn độc không khác gì bộ lông. Những ngón đòn đủ để làm cho đối thủ bất ngờ. Mỗi khi xung trận thường áp đảo đối thủ làm chúng không kịp phản công.</p>
+                        <p>Danh tiếng của gà nhím lừng lẫy cả một vùng. Vậy nên mà muốn đá thì các chủ kê thường phải đưa đi xa. Ở gần, biết tiếng thì chẳng có chủ kê nào dại dột cho gà của mình giao đấu. 90% là thua trận thì làm gì có ai dám mạo hiểm. Tình huống này làm cho chúng ta nhớ đến huyền thoại gà xám thần một thời. Vì đá quá hay quá, không có đối thủ. Nên phải mất một thời gian dài chiến kê này bị ế độ vì chẳng ai muốn cho gà của mình thi đấu cùng. </p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Tài năng thực sự của gà nhím như thế nào?</h3>
+                    <div class="*:pb-3">
+                        <p>Gà nhím đá hay hay không cũng tùy vào từng con. Nói chung, không thể mặc định cứ là lông nhím quái kê đã là gà hay. Nhưng có một điều chắc chắn là loại gà này khá lì đòn. Chúng thi đấu đến lúc gục trên sân còn không thì không bao giờ bỏ chạy. </p>
+                        <p>Để đánh giá một chiến kê người ta sẽ có nhiều tiêu chí khác nhau. Người thì dựa vào sách vở, những kinh nghiệm được cha ông đúc kết và truyền lại. Người thì dựa vào xem những hình ảnh, những video quay lại chiến kê đó thi đấu. Ai mà theo trường phái thực tế thì cứ phải tận tay, tận mắt xem gà thì mới biết được. Nhưng đối với gà nhím thì tương đối khó. </p>
+                        <p>Sách vở xưa nay chẳng mấy tài liệu ghi chép về loài gà này. Nên để mà học hỏi kinh nghiệm từ sách thì gần như là không. Tìm kiếm video về gà nhím trên mạng thì còn khó hơn hái sao trên trời. Cuối cùng là xem tận mắt thì nghìn con mới có một. Cả một đời chơi gà đá chắc gì đã có cơ duyên để gặp.</p>
+                        <p>Những nhận xét về tài năng, độ độc đáo của loại gà này thì vẫn chỉ là truyền miệng mà thôi. Anh em nào tin thì cứ dần dần chiêm nghiệm nhé. </p>
+                    </div>
+                    <div class="text-center flex justify-center items-center">
+                        <img src="/image/512.jpg" alt="">
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Thông tin giá bán gà nhím</h3>
+                    <div class="*:pb-3">
+                        <p>Mấy ai đã được sở hữu loại gà này để mà biết được giá bán đâu. Nhưng chắc chắn là gà độc lạ như vậy thì giá bán cũng chẳng hề rẻ chút nào. Nếu cộng thêm tài năng nữa thì giá cứ phải gọi là trên trời. Giá đó chỉ có thể dành cho những tay chơi gà khét tiếng, có tiềm lực tài chính khủng. Muốn sưu tập gà độc lạ mới dám bỏ tiền ra mua. Thường thì người ta mua theo yếu tố phong thủy để làm ăn thuận lợi, mang lại may mắn và tài lộc</p>
+                        <p>Còn với anh em theo hệ bình dân thì cứ tìm gà thường. Xem xét nếu thấy đòn lối ổn thì mang về huấn luyện bài bản. Có tâm huyết thì kiểu gì cũng có ngày thành công.</p>
+                        <p class="pt-3">Bài viết trên là toàn bộ những thông tin chúng tôi đã tổng hợp được về gà lông nhím. Có thể chưa đầy đủ nên hy vọng nhận được ý kiến đóng góp của anh em, những ai đã có duyên sở hữu gà nhím hoặc từng được chứng kiến loại gà này thi đấu. Hãy cùng chia sẻ để mọi người được biết nhé. <a class="text-blue-400 font-normal hover:text-black"> Goal123  </a> cảm ơn các bạn đã theo dõi và hẹn gặp lại.</p>
+                    </div>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

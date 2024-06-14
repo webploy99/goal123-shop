@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">SOI KÈO BÓNG ĐÁ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Soi kèo Scotland vs Gibraltar – 23h00 03/06/2024 – Giao hữu quốc tế</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">JUNE 1, 2024</a> BY <a class=" text-blue-400 hover:text-black"  href=""> ĐINH HÙNG</a></p>
+                    <div>
+                        <img class="w-full" src="/image/Scotland-vs-Gibraltar-3.jpg" alt="">
+                    </div>
+                    <p class="pt-5"> <a class="text-blue-400 font-normal hover:text-black">Goal123</a><strong>– Soi kèo Scotland vs Gibraltar</strong>là trận đấu giao hữu quốc tế được chờ đợi vào lúc 23h00 ngày 03/06/2024. Trận đấu này hứa hẹn mang đến nhiều kịch tính và hấp dẫn cho người hâm mộ bóng đá. Dưới đây là những nhận định, phân tích và dự đoán kèo chi tiết cho trận đấu này.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-5 text-2xl font-bold">Cược Tài Xỉu Giữa Scotland và Gibraltar</h3>
+                    <p class="pb-2"> <strong>Soi kèo Scotland vs Gibraltar</strong> là trận đấu giao hữu quốc tế đáng chú ý sẽ diễn ra vào lúc 23h00 ngày 03/06/2024. Trận đấu này không chỉ mang tính chất thử nghiệm mà còn là cơ hội để cả hai đội tuyển đánh giá lại sức mạnh và chiến thuật của mình.</p>
+                    <div class="text-center">
+                        <img src="/image/Scotland-vs-Gibraltar-5.jpg" alt="">
+                        <p class="text-sm italic">Cược Tài Xỉu Giữa Scotland và Gibraltar</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Scotland Cần Một Nguồn Động Lực</h4>
+                    <p class="pb-2">Scotland đang trải qua một giai đoạn khó khăn khi thiếu chiến thắng trong bảy trận liên tiếp. Đây là lúc họ cần một cú hích tinh thần trước khi bước vào trận đấu quan trọng với Đức trong hai tuần tới. HLV Steve Clarke sẽ dẫn dắt đội tuyển trong trận giao hữu quốc tế đầu tiên của tháng 6 với Gibraltar. Dù chỉ là một trận đấu giao hữu, nhưng chiến thắng sẽ mang lại sự tự tin rất lớn cho đội bóng này.</p>
+                    <h4 class="my-3 text-xl font-bold">Thành Tích Gần Đây Của Scotland</h4>
+                    <p>Scotland đã gặp khó khăn trong hai trận giao hữu gần đây khi thua Hà Lan (0-4) và Bắc Ireland (0-1). Điều này khiến nhiều người nghi ngờ về khả năng tấn công của họ. Tuy nhiên, cần nhớ rằng Scotland đã vượt qua vòng loại Euro 2024 trong một bảng đấu rất khó khăn với sự góp mặt của Tây Ban Nha, Na Uy, Georgia và Đảo Síp. Đây là minh chứng rõ ràng cho thấy họ vẫn có tiềm năng lớn.</p>
+                    <h4 class="my-3 text-xl font-bold">Gibraltar – Đội Bóng Cần Cải Thiện</h4>
+                    <p>Ở phía bên kia, <strong>Gibraltar</strong> đã hoàn thành vòng loại Euro 2024 mà không đạt được kết quả tốt, nhưng họ cũng đã trở lại nhóm D tại Nations League sau hai thất bại trước Lithuania. Đội bóng này không chỉ phải cải thiện hàng thủ mà còn cần tập trung vào các trận đấu lớn hơn trong tương lai.</p>
+                    <h4 class="mt-3 text-xl font-bold">Hàng Thủ Gibraltar Đang “Mơ Ngủ”</h4>
+                    <p class="pb-2"> Gibraltar có hàng thủ tệ nhất với 41 bàn thua. Trước khi thua Lithuania trong hai trận chung kết Playoff nhóm C Nations League, đội của HLV Julio Ribas đã để thủng lưới tới 20 lần trong hai trận đấu với Pháp (14) và Hà Lan (6). Đây là dấu hiệu cho thấy hàng thủ của họ rất dễ bị khai thác, và các nhà đầu tư nên chọn tài vì khả năng cao trận đấu sẽ có nhiều bàn thắng.</p>
+                    <h4 class="mt-3 text-xl font-bold">Lựa Chọn Tài Cho Trận Đấu</h4>
+                    <p class="pb-2"> Với những phân tích trên, lựa chọn tài (H1) và tài (Full Time) là rất hợp lý cho trận đấu giữa Scotland vs <strong>Gibraltar</strong>. Hàng thủ của Gibraltar không đủ chắc chắn để chống đỡ những đợt tấn công mạnh mẽ từ Scotland.</p>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]">Chọn tài (H1)</li>
+                        <li class="pt-2 text-[16px]">Chọn tài (Full Time)</li>
+                    </ul>
+                    <h3 class="my-2 text-2xl font-bold">Nhận định kèo Châu Á, Soi kèo Scotland vs Gibraltar</h3>
+                    <p class="pb-2">Phong độ của <strong>Scotland</strong> gần đây không tốt. Đội bóng dưới sự dẫn dắt của HLV Steve Clarke đã không thể giành chiến thắng trong bảy trận liên tiếp, chỉ có hai trận hòa và năm thất bại. Tuy nhiên, Andrew Robertson và các đồng đội đã chơi rất tốt trong chiến dịch vòng loại Euro 2024. Họ đã giành được 5 chiến thắng, 2 hòa và chỉ thua 1 trong 8 trận đấu tại bảng A. Một chiến thắng cách biệt trước đối thủ yếu như <strong>Gibraltar</strong> không phải là điều quá khó khăn nếu Scotland chơi đúng cách. Sau 180 phút tịt ngòi liên tiếp trước Bắc Ireland và Hà Lan, đây có thể là cơ hội tuyệt vời để Scotland tấn công lại.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/Scotland-vs-Gibraltar-4.jpg" alt="">
+                        <p class="text-sm italic">Nhận định kèo Châu Á, Soi kèo Scotland vs Gibraltar</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Gibraltar: Đội Bóng Cần Cải Thiện </h4>
+                    <p class="pb-2">Không có từ nào có thể mô tả sự tàn phá của <strong>Gibraltar</strong> bên kia chiến tuyến. Đoàn quân của HLV Julio Ribas cũng gây thất vọng khi để thua Lithuania trong trận chung kết Playoff nhóm C UEFA Nations League. Ngoài ra, họ đã thua 8 trận toàn thua tại vòng loại Euro 2024 và thậm chí chỉ ghi được 1 bàn danh dự, nhưng đã lọt lưới 41 lần. Với chuỗi 12 trận thua liên tiếp, <strong>Gibraltar</strong> khó chống lại sức tấn công của Scotland, mặc dù đây chỉ là trận đấu vô thưởng vô phạt. Các nhà đầu tư cũng không yên tâm về Gibraltar trên sàn giao dịch châu Á.</p>
+                    <h4 class="my-3 text-xl font-bold">Lựa Chọn Kèo Châu Á:</h4>
+                    <p class="pb-2">Dựa trên những phân tích trên, lựa chọn kèo châu Á hợp lý sẽ là:</p>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Chọn Scotland H1</strong> </li>
+                        <li class="pt-2 text-[16px]"><strong>Chọn Scotland Full Time</strong> </li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Bảng tỷ lệ kèo bóng đá trận đấu</h4>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/Scotland-vs-Gibraltar-1.jpg" alt="">
+                        <p class="text-sm italic">Bảng tỷ lệ kèo bóng đá trận đấu</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Soi kèo Châu Âu: Scotland Chống Lại Gibraltar</h4>
+                    <p class="pb-2">Theo tỷ lệ kèo châu Âu, nhà cái áp đảo khả năng chiến thắng của <strong>Scotland</strong>. HLV Steve Clarke là sự lựa chọn tuyệt vời với thực lực vượt trội và phong cách thuyết phục. Khi nhìn vào màn trình diễn kém cỏi của <strong>Gibraltar</strong> trong thời gian vừa qua, Gibraltar khó tránh khỏi kết cục trắng tay.</p>
+                    <li><strong>Chọn Scotland thắng toàn bộ</strong></li>
+                    <h4 class="my-3 text-xl font-bold">Soi kèo Tỉ Số Giữa Scotland và Gibraltar</h4>
+                    <p class="pb-2">Trận đấu một chiều chất lượng cao của các chân sút <strong>Scotland</strong> đã khiến tỷ số lên tới ba bàn thắng. Với đội ngũ của HLV Steve Clarke quyết tâm đạt được chiến thắng thuyết phục vào ngày hội tại Đức, việc giành chiến thắng sẽ không khó khăn.</p>
+                    <h4 class="my-3 text-xl font-bold">Dự đoán tỷ số của trận đấu giữa Scotland và Gibraltar:</h4>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Hiệp một: </strong> Scotland thắng Gibraltar 2-0.</li>
+                        <li class="pt-2 text-[16px]"><strong>Cả trận:</strong>Scotland 5–0 Gibraltar. </li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Lịch sử đối đầu Scotland vs Gibraltar</h4>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/Scotland-vs-Gibraltar-2.jpg" alt="">
+                        <p class="text-sm italic">Lịch sử đối đầu Scotland vs Gibraltar</p>
+                        </div>
+                    <p class="py-2"> <strong>Soi kèo Scotland vs Gibraltar</strong> là cơ hội để Scotland khẳng định sức mạnh của mình và chuẩn bị tốt hơn cho các trận đấu quan trọng sắp tới. Gibraltar với phong độ kém cỏi sẽ khó lòng tạo nên bất ngờ trước một Scotland quyết tâm và đầy đủ lực lượng.</p>
+                </div>
+
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

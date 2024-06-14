@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">HƯỚNG DẪN</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Soi kèo Aston Villa vs Liverpool – 02h00 14/05/2024 – Kèo bóng Anh</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">MAY 11, 2024</a> BY <a class=" text-blue-400 hover:text-black"  href=""> ĐINH HÙNG</a></p>
+                    <div>
+                        <img class="w-full" src="/image/aston-villa-vs-liverpool-4.jpg" alt="">
+                    </div>
+                    <p class="pt-5"> <strong>Soi kèo Aston Villa vs Liverpool – Ngoại hạng Anh</strong>: Thể lực sa sút và dự đoán kết quả. <strong> Soi kèo Aston Villa vs Liverpool</strong>lúc 02h00 ngày 14/05/2024<a href="" class=" text-blue-400 hover:text-black italic"> Nhà cái Goal123  </a> nhận định trận đấu sẽ là trận đấu được nhiều người hâm mộ bóng đá quan tâm. Trận đấu này không chỉ quyết định số phận của hai đội trong cuộc đua giành vị trí cao tại Ngoại hạng Anh mà còn là màn thể hiện của các cầu thủ sau một mùa giải dài.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-5 text-2xl font-bold">Kèo tài xỉu, soi kèo Aston Villa vs Liverpool</h3>
+                    <p class="pb-2"><strong>Liverpool</strong> luôn thu hút sự chú ý với lối chơi tấn công đầy hấp dẫn. Họ đã ghi được <strong> 4 bàn thắng</strong> vào lưới của Tottenham ở vòng đấu trước và tổng cộng 6 bàn trong hai vòng đấu gần nhất. Lối chơi của họ thường xuyên mang lại nhiều bàn thắng, làm cho các trận đấu có phần dễ dàng và kịch tính hơn. Trong khi đó, <strong>Aston Villa</strong> đang trải qua giai đoạn khó khăn, thường xuyên thất bại trong các trận gần đây. Dự đoán này là cơ sở để bạn có thể cân nhắc lựa chọn <strong>Tài 1 1/2 (Hiệp 1)</strong> và <strong>Tài 3 1/2 (Cả trận) </strong>cho trận đấu sắp tới.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/aston-villa-vs-liverpool-3.jpg" alt="">
+                        <p class="text-sm italic">Kèo tài xỉu, soi kèo Aston Villa vs Liverpool</p>
+                    </div>
+                    <p class="pb-2"> Thời điểm này là khá khó khăn cho <strong>Aston Villa</strong> với lịch thi đấu dày đặc và thử thách. Họ đã thua trong ba trận đấu gần nhất, cho thấy phong độ không ổn định. Trong khi đó, <strong>Liverpool</strong> đã thể hiện sự vững chắc với chiến thắng <strong>4-2 </strong> trước Tottenham ở vòng trước và trước đó đã đánh bại <strong> Aston Villa</strong> với tỷ số <strong>3-0</strong>. Điều này củng cố niềm tin rằng <strong>Liverpool</strong> sẽ tiếp tục giành chiến thắng trong trận đấu này. Vì vậy, việc lựa chọn Liverpool ở kèo chấp Châu Á là lựa chọn hợp lý.</p>
+                    <p class="pb-2">Dự đoán kèo tài xỉu trước trận</p>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]">CChọn Tài 1 1/2 (H1)</li>
+                        <li class="pt-2 text-[16px]">Chọn Tài 3 1/2 (Full Time)</li>
+                    </ul>
+                    <h3 class="my-5 text-2xl font-bold">Kèo châu Á, Soi kèo  Aston Villa vs Liverpool</h3>
+                    <h4 class="my-3 text-xl font-bold">Kèo Châu Á Hiệp 1: Liverpool -1/4</h4>
+                    <div class="*:pb-3">
+                        <p>Khi bạn chọn <strong>Liverpool -1/4</strong> ở hiệp một, điều này có nghĩa là bạn đặt cược vào Liverpool sẽ dẫn trước vào cuối hiệp một. Tuy nhiên, tỷ lệ -1/4 chỉ ra rằng sự ưu thế không quá lớn. Nếu hiệp một kết thúc với tỷ số hòa, bạn sẽ mất một nửa số tiền cược. Nếu Liverpool dẫn trước, bạn sẽ thắng cược.</p>
+                        <p>Phân tích này dựa trên sự thống trị gần đây của Liverpool trong hiệp một của các trận đấu, và khả năng tấn công mạnh mẽ ngay từ đầu. Đặc biệt, với lối chơi tấn công hiệu quả của Liverpool, họ có khả năng tạo ra áp lực và ghi bàn ngay trong hiệp đầu.</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Kèo Châu Á Cả Trận: Liverpool -3/4</h4>
+                    <div class="*:pb-3">
+                        <p>Với kèo này, bạn đặt cược vào Liverpool với điểm chấp là <strong>-3/4</strong> cho cả trận. Điều này có nghĩa là Liverpool cần thắng với cách biệt ít nhất một bàn để bạn thắng cược toàn phần. Nếu Liverpool thắng với cách biệt đúng một bàn, bạn chỉ thắng một nửa số tiền cược. Nếu trận đấu hòa hoặc Aston Villa thắng, bạn sẽ mất toàn bộ tiền cược.</p>
+                        <p>Liverpool đã cho thấy họ có khả năng đánh bại các đội yếu hơn với cách biệt ít nhất một bàn. Sự ổn định trong phong độ ghi bàn và khả năng kiểm soát bóng vững chắc sẽ là chìa khóa để họ thắng kèo này.</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Kèo bóng đá trận đấu Aston Villa vs Liverpool</h4>
+
+                    <h4 class="my-3 text-xl font-bold">Nhận Định Và Lựa Chọn Kèo Tài Xỉu </h4>
+                    <p>Tuy nhiên, khi VCK Euro 2024 đang đến gần, có thể không thể mong đợi một ngày thi đấu tưng bừng từ Slovenia. Điều này là do mục tiêu giữ chân hiện tại là quan trọng nhất. Các nhà đầu tư không nên đầu tư vào tài xỉu với giá 2,75.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/aston-villa-vs-liverpool-1.jpg" alt="">
+                        <p class="text-sm italic">Kèo bóng đá trận đấu Aston Villa vs Liverpool</p>
+                    </div>
+                    <h3 class="my-5 text-2xl font-bold">Kèo Châu Âu – Dự đoán Liverpool thắng Full Time</h3>
+                    <div class="*:pb-3">
+                        <p>Liverpool đang cho thấy phong độ tốt trong những trận đấu gần đây, với khả năng ghi bàn cao và phòng ngự chắc chắn. Sự ổn định của họ trên hàng công là điểm mạnh lớn, giúp họ có thể chiếm ưu thế trong các trận đấu quan trọng. Lịch sử đối đầu giữa Liverpool và Aston Villa cũng nghiêng về phía Liverpool, với nhiều chiến thắng trong các cuộc gặp gỡ trước đây. Điều này cho thấy Liverpool có tâm lý và kinh nghiệm tốt khi đối mặt với Aston Villa.</p>
+                        <p>Việc đánh giá tình hình lực lượng của cả hai đội cũng cần được xem xét kỹ lưỡng. Nếu Liverpool có đội hình mạnh nhất và không có chấn thương quan trọng nào, khả năng họ sẽ thắng trận này càng cao. Ngược lại, nếu Aston Villa đang trong tình trạng khủng hoảng chấn thương hoặc có sự vắng mặt của các cầu thủ chủ chốt, điều này càng làm tăng khả năng chiến thắng cho Liverpool.</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/aston-villa-vs-liverpool-5.jpg" alt="">
+                        <p class="text-sm italic">Kèo Châu Âu – Dự đoán Liverpool thắng Full Time</p>
+                    </div>
+                    <h3 class="my-5 text-2xl font-bold">Dự đoán kết quả trận đấu trước trận</h3>
+                    <h4 class="my-3 text-xl font-bold">Hiệp 1: Aston Villa 0-2 Liverpool</h4>
+                    <p class="pb-2"> Dự đoán tỉ số 0-2 cho Liverpool ở hiệp đầu cho thấy sự khởi đầu mạnh mẽ và áp đảo từ phía Liverpool. Điều này phản ánh niềm tin vào khả năng tấn công sớm và hiệu quả của Liverpool, một đội bóng có lối chơi tấn công nhanh và quyết liệt ngay từ những phút đầu của trận đấu. Việc dẫn trước 2 bàn không chỉ giúp Liverpool giảm áp lực mà còn đặt Aston Villa vào tình thế khó khăn, buộc họ phải mở trận đấu hơn trong hiệp hai để tìm kiếm bàn thắng, điều này có thể tạo ra nhiều khoảng trống cho Liverpool khai thác.</p>
+                    <h4 class="mt-3 text-xl font-bold">Full Time: Aston Villa 1-3 Liverpool</h4>
+                    <p class="pb-2"> Dự đoán tỉ số cuối trận 1-3 nghiêng về Liverpool cho thấy trận đấu có thể có thêm bàn thắng được ghi trong hiệp hai, với Aston Villa có thể ghi được một bàn danh dự. Điều này cho thấy một sự cố gắng từ phía Aston Villa để phục hồi sau hiệp một khó khăn, nhưng Liverpool vẫn giữ được lợi thế và khả năng kiểm soát trận đấu, cuối cùng giành chiến thắng với cách biệt hai bàn. Tỉ số này phản ánh sự chênh lệch về phong độ và chất lượng giữa hai đội, với Liverpool là đội bóng mạnh hơn và có nhiều kinh nghiệm hơn ở những trận đấu quan trọng.</p>
+                    <h4 class="mt-3 text-xl font-bold">Đội hình dự kiến Aston Villa vs Liverpool</h4>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Aston Villa:</strong> Martinez, Digne, Diego Carlos, Konsa, Torres, Cash, Bailey, Douglas Luiz, McGinn, Diaby, Watkins.</li>
+                        <li class="pt-2 text-[16px]"><strong>Liverpool:</strong>Alisson, Alexander-Arnold, Quansah, van Dijk, Robertson, Elliott, Endo, MacAllister Salah, Gakpo, Diaz.</li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Lịch sử đối đầu của Aston Villa vs Liverpool</h4>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/aston-villa-vs-liverpool-2.jpg" alt="">
+                        <p class="text-sm italic">Lịch sử đối đầu của Aston Villa vs Liverpool</p>
+                    </div>
+                </div>
+
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

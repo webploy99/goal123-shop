@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">XỔ SỐ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Cách Chơi Lô Đề Chuyên Nghiệp Mang Lại Hiệu Quả Như Thế Nào?
+                    </h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">  JUNE 8, 2024</a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/535-1024x609.jpg" alt="">
+                    </div>  
+                    <p class="pt-2">Ngoại trừ những người chơi lô đề theo cảm hứng, chơi vui, thi thoảng mới chơi thì với những người đã coi lô đề là một nghề kiếm tiền cần phải xác định cho mình cách chơi lô đề chuyên nghiệp. Như vậy với mang lại hiệu quả cao, đảm bảo có thu nhập đều mỗi ngày, thậm chí còn<a class="text-blue-400 font-normal hover:text-black">    làm giàu được từ lô đề</a> . Dưới đây là cách mà dân chơi lô đề chuyên nghiệp thường áp dụng, mời các bạn tham khảo.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Chơi lô đề chuyên nghiệp là như thế nào?</h3>
+                    <div class="*:pb-3">
+                        <p>Khác với hình thức chơi xổ số là hoạt động hợp pháp được nhà nước cấp phép. Lô đề ở nước ta vẫn hoạt động theo dạng “chui”. Vì vậy, có thể nói tham gia lô đề vẫn là một trò chơi chứa đựng rất nhiều sự rủi ro. Tuy nhiên về cơ chế trúng giải hấp dẫn nên vẫn có rất nhiều người tham gia, thậm chí còn muốn biến đây thành một công việc mang lại thu nhập hàng ngày, hàng tháng.</p>
+                        <p>Cách thức chơi khá đơn giản, người chơi chỉ cần dự đoán đúng một hoặc một vài con số  trong dải số từ 00 đến 99 là đã có thể trúng thưởng. Có sự khác nhau về tỷ lệ ăn tiền cũng như cách tính điểm giữa ba miền Bắc- Trung – Nam. Nếu xác định chơi chuyên nghiệp, bạn cũng nên dành thời gian để tìm hiểu về sự khác nhau này. Để có thể chơi một cách tự tin và tỉnh táo nhất.  </p>
+                        <p>Nói chung, đây là một trò chơi có tính hên xui nhưng cũng không phải không có cách để nâng cao tỷ lệ chiến thắng. Có nhiều cách mà dân chuyên nghiệp thường xuyên áp dụng để có thể “sống” thoải mái với nghề này. Chi tiết sẽ có ở phần dưới đây.</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/536.jpg" alt="">
+                        <p class="text-sm italic">Hiểu đúng về việc chơi lô đề có lãi </p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Tổng hợp cách chơi lô đề chuyên nghiệp</h3>
+                    <p class="pb-3">Thực ra mỗi người chơi kỳ cựu lại có những bí kíp riêng do tự mình đúc rút qua nhiều năm. Nhưng tựu chung lại vẫn nằm trong những nguyên tắc cơ bản sau.</p>
+                    <h4 class="my-2 text-xl font-bold">Nắm được phương pháp nhớ bạc</h4>
+                    <div class="*:pb-3">
+                        <p>Nhớ bạc thực chất không phải là một phương pháp mà nó chính là một công thức được dân chuyên nghiệp thường vận dụng và đưa vào tính toán. Mục đích để tìm ra những con lô có tỷ lệ xuất hiện cao. Muốn làm được việc này trước hết phải ghi nhớ đặc điểm từ những con lô đã nổ ở kỳ trước. Cần ghi chép lại những bộ số hay ra cùng nhau hoặc những bộ số nổ từ những đặc điểm của bộ số khác.</p>
+                        <p>Nghe qua có vẻ hơi khó hiểu nhưng người chơi chỉ cần ghi nhớ công thức sau: Dãy số – con lô – lô kép. Đây là cách nhớ bạc mà những dân chơi lão luyện thường áp dụng.</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Đánh lô đề phụ thuộc vào đầu số kép</h4>
+                    <p class="pb-3">Ở miền Bắc nếu đánh lô dựa vào đầu số kép thì thường dùng cho các giải tư và giải 5. Theo đó, dựa vào kết quả xổ số hàng ngày bạn có thể thì ra con số trùng lặp, có ấn tượng và khả năng cao sẽ nổ vào ngày tiếp theo để cược. Ngoài ra, người chơi có thể ghép cầu lô đề để đánh cũng là một cách chơi rất hiệu quả áp dụng với lô đề miền Bắc.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/535-1024x609.jpg" alt="">
+                        <p class="text-sm italic">Tổng hợp cách chơi lô đề chuyên nghiệp</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Nguyên cứu các giải đáng chú ý</h4>
+                    <p class="pb-3">Chơi theo cách này khá dễ hiểu và dễ thực hiện, có thể tìm ra bạch thủ hoặc rồng bạch kim. Căn cứ vào kết quả xổ số ngày hôm trước, đặc biệt chú ý đến giải cao nhất. Tìm 2 số liền nhau tạo thành một cặp lô, đánh lộn đầu lộn đuôi để tăng khả năng chiến thắng. Đặt tiền vào con số chính nhiều hơn, số đánh lộn đầu đuôi thì chỉ nên đáng ít. Người mới chơi muốn tránh rủi ro nên tham khảo cách này.</p>
+                    <h4 class="my-2 text-xl font-bold">Đánh theo bóng của giải đặc biệt</h4>
+                    <p class="pb-3">Kiểu chơi này như là một hình thức thống kê, tức là bạn sẽ xem kết quả giải đặc biệt của ngày hôm trước, thực hiện tính toán một cách nghiêm túc, cộng các số trong giải để tìm ra tổng. Từ đó có thể đánh theo bóng âm dương, tính cầu mới và đánh lộn kết hợp. Một lần thống kê có thể chơi và nuôi lô trong vòng 2 đến 3 ngày.</p>
+                    <h4 class="my-2 text-xl font-bold">Chơi lô đề theo giải nhất</h4>
+                    <p class="pb-3">Cách ở trên là chơi lô theo giải đặc biệt, thì cách này sẽ là tính lô theo giải nhất. Cũng là một cách tính hiệu quả để tìm ra con lô đẹp. Thay vì cộng tổng như giải đặc biệt hãy lấy 3 số giữa của giải nhất kết hợp với nhau tạo thành các cặp lô. Tiến hành nuôi lô trong khoảng 3 ngày liên tiếp. Theo kinh nghiệm của dân chuyên nghiệp thì những cặp số này có khả năng về trong vài ngày kế tiếp là rất cao. Người chơi nên nhớ trong lô sẽ tồn tại một khái niệm là ‘chu kỳ lô’. Nếu nuôi hết một chu kỳ mà con lô đó không xuất hiện thì nên dừng một quãng rồi mới nuôi chu kỳ mới để tạo được sự may mắn, giống như đổi vận.</p>
+                    <h4 class="my-2 text-xl font-bold">Cách đánh lô ngày chủ nhật</h4>
+                    <div class="*:pb-3">
+                        <p>Đánh lô ngày chủ nhật không phải là phương pháp gì cao siêu cả, anh em cứ hiểu đơn giản rằng cuối tuần thì sẽ có đông người chơi hơn. Mà càng đông thì trúng thưởng càng lớn. Tâm lý người chơi những ngày này là muốn soi cầu thật kỹ để tìm ra con lô xuất sắc có khả năng nổ điểm cao. Lúc này việc anh em cần làm là tổng hợp lại cả 5 phương pháp chơi ở trên để tìm ra còn lô hoặc cặp lô có khả năng về bờ nhất. Có một số người cho rằng các con số lớn thường nổ vào cuối tuần, nhiều người đã thắng lớn khi đánh những con có hàng chục và hàng đơn vị trên 5. Anh em có thể tham khảo thêm cách đánh này cũng khá ổn.</p>
+                        <p>Ngoài ra anh em cũng có thể tìm ra con số may mắn dựa vào giấc mơ, những sự kiện xảy ra bất ngờ để đánh như là một cách chơi lấy hên. Tuy nhiên chơi theo kiểu này thì chỉ là ngẫu hứng thỉnh thoảng mới nên áp dụng thì còn nhạy. Chơi liên tục, chơi đường dài thì vẫn cần sự tính toán chuyên nghiệp.</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/537.png" alt="">
+                        <p class="text-sm italic">Nguyên cứu các giải đáng chú ý</p>
+                    </div>
+                    <p>Tất cả những thông tin được đưa ra ở trên đều chỉ mang tính chất tham khảo. Để chơi có hiệu quả mỗi người chơi cần tự tìm tìm và đúc rút kinh nghiệm cho riêng mình.  <a class="text-blue-400 font-normal hover:text-black">Goal123</a> luôn hy vọng người chơi gặp nhiều may mắn và kiếm được nhiều tiền mỗi ngày nhờ vào việc đặt cược. </p>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

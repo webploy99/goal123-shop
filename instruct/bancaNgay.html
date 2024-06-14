@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">BẮN CÁ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Tải Game Bắn Cá 365 Ngày Bắn Cá Tỉ Lệ Thắng Cao</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href=""> JULY 6, 2023  </a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/game-ban-ca-365-1.jpg" alt="">
+                    </div>  
+                    <p class="pt-2"><a class="text-blue-400 font-normal hover:text-black"> Bắn cá 5 sao</a> là cổng game đổi thưởng trực tuyến hàng đầu hiện nay. Sức hấp dẫn của trò chơi này không chỉ đến từ giao diện đẹp mắt, luật chơi dễ hiểu mà còn là cơ chế đổi thưởng linh hoạt. Mang đến cho người chơi cơ hội kiếm được rất nhiều tiền. Nếu bạn có băn khoăn, thắc mắc gì về cổng game này, hãy theo dõi bài viết dưới đây của chúng tôi. Sẽ có câu trả lời chi tiết dành cho bạn.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Giới thiệu game bắn cá 365</h3>
+                    <p class="pb-3">Được ra mắt chính thức vào năm 2019, so với nhiều phiên bản bắn cá đổi thưởng khác thì bắn cá 365 ra đời khá muộn. Nhưng cũng chính vì vậy cổng game này đã khắc phục được những nhược điểm của các phiên bản trước. Có thể nói đây là một trong  những cổng game bắn cá đổi thưởng hoàn thiện nhất hiện nay. Nó hấp dẫn từ giao diện đến nội dung, với vô số những chương trình khuyến mãi khủng cùng một chế độ chăm sóc khách hàng rất chuyên nghiệp.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-365-1.jpg" alt="">
+                        <p class="text-sm italic">Game bắn cá 365 cho android và giả lập android PC</p>
+                    </div>
+                    <p class="pb-3">Tất cả những người đã chơi bắn cá 365 đều không thể chuyển qua chơi game khác. Họ đã trở thành fan trung thành của trò chơi này. Tạo nên một cộng đồng game thủ rất lớn mạnh.</p>
+                    <p class="pb-3">Trải qua quá trình được đồng bộ hóa, dung lượng game bắn cá 365 rất nhẹ. Có thể tải về để chơi trên nhiều thiết bị như: PC, laptop, điện thoại di động mà không lo nặng máy.</p>
+                    <h3 class="my-2 text-2xl font-bold">Bắn cá 365 có thực sự hấp dẫn?</h3>
+                    <p class="pb-3">Để trả lời cho câu hỏi: “Bắn cá 365 có thực sự hấp dẫn” hãy cùng đi vào tìm hiểu những ưu điểm nổi bật của trò chơi này. Từ đó bạn sẽ có câu trả lời cho chính mình.</p>
+                    <h4 class="my-2 text-xl font-bold">Hình ảnh đẹp mắt, âm thanh sống động</h4>
+                    <p class="pb-3">Hình ảnh và âm thanh là những thứ gây ấn tượng đầu tiên với người chơi. Trò chơi hấp dẫn thì phải có hình ảnh đẹp, âm thanh bắt tai. Bắn cá 365 xứng đáng là cổng game đổi thưởng số 1 hiện nay với giao diện 3D cực đẹp mắt, từ màu sắc đến thiết kế đều đạt độ hài hòa tinh tế đến tuyệt đối. Đưa người chơi đến với một không gian game chân thực đến bất ngờ.</p>
+                    <p class="pb-3">Bên cạnh đó âm thanh cũng là một điểm nổi bật của bắn cá 365. Nhưng tiếng động được lồng ghép rất phù hợp từ tiếng sóng biển rì rào, tiếng cá lặn, ăn mồi đến tiếng súng nổ. Đặc biệt người chơi chắc chắn thích nghe nhất là tiếng tiền rơi leng keng vào tài khoản. Mọi chi tiết kết hợp lại tạo nên một phiên bản game hot nhất hiện nay.</p>
+                    <h4 class="my-2 text-xl font-bold">Rất nhiều cấp độ chơi khác nhau</h4>
+                    <p class="pb-3">Các level trong game đa dạng từ thấp đến cao, từ dễ đến khó. Do đó không khó cho người mới bắt đầu đồng thời có nhiều hơn cơ hội đẻ gamer chuyên nghiệp kiếm tiền. Với hơn 100 loài cá to nhỏ và có mức độ nguy hiểm khác nhau, chúng sẽ có mật độ xuất hiện tùy vào từng level. Càng level cao càng xuất hiện nhiều cá nguy hiểm, nhưng nếu tiêu diệt được chúng sẽ kiếm được rất nhiều tiền. Người chơi nếu kiên trì rèn luyện theo từng cấp độ sẽ nhanh chóng trở thành những tay săn cá chuyên nghiệp.</p>
+
+                    <div class="text-center">
+                        <img src="/image/mien-phi-tro-choi-trong-ban-ca-365.jpg" alt="">
+                        <p class="text-sm italic">Nhiều màn chơi hấp dẫn trong game bắn cá 365</p>
+                        </div>
+                    <h4 class="my-2 text-xl font-bold">Hệ thống súng đa dạng và hiện đại</h4>
+                    <p class="pb-3">Với hơn 10 loại súng cùng 3 cấp độ đạn khác nhau, người chơi có thể chinh chiến tại nhiều vùng biển khác nhau và tiêu diệt được vô vàn cá to nhỏ. Mỗi loại súng sẽ có tính năng khác nhau. Người chơi cần có chiến thuật sử dụng súng hợp lý. Đồng thời phải cân nhắc kỹ khi sử dụng đạn, tránh lãng phí.</p>
+                    <h4 class="my-2 text-xl font-bold">Cơ chế nạp rút tiền nhanh chóng, uy tín</h4>
+                    <div class="*:pb-3">
+                        <p>Một trong những điểm mà người chơi game đổi thưởng quan tâm nhiều nhất chính là cơ thể đổi thưởng. Có thể nói với bắn cá 365 người được tạo điều kiện tốt nhất để thực hiện việc nạp rút tiền thuận lợi hơn. Có thể nạp rút qua rất nhiều hình thức như: Tài khoản ngân hàng, ví điện tử, thẻ cao điện thoại… Mỗi lần nạp rút chỉ mất vài ba phút. Có thể nạp rút nhiều lần trong ngày và không quy định số tiền nạp tối thiểu.</p>
+                        <p>Khi thực hiện việc rút tiền người chơi sẽ được hưởng theo tỷ lệ 1:1, tức là được quy đổi toàn bộ tiền trong game thành tiền mặt mà không phải chịu bất cứ một chi phí nào phát sinh. Cổng game 365 liên kết chặt chẽ với các ngân hàng, các nhà nhà mạng lớn, nhờ đó việc đổi thưởng, rút tiền của người chơi được thực hiện rất nhanh chóng, an toàn và uy tín.</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Chế độ bảo mật cao</h4>
+                    <p class="pb-3">Mọi thông tin của khách hàng ngay sau khi đăng ký tài khoản thành công đều được từ động mã hóa.Đó là nhờ vào công nghệ bảo mật hiện đại nhất mà game bắn cá 365 đang sử dụng. Vì thế, người chơi chỉ việc yên tâm chơi game, kiếm thật nhiều tiền, việc bảo mật thông tin đã có những nhà điều hành chuyên nghiệp lo.</p>
+                    <h4 class="my-2 text-xl font-bold">Nhiều mini game hấp dẫn</h4>
+                    <p class="pb-3">Mini game là cơ hội kiếm tiền mở rộng với những game chuyên nghiệp. Đồng thời là cơ hội rèn luyện của những người mới chơi. Kết quả của minigame thắng hay thua đều không liên quan đến mạch game chính nhưng số tiền thắng được lại được cộng dồn và có thể đổi thành tiền mặt bất cứ lúc nào.</p>
+                    <div class="text-center">
+                        <img src="/image/mien-phi-tro-choi-trong-ban-ca-365-1.jpg" alt="">
+                        <p class="text-sm italic">Nhiều phần quà thú vị đang chờ đón các game thủ</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Chính sách chăm sóc khách hàng chu đáo, tận tâm</h4>
+                    <p class="pb-3">Người chơi có thể chat live, gọi điện đến số hotline, gửi email, liên hệ qua zalo để được trợ giúp. Hệ thống chăm sóc khách hàng của bắn cá 365 nổi tiếng bởi sự tận tâm chu đáo và vô ùng chuyên nghiệp. luôn đồng hàng với khách hàng mọi thời điểm trong ngày. Cam kết hỗ trợ cho đến khi nhận được sự hài lòng của người chơi.</p>
+                    <h3 class="my-2 text-2xl font-bold">Những chương trình khuyến mại độc quyền của bắn cá 365</h3>
+                    <p class="pb-3">Một điểm cộng lớn nhất của bắn cá 365 đến từ các chương trình khuyến mại. Các nhà điều hành game thường xuyên tung ra các chương trình khuyến mãi mới, các chế độ ưu đãi độc quyền để thu hút người chơi. Hãy cùng điểm qua những khuyến mãi đáng chú ý nhất của cổng game này.</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Không có một game nào lại có nhiều chính sách ưu tiên cho tân binh đến như vậy. Ngay sau khi đăng ký tài khoản thành công sẽ được tặng ngay 10K vào tài khoản, kích hoạt giftcode nhận quà.</li>
+                        <li>Nạp thẻ lần đầu được khuyến mãi 20%.</li>
+                        <li>Thường xuyên có chương trình tặng quà tri ân khách hàng theo tháng, quý, sinh nhật và các dịp lễ tết. các phần thưởng này người chơi có thể quy đổi thành tiền mặt, thẻ cào tùy ý.</li>
+                        <li>Nhiều giftcode và voucher được tung ra hàng ngày. Nhờ đó những người chơi chăm chỉ điểm danh sẽ không phải nạp tiền vào tài khoản mà vẫn có tiền chơi. Liên tục có các mã thẻ cào được tung ra và nhiều phần quà trị giá 10k, 15k cho những người chịu khó săn phần thưởng.</li>
+                    </ul>
+                    <h3 class="my-2 text-2xl font-bold">Cách tải game bắn cá 365</h3>
+                    <h4 class="my-2 text-xl font-bold">Cách tải game bắn cá 365 trên IOS</h4>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Bước 1: Vào “AppStore” tìm kiếm “bắn cá 365”. Bạn sẽ nhận thấy ngay lập tức kết quả mà bạn tìm kiếm.</li>
+                        <li>Bước 2: Chỉ cần ấn vào cài đặt có trên ứng dụng game là máy sẽ tự động cài game cho bạn.</li>
+                        <li>Bước 3: Chờ trong ít phút để cài đặt xong game. Tốc độ cài đặt nhanh hay chậm tùy thuộc vào cấu hình điện thoại và tốc độ mạng internet bạn đang sử dụng.</li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="/image/giao-dien-ban-ca-365.jpg" alt="">
+                        <p class="text-sm italic">Đồ hoạ sắc nét tuyệt vời của bắn cá 365</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Cách tải game bắn cá mập trên Android</h3>
+                    <p class="pb-3">Tương tự như cách cài đặt trên IOS, cài đặt game trên Android cũng bao gồm 3 bước sau:</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Bước 1: Vào mục “CH Play” tìm kiếm “bắn cá 365”. Bạn sẽ nhận thấy ngay lập tức kết quả mà bạn tìm kiếm.</li>
+                        <li>Bước 2: Nhấn vào cài đặt trên ứng dụng game vừa tìm kiếm được.</li>
+                        <li>Bước 3: Chờ đợi trong vài phút, quá trình cài đặt đã hoàn tất. Lúc này bạn có thể đăng ký tài khoản nạp tiền và tham gia chơi ngay lập tức.</li>
+                    </ul>
+                    <h3 class="my-2 text-2xl font-bold">Cách tải game bắn cá về máy tính</h3>
+                    <p class="pb-3">Nhiều người nghĩ rằng game bắn cá 365 chỉ có thể tải về điện thoại di động, nếu dùng trên máy tính thì phải chơi trực tiếp tại trang chủ của các nhà cái. Thực tế bạn hoàn toàn có thể tải game về PC hay laptop của bạn để tham gia chơi mọi lúc, mọi nơi thông qua trình giả lập Android.</p>
+                    <ul class=" pb-3  list-decimal pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Tìm kiếm và tải trình giả lập Android</li>
+                        <li>Vào trang cung cấp game trực tuyến tìm kiếm “bắn cá 365”.</li>
+                        <li>Sau khi tìm được phiên bản game bạn yêu thích chỉ cần nhấn “Download” và làm theo hướng dẫn.</li>
+                        <li>Chỉ trong vài phút máy tính của bạn đã được cài đặt game bắn cá 365. Hay đăng ký chơi ngay thôi.</li>
+                    </ul>
+                    <div class="*:pb-3">
+                        <p>Trên đây là toàn bộ những thông tin chi tiết nhất về game bắn cá đổi thưởng 365. nếu bạn muốn tìm một game vừa giải trí vừa làm giàu nhanh chóng thì đây chính là cổng game dành cho bạn. Hãy ngay lập tức tải game về máy và thực hiện công cuộc kiếm tiền thôi nào.</p>
+                        <p>Nếu như những thông tin chúng tôi đưa ra ở phần trên đã làm bạn cảm thấy thích thú với cổng game 365, thì hãy ngay lập tức nhấc điện thoại lên và tải game ngay thôi nào. Còn nếu bạn thấy chưa hài lòng hãy để lại ý kiến để chúng tôi hoàn thiện hơn ở những bài viết sau nhé. Cảm ơn các bạn đã quan tâm theo dõi.</p>
+                        <p>Nếu trong quá trình tải game có lỗi gì hãy comment xuống bên dưới để Goal 123 nhà cái uy tín trợ giúp nhé!<a class="text-blue-400 font-normal hover:text-black"> Goal 123 nhà cái uy tín</a> trợ giúp nhé!</p>
+                    </div>
+                    
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

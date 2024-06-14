@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:pl-10  col-span-12 md:col-span-10 w-full">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">SOI KÈO BÓNG ĐÁ</a>
+                    <h1 class="font-bold text-2xl ">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">JUNE 8, 2024</a> BY <a class=" text-blue-400 hover:text-black"  href="">ĐINH HÙNG</a></p>
+                    <!-- <div>
+                        <img src="/image/555.webp" alt="">
+                    </div> -->
+                    <p class="pt-5"><strong>Soi kèo Bồ Đào Nha vs Ireland –</strong> Soi kèo bóng đá – 01h45 12/06/2024 – Giao hữu quốc tế. Trận giao hữu quốc tế giữa Bồ Đào Nha và Ireland diễn ra vào lúc 01h45 ngày 12/06/2024 hứa hẹn sẽ mang lại những phút giây kịch tính và hấp dẫn.<a href="" class=" text-blue-400 hover:text-black">Goal123.shop</a>  nhận định, đây là cơ hội để cả hai đội bóng thử nghiệm đội hình và chiến thuật trước khi bước vào các giải đấu quan trọng. <strong>Soi kèo Bồ Đào Nha vs Ireland</strong>sẽ giúp bạn có những nhận định chính xác và chi tiết về trận đấu này. </p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3  class="my-5 font-bold text-2xl">Soi kèo tài xỉu Bồ Đào Nha vs Ireland</h3>
+                    <p>  <strong>Soi kèo Bồ Đào Nha vs Ireland </strong> cho thấy trận đấu này sẽ là một cuộc chạm trán đầy kịch tính. Bồ Đào Nha đang chuẩn bị cho ngày hội bóng đá lớn nhất châu Âu, hy vọng vào một chiến thắng thuyết phục trên sân nhà Estádio Municipal de Aveiro. Đội bóng này vừa có màn trình diễn ấn tượng khi đánh bại Phần Lan, ngoài thất bại 0-2 trước Slovenia trong đợt tập trung hồi tháng 3, đội ngũ của HLV Roberto Martinez vẫn hoạt động tốt. Với tư cách là ứng cử viên vô địch, <strong>Brazil châu Âu</strong> chỉ có thể chấp nhận một kết quả là chiến thắng trước khán giả nhà.</p>
+                    <div class="text-center ">
+                        <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="" class="">
+                        <p class="text-sm italic">Soi kèo tài xỉu Bồ Đào Nha vs Ireland</p>
+                    </div>
+                    <h3 class=" font-bold my-5 text-xl">Sức mạnh tấn công của Bồ Đào Nha</h3>
+                    <p>Hàng công của Bồ Đào Nha đang đe dọa bất kỳ hàng thủ nào với 36 lần điền tên lên bảng điện tử sau 10 trận đấu tại bảng J vòng loại Euro 2024 và hiệu suất trung bình 3.6 bàn/trận. Ngoài ra, họ đã lên tiếng 9 lần trong 2/3 trận giao hữu trước Thụy Điển và Phần Lan mới đây. Đây là lời tuyên chiến đầy sức nặng mà các học trò của Roberto Martinez đưa ra khi giải đấu tại Đức sắp tới. Mặc dù  <strong>Bồ Đào Nha</strong>  có thể không sử dụng đội hình mạnh nhất của họ trong những trận giao hữu trong tháng 6 này, nhưng bốn bàn thắng vào lưới Phần Lan mới đây cho thấy sức mạnh của  <strong>Brazil châu Âu.</strong></p>
+                    <h3 class="my-5 font-bold text-xl ">Phân tích chiến thuật của Ireland</h3>
+                    <p>Ngoài ra, chiến thắng mới đây của Hungary với tỷ số 2-1 đã giúp  <strong> Ireland</strong> tin tưởng hơn vào thế trận ăn miếng trả miếng từ Ireland. Tài sẽ là lựa chọn tốt nhất cho các nhà đầu tư, giống như 2/3 lần gặp nhau gần nhất giữa hai đội; lần tái đấu này được dự đoán sẽ chứng kiến ít nhất ba lần lưới rung.</p>
+                    <ul class="pt-5 pb-3 list-disc pl-5 text-lg">
+                        <li >Chọn tài (H1)</li>
+                        <li class="pt-2">Chọn tài (Full Time)</li>
+                    </ul>
+                    <h1 class="font-semibold text-2xl ">Soi kèo châu Á, Bồ Đào Nha và Ireland</h1>
+                    <p class="pt-5"><strong>Soi kèo Bồ Đào Nha vs Ireland</strong>là trận đấu đáng chú ý khi Bồ Đào Nha là đội bóng duy nhất đã giành chiến thắng ở vòng loại, chứng minh sức mạnh hủy diệt của ứng viên nặng ký cho chức vô địch VCK Euro 2024. Bảng đấu bao gồm Slovakia, Bosnia & Herzegovina, Luxembourg, Iceland và Liechtenstein rõ ràng không hấp dẫn đối với các học trò của HLV Roberto Martinez. Bồ Đào Nha đã có mạch 11 trận toàn thắng trước khi thua Slovenia vào tháng 3. Sau khi đánh bại Phần Lan trong trận cầu có 6 bàn thắng, <strong> Brazil châu Âu</strong>đã duy trì mạch này. Người ta rõ ràng không thể nghi ngờ rằng Bồ Đào Nha sẽ thắng, ngay cả khi họ chơi với đội hình yếu nhất.</p>
+                    <div class="text-center ">
+                        <img src="/image/Bo-Dao-Nha-vs-Ireland-3.webp" alt="" class="">
+                        <p class="text-sm italic">Soi kèo châu Á, Bồ Đào Nha và Ireland</p>
+                    </div>
+                    <h3 class="my-5 font-bold text-xl ">Phân tích chiến thuật của Ireland</h3>
+                    <p>Tại vòng loại Euro 2024 tại bảng B, Ireland chỉ giành được 2 chiến thắng cùng 6 trận thua sau 8 trận, khiến quốc gia này không thể tham dự sự kiện bóng đá lớn nhất châu Âu. Đội lót đường Gibraltar chỉ có được sáu điểm sau hai trận đấu, rõ ràng là một thống kê quá thấp cho mục tiêu tiến xa hơn. Sau khi chia tay HLV Stephen Kenny và giành chiến thắng đầu tiên dưới quyền John O’Shea, giới chuyên môn cho rằng trước Bồ Đào Nha, Ireland gần như không có cơ hội mang lại bất ngờ và niềm vui cho các nhà đầu tư châu Á trong 90 phút.</p>
+                    <h3 class="my-5 font-bold text-xl ">Lựa chọn kèo châu Á</h3>
+                        <li class="font-bold" >Chọn Bồ Đào Nha (H1)</li>
+                        <li class="pt-2 font-bold">Chọn Bồ Đào Nha (Full Time)</li>
+                    <h3 class="my-5 font-bold text-xl ">Soi kèo châu Âu: Bồ Đào Nha chống lại Ireland</h3>
+                    <p class="pt-5"><strong>Soi kèo Bồ Đào Nha vs Ireland</strong> theo tỷ lệ kèo châu Âu, nhà cái đánh giá cao khả năng chủ nhà chiến thắng. Bồ Đào Nha có thực lực vượt trội và phong cách thuyết phục, vì vậy nó là một lựa chọn tuyệt vời. Khi xem xét sự khác biệt quá lớn giữa hai bên, Ireland có thể rơi vào tình trạng trắng tay.</p>
+                    <li ><strong>Chọn Bồ Đào Nha (H1)</strong> thắng toàn thời gian</li>
+                    <h3 class="my-5 font-bold text-xl ">Soi kèo châu Âu: Bồ Đào Nha chống lại Ireland</h3>
+                    <div class="text-center ">
+                        <img src="/image/Bo-Dao-Nha-vs-Ireland-4.webp" alt="" class="">
+                        <p class="text-sm italic">Soi kèo châu Âu: Bồ Đào Nha chống lại Ireland</p>
+                    </div>
+                    <h3 class="my-5 font-bold text-xl ">Phân tích trận đấu Bồ Đào Nha vs Ireland</h3>
+                    <p class="pt-5">Các chân sút của đội chủ nhà đã ghi được nhiều bàn thắng trong trận đấu một chiều. Tuy nhiên, đây cũng là khoảng thời gian 90 phút mà Ireland được kỳ vọng sẽ chơi một trận đấu ra trò để cùng với Bồ Đào Nha giành chiến thắng.</p>
+                    <h3 class="my-5 font-bold text-xl ">Dự đoán tỉ số Bồ Đào Nha vs Ireland</h3>
+                    <li ><strong>Hiệp một:</strong> Bồ Đào Nha thắng Ireland 2-1.</li>
+                    <li ><strong>Toàn trận:</strong>  Bồ Đào Nha thắng Ireland.</li>
+                    <h3 class="my-5 font-bold text-xl ">Đội hình dự kiến Bồ Đào Nha vs Ireland</h3>
+                    <li ><strong>Bồ Đào Nha:</strong> Diogo Costa; Diogo Dalot, Ruben Dias, Goncalo Inacio, Joao Cancelo; Joao Neves; Otávio Edmilson da Silva Monteiro, Vitinha, Bruno Fernandes; Cristiano Ronaldo, Joao Felix.</li>
+                    <li ><strong>Ireland:</strong> Gavin Bazunu; Seamus Coleman, Nathan Michael Collins, Dara O’Shea, Andrew Omobamidele, Robbie Brady; Sammie Szmodics, Jason Knight, Josh Cullen, Mikey Johnston; Evan Ferguson.</li>
+                    <h3 class="my-5 font-bold text-xl ">Lịch sử đối đầu Bồ Đào Nha vs Ireland</h3>
+                    <div class="text-center mb-10">
+                        <img src="/image/Bo-Dao-Nha-vs-Ireland-1.webp" alt="" class="w-4/5">
+                        <p class="text-sm w-4/5 italic">Lịch sử đối đầu Bồ Đào Nha vs Ireland</p>
+                    </div>
+
+                    <div class="  text-xl text-gray-500 w-96 float-right flex items-center justify-center ">
+                        <div class="pr-1">
+                            <div class="star"></div>
+                        </div>
+                        <div class="pr-1">
+                            <div class="star"></div>
+                        </div>
+                        <div class="pr-1">
+                            <div class="star"></div>
+                        </div>
+                        <div class="pr-1">
+                            <div class="star"></div>
+                        </div>
+                        <div class="pr-1">
+                            <div class="star"></div>
+                        </div>
+                        <p class="pl-5"> Rate this post</p>
+                    </div>
+                    <div class=" border-y py-2 mt-20"> 
+                        <p class="text-sm   ">This entry was posted in <a class=" text-blue-400 hover:text-black"  href="">Xổ số</a>. Bookmark the <a class=" text-blue-400 hover:text-black"  href=""> permalink</a>.</p>
+                    </div>
+                    <div class="mt-7 flex">
+                            <img class="rounded-full w-24 h-24"  src="/image/photo.png" alt="">
+                        <div>
+                            <h5 class=" font-semibold text-base pl-5 pt-5 pb-0">ĐINH HÙNG </h5>
+                            <p class="pl-5 pt-2">Xin chào tôi là Đinh Hùng - Admin phụ trách mảng thể thao chịu trách nghiệm nội dung cho website <a href="" class=" text-blue-400 hover:text-black" >Goal123</a> - Trang chủ Goal123 Việt Nam. Với nhiều năm kinh nghiệm tôi tự tin mang lại các bài viết chuyên môn có chất lượng cao và cung cấp thông tin về kèo cược uy tín. Xem thêm các bài viết của tôi: <a href="" class=" text-blue-400 hover:text-black">Danh sách bài viết của Đinh Dùng.</a></p>
+                        </div>
+                    </div>
+                    <div class="mt-10 mb-10 bg-gray-100 w-4/5 pt-5 pl-5">
+                        <h4 class="pb-3 font-semibold text-xl">Leave a Reply </h4>
+                        <p >You must be <a class=" text-blue-400 hover:text-black" href="">logged in</a> to post a comment.</p>
+                    </div>
+                </div>
+
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Bắn cá</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-5">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

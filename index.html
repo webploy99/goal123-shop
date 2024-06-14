@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--======== header ========-->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div> 
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./instruct/khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./instruct/banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./instruct/daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./instruct/xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./instruct/soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./instruct/huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    
+    <!-- main -->
+    <section class="main">
+        <!-- slider -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/image/GOAL123V-BANNER-7.webp">
+                    <div class="autoplay-progress">
+                        <span class="progressBar"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/GOAL123V-BANNER-6.webp">
+
+                    <div class="autoplay-progress">
+                        <span class="progressBar"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/GOAL123V-BANNER-4.webp">
+
+                    <div class="autoplay-progress">
+                        <span class="progressBar"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/GOAL123V-BANNER-3.webp">
+
+                    <div class="autoplay-progress">
+                        <span class="progressBar"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/GOAL123V-BANNER-1.webp">
+
+                    <div class="autoplay-progress">
+                        <span class="progressBar"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/GOAL123V-BANNER-2.webp">
+
+                    <div class="autoplay-progress">
+                        <span class="progressBar"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+        <div class=" mt-10">
+            <div class="box_menu max-w-6xl m-auto">
+               <div class="boxx">
+                    <div class="img">
+                        <img  src="/image/10026.png" alt="">
+                        <h3>SOI KÈO GOAL123</h3>
+                    </div>
+                    <span class="font-semibold block mt-3">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</span>
+                    <p class="pt-4">Goal123v – Soi kèo Inter [...]</p>
+                    <div class="box_img pt-2">
+                        <img src="/image/Ecuador-vs-Bolivia-5 (1).jpg" alt="">
+                        <div class="text pl-2">
+                        <a href="/instruct/soikeoEcuador.html" class="font-bold">Soi kèo Ecuador vs Bolivia – 08h30 13/06/2024 – Giao hữu quốc tế</a>
+                        <p class="pt-2">Goal123 – Soi kèo Ecuador [...]</p>
+                        </div>
+                    </div>
+                    <div class="box_img pt-2 mt-3">
+                        <img src="/image/Ha-Lan-vs-Iceland-4.jpg" alt="">
+                        <div class="text pl-2">
+                        <a href="/instruct/soikeoHalan.html" class="font-bold">Soi kèo Hà Lan vs Iceland – 01h45 11/06/2024 – Giao hữu quốc tế</a>
+                        <p class="pt-2">Soi kèo Hà Lan vs [...]</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="boxx">
+                    <div class="img">
+                        <img  src="/image/10026.png" alt="">
+                        <h3>TIN TỨC</h3>
+                    </div>
+                    <span class="font-semibold block mt-3">Soi kèo Inter Miami vs Louis City – 06h30 02/06/2024 – Kèo bóng Mỹ</span>
+                    <p class="pt-4">Goal123v – Soi kèo Inter [...]</p>
+                    <div class="box_img pt-2">
+                        <img src="/image/Hungary-vs-Thuy-Sy-3-300x189.jpg" alt="">
+                        <div class="text pl-2">
+                        <a href="/instruct/soikeohungary.html" class="font-bold">Soi kèo Hungary vs Thụy Sĩ – 20h00 15/06/2024 – UEFA Euro 2024</a>
+                        <p class="pt-2">Soi kèo Hungary vs Thụy [...]</p>
+                        </div>
+                    </div>
+                    <div class="box_img pt-2 mt-3">
+                        <img src="/image/tay-Ban-Nha-vs-Croatia-3-300x186.jpg" alt="">
+                        <div class="text pl-2">
+                        <a href="/instruct/soikeoTayban.html" class="font-bold">Soi kèo Tây Ban Nha vs Croatia – 23h00 15/06/2024 – UEFA Euro 2024</a>
+                        <p class="pt-2">Soi kèo Tây Ban Nha [...]</p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div> 
+
+        <div class="md:bg-gray-100 mt-10 block">
+            <div class="box max-w-6xl m-auto leading-8">
+               <h1 class="text-2xl font-semibold text-center py-5">Goal123 Casino – Link Đăng Ký &amp; Casino Mới Nhất 2023</h1>
+               <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+               <h1  class="text-2xl font-semibold py-5 ">Giới thiệu Goal123</h1>
+               <p >Goal123 không chỉ là một nhà cái cá cược bóng đá mà còn cung cấp nhiều dịch vụ giải trí khác như bắn cá, sòng bài, cá cược thể thao điện tử. Với những trò chơi đa dạng và hấp dẫn này, Goal123 mang lại cho người chơi những giây phút thư giãn và vui vẻ.</p>
+               <div class="blog_img">
+                    <img src="/image/10031.jpg" alt="">
+                    <figure class="text-center italic">Giới thiệu Goal123</figure>
+               </div>
+               <p >Không chỉ là một cái tên mới trên thị trường cá cược, Goal123 đã nhanh chóng tạo dấu ấn bởi các dịch vụ và tính năng vượt trội. Với sứ mệnh xây dựng một sân chơi minh bạch và công bằng nhất, nhà cái này đã chinh phục được sự tín nhiệm của đông đảo cộng đồng game thủ.</p>
+               <p >Không chỉ là một cái tên mới trên thị trường cá cược, Goal123 đã nhanh chóng tạo dấu ấn bởi các dịch vụ và tính năng vượt trội. Với sứ mệnh xây dựng một sân chơi minh bạch và công bằng nhất, nhà cái này đã chinh phục được sự tín nhiệm của đông đảo cộng đồng game thủ.</p>
+               <p >Tận hưởng các trận đấu thể thao đỉnh cao và đặt cược tại nhà cái Goal123 – đại diện chính thức của nhà cái được cấp phép bởi Philippine Amusement and Gaming Corporation tại Việt Nam.</p>
+               <div class="blog_img">
+                    <img src="/image/10032.jpg" alt="">
+                    <figure class="text-center italic">Giao diện trang chủ nhà cái bóng đá Goal123Giới thiệu Goal123</figure>
+                </div>
+                <p >Ngoài ra, Goal123 còn cung cấp đầy đủ các thông tin về các giải đấu bóng đá hàng đầu trên thế giới, bao gồm cả lịch thi đấu, tỷ lệ cược và kết quả trận đấu. Người chơi có thể dễ dàng đặt cược trực tuyến trên các giải đấu bóng đá hàng đầu như Ngoại hạng Anh, La Liga, Serie A, Bundesliga và Champions League.</p>
+                <h3 class="text-xl font-semibold  ">Cá cược bóng đá Goal123</h3>
+                <p  >Với những người yêu thích bóng đá và cá cược, Goal123 là sự lựa chọn hàng đầu. Tại Goal123, người chơi có thể đặt cược trực tiếp trên hàng ngàn trận đấu bóng đá trên khắp thế giới. Các tỷ lệ cược được cập nhật liên tục để người chơi có thể đặt cược vào đội bóng yêu thích của mình và có cơ hội giành chiến thắng lớn.</p>
+                <p >Tận hưởng các trận đấu thể thao đỉnh cao và đặt cược tại nhà cái Goal123 – đại diện chính thức của nhà cái được cấp phép bởi Philippine Amusement and Gaming Corporation tại Việt Nam.</p>
+                <div class="blog_img">
+                    <img src="/image/10033.jpg" alt="">
+                    <figure class="text-center italic">Cá cược bóng đá Goal123</figure>
+                </div>
+                <p class="py-4" >Với các sảnh cược thể thao hàng đầu thị trường và nhiều bộ môn thể thao được yêu thích trên toàn thế giới như bóng đá, bóng chuyền, cầu lông, bóng rổ, đua ngựa,… Anh em hoàn toàn có thể tìm thấy các trận đấu, giải đấu thể thao mà anh em yêu thích tại Goal123 với đầy đủ các tỷ lệ kèo cược hấp dẫn.</p>
+                <p class="py-4" >Với những bài viết soi kèo độc đáo và chính xác, Goal123 giúp anh em có thêm nhiều gợi ý bổ ích để đưa ra quyết định đặt cược của riêng mình. Không chỉ thế, nhà cái còn cung cấp các sảnh cược thể thao ảo đang được ưa chuộng trên thị trường cá cược trực tuyến.</p>
+                <p >Thời gian diễn ra các trận đấu nhanh, tần suất tổ chức liên tục, cá cược môn thể thao ảo trở thành lựa chọn ưu tiên của các anh em cược thủ muốn tham gia chơi xổi và đánh nhanh thắng nhanh.</p>
+                <p >Tại Goal123, sảnh cược thể thao với nhiều kèo cược đa dạng, tỷ lệ trả thưởng cạnh tranh bậc nhất thị trường. Ngoài ra, anh em còn có thể xem lịch thi đấu và bảng xếp hạng của các giải đấu được mong chờ nhất trên toàn thế giới. Điều này giúp anh em không bỏ lỡ bất kỳ trận đấu yêu thích nào và nâng cao cơ hội chiến thắng và mang về giá trị tiền thưởng lớn hơn, nhiều hơn.</p>
+                <h3>Đăng ký Goal123</h3>
+                <p >Để trở thành thành viên của Goal123, người chơi chỉ cần truy cập trang web goal123 và đăng ký tài khoản. Quy trình đăng ký rất đơn giản và nhanh chóng, chỉ mất vài phút để hoàn tất.</p>
+                <p  >Người chơi cần điền đầy đủ thông tin cá nhân và thông tin tài khoản, sau đó xác nhận đăng ký. Sau khi đăng ký thành công, người chơi có thể truy cập vào trang web và thực hiện các giao dịch tại Goal123.</p>
+                <div class="blog_img">
+                    <img src="/image/10034.jpg" alt="">
+                    <figure class="text-center italic">Đăng ký Goal123</figure>
+                </div>
+                <h3>Hướng dẫn đăng ký tài khoản tại Goal123</h3>
+                <ul>
+                    <li class="pb-3">Bước 2: Trên trang chủ, nhấp vào nút “Đăng ký” nằm ở góc phải của giao diện để bắt đầu quá trình tạo tài khoản.</li>
+                    <li class="pb-3">Bước 3: Một cửa sổ mới sẽ xuất hiện, hãy điền đầy đủ thông tin cần thiết theo yêu cầu của nhà cái.</li>
+                    <li class="pb-3">Bước 4: Kiểm tra lại các thông tin vừa điền và nhấn nút “Đăng ký” để hoàn tất quá trình tạo tài khoản.</li> 
+                    <li class="pb-3">Bước 1: Truy cập website thông qua đường link được cung cấp hoặc tải ứng dụng Goal123 về điện thoại của bạn.</li>
+                </ul>
+                <p>Sau khi tài khoản của bạn được kích hoạt, bạn có thể đăng nhập và bắt đầu trải nghiệm các trò chơi tại Goal123.</p>
+                <p>Với những hướng dẫn trực quan và chi tiết này, việc đăng nhập và đăng ký tại Goal123 trở nên đơn giản và dễ dàng hơn bao giờ hết.</p>
+                <h3>Đăng nhập Goal123</h3>
+                <p>Hướng dẫn đăng nhập Goal123 – Bước vào thế giới của các game thủ Để truy cập vào các trò chơi thú vị và hấp dẫn trên nhà cái trực tuyến Goal123, bạn cần phải đăng nhập vào hệ thống. Nhưng đừng lo lắng, quá trình đăng nhập rất đơn giản và dễ dàng. Bạn chỉ cần làm theo các bước sau đây:</p>
+                <p>Bước 1: Truy cập vào trang chủ của nhà cái Goal123 và tìm kiếm mục “Đăng nhập” nằm ngay cạnh “Đăng ký”.</p>
+                <p>Bước 1: Truy cập vào trang chủ của nhà cái Goal123 và tìm kiếm mục “Đăng nhập” nằm ngay cạnh “Đăng ký”.</p>
+                <p>Bước 3: Sau khi kiểm tra kỹ thông tin đã nhập, nhấn nút “Đăng nhập” và bạn đã sẵn sàng để khám phá thế giới của các tựa game cá cược thú vị.</p>
+                <h3>Nạp tiền Goal123</h3>
+                <p>Sau khi đăng ký tài khoản, người chơi cần nạp tiền vào tài khoản để có thể thực hiện các giao dịch tại Goal123.</p>
+                <p>Goal123 cung cấp nhiều phương thức nạp tiền đa dạng và tiện lợi như nạp tiền bằng thẻ ngân hàng, chuyển khoản, thẻ cào điện thoại và ví điện tử. Người chơi có thể chọn phương thức nạp tiền phù hợp với mình và thực hiện các bước hướng dẫn trên trang web. </p>
+                <div class="blog_img">
+                    <img src="/image/10035.jpg" alt="">
+                    <figure class="text-center italic">Nạp tiền Goal123</figure>
+                </div>
+                <h3>Cách nạp tiền tại Goal123</h3>
+                <p>Hướng dẫn chi tiết cho người chơi Nạp tiền vào tài khoản cá cược trực tuyến của Goal123 là một việc làm đơn giản và dễ dàng.</p>
+                <p>Để giúp quý khách hàng thực hiện được thao tác này một cách nhanh chóng, chúng tôi sẽ cung cấp đến bạn những thông tin cần thiết.</p>
+                <p>Goal123 cung cấp nhiều phương thức nạp tiền, cho phép người chơi dễ dàng lựa chọn phương thức nạp tiền phù hợp với nhu cầu cá nhân của mình. Các phương thức nạp tiền bao gồm:</p>
+                <ul>
+                    <li>Ngân hàng địa phương</li>
+                    <li>Ví điện tử</li>
+                    <li>Ngân hàng trực tuyến và thẻ cào điện thoại.</li>
+                </ul>
+                <p>Để nạp tiền vào tài khoản của mình, anh em chỉ cần truy cập vào trang chủ của nhà cái và đăng nhập vào tài khoản của mình. Sau đó, chọn mục Nạp tiền và chọn phương thức nạp tiền phù hợp với bạn. Lưu ý, số tiền nạp tối thiểu là 50k và tối đa là 30 triệu.</p>
+                <h3>Rút tiền nhà cái</h3>
+                <p>Hướng dẫn rút tiền tại Goal123 – nhà cái cung cấp đa dạng hình thức thanh toán Bạn đang muốn rút tiền từ tài khoản cá cược của mình tại Goal123? Đừng lo lắng! Nhà cái của chúng tôi cung cấp nhiều phương thức thanh toán khác nhau để bạn dễ dàng rút tiền một cách nhanh chóng và tiện lợi nhất.</p>
+                <p>Bạn có thể sử dụng các phương thức giao dịch, bao gồm ngân hàng trực tuyến hoặc ngân hàng địa phương, hoặc bất cứ phương thức thanh toán nào phù hợp với bạn.</p>
+                <p>Để đảm bảo việc rút tiền được thuận tiện và an toàn, chúng tôi liên kết với hầu hết các ngân hàng trên toàn quốc, phân bổ từ khu vực Bắc đến Nam.</p>
+                <p>Hơn nữa, quy tắc rút tiền tại Goal123 rất đơn giản và dễ hiểu. Bạn chỉ cần rút tối thiểu 20k và nhập mã xác minh trước khi thực hiện giao dịch để đảm bảo tính bảo mật của tài khoản cá cược của bạn.</p>
+                <p>Nhanh chóng, đơn giản và tiện lợi – đó là những gì mà Goal123 cam kết đối với khách hàng của mình.</p>
+                <h3>Cách làm đại lý Goal123</h3>
+                <p>Bạn muốn trở thành đại lý của Goal123 và có cơ hội kiếm thêm thu nhập hấp dẫn? Đừng lo, chỉ cần làm theo các bước đơn giản sau đây:</p>
+                <ul>
+                    <li>Bước 1: Truy cập đường link đăng ký Đại lý Goal123 trên trang web chính thức và điền đầy đủ thông tin cá nhân bao gồm họ tên, số điện thoại, email và số tài khoản chính chủ.</li>
+                    <li>Bước 2: Nhấn vào nút đăng ký và đợi trong ít phút để nhận được phản hồi từ đội ngũ quản lý của nhà cái. Bạn sẽ nhận được thông tin qua số điện thoại hoặc email của mình.
+                    </li>
+                </ul>
+                <p>Với việc trở thành đại lý của Goal123, bạn sẽ được hưởng mức hoa hồng hấp dẫn cùng nhiều ưu đãi đặc biệt.</p>
+                <div class="blog_img">
+                    <img src="/image/10036.jpg" alt="">
+                    <figure class="text-center italic">Cách làm đại lý Goal123</figure>
+                </div>
+                <h3>Goal123 có uy tín không</h3>
+                <p>Nếu bạn đang tìm kiếm một nhà cái đáng tin cậy và hấp dẫn để thỏa mãn niềm đam mê cá độ bóng đá của mình, thì không thể bỏ qua Goal123 – một trong những địa chỉ được ưa chuộng nhất trên thị trường hiện nay. Với hàng loạt ưu điểm vượt trội và tính năng độc đáo, Goal123 đã trở thành lựa chọn hàng đầu của các tín đồ cá độ.</p>
+                <h3>Giao diện sáng tạo hiện đại</h3>
+                <p>Giao diện đẹp mắt và tiện dụng của Goal123. Giao diện tối giản của Goal123 đã tạo được ấn tượng tốt đối với người chơi. Với đồ họa sắc nét và màu sắc tinh tế, người chơi không bị mỏi mắt khi sử dụng trong thời gian dài. Bố cục được thiết kế khoa học và gọn gàng, giúp người chơi dễ dàng truy cập vào các dịch vụ và thông tin tại nhà cái.</p>
+                <p>Giao diện còn có độ phân giải cao, mang đến cho người chơi trải nghiệm mượt mà và tuyệt vời hơn bao giờ hết.</p>
+                <p>Bên cạnh đó, tính năng tiện ích của Goal123 cũng là điểm nhấn vô cùng hấp dẫn, giúp người chơi dễ dàng thực hiện các giao dịch và tìm kiếm thông tin. Với giao diện đẹp mắt và tiện dụng như vậy, Goal123 là sự lựa chọn hoàn hảo cho những người yêu thích cá cược bóng đá.</p>
+                <h3>Chăm sóc khách hàng 24/7</h3>
+                <p>Goal123 – Dịch vụ chăm sóc khách hàng 24/7, tận tâm và chuyên nghiệp Với đội ngũ nhân viên được chọn lọc và đào tạo kỹ lưỡng, Goal123 tự hào mang đến cho người chơi dịch vụ chăm sóc khách hàng tốt nhất.</p>
+                <p>Không chỉ có tốc độ giải quyết nhanh chóng, mà các nhân viên còn tận tâm và chuyên nghiệp. Bạn sẽ cảm thấy yên tâm hơn khi biết rằng bộ phận chăm sóc khách hàng hoạt động 24/7, bao gồm cả ngày cuối tuần và các ngày lễ.</p>
+                <p>Nếu bạn có bất kỳ thắc mắc nào, hãy liên hệ với chúng tôi ngay để được giải đáp và hỗ trợ tốt nhất. Goal123 sẽ là sự lựa chọn hoàn hảo cho những ai yêu thích giải trí và muốn kiếm thêm thu nhập từ cá cược bóng đá.</p>
+                <h3>Bảo mật hiện địa uy tín</h3>
+                <p>Tận dụng công nghệ để bảo vệ thông tin người chơi, đó là một trong những cam kết của nhà cái Goal123. Tất cả các thông tin đăng ký và đăng nhập tài khoản đều được bảo mật tuyệt đối bằng phần mềm mã hóa tiên tiến cùng các tính năng bảo mật hàng đầu như xác nhận OTP qua Telegram.</p>
+                <p>Không chỉ vậy, đội ngũ an ninh mạng chuyên nghiệp và đỉnh cao của nhà cái này còn luôn giám sát và chặn những kẻ gian lận trong quá trình cá cược.</p>
+                <p>Với sự đảm bảo này, không gian thư giãn của Goal123 trở nên vô cùng an toàn và lành mạnh, để bạn hoàn toàn tập trung vào trận đấu và trải nghiệm giải trí mà không phải lo lắng về việc bị lộ thông tin cá nhân.</p>
+                <h3>Dịch vụ uy tín khác tại Goal123</h3>
+                <p>Goal123 – Nơi sở hữu kho game đa dạng và hấp dẫn nhất Goal123 được biết đến như một trong những nhà cái mới nhất nhưng lại sở hữu một kho game đa dạng và phong phú, không chỉ dành riêng cho những fan hâm mộ thể thao mà còn bao gồm các trò chơi đánh bài và slots lôi cuốn.</p>
+                <div class="blog_img">
+                    <img src="/image/10037.jpg" alt="">
+                    <figure class="text-center italic">Dịch vụ uy tín khác tại Goal123</figure>
+                </div>
+                <p>Đến với Goal123, bạn sẽ được thoải mái lựa chọn siêu phẩm mà mình yêu thích để tham gia cá cược và có cơ hội rinh được nhiều phần thưởng giá trị. Điểm đặc biệt của nhà cái này là tỷ lệ trả thưởng cực kỳ hấp dẫn và cạnh tranh nhất trên thị trường, đảm bảo sự hài lòng cho tất cả các khách hàng.</p>
+                <h3>Game bài uy tín</h3>
+                <p>Trải nghiệm sòng bạc trực tuyến đỉnh cao tại Goal123. Bạn đang tìm kiếm một sàn giải trí trực tuyến với sự đa dạng về các trò chơi casino hấp dẫn?</p>
+                <p>Hãy tìm đến Goal123, nơi đem đến cho bạn những trải nghiệm sòng bạc trực tuyến tuyệt vời nhất. Với danh sách các trò chơi casino như:</p>
+                <ul>
+                    <li>AG, DG, PP, SA cùng với các Dealer xinh đẹp, mỗi ván chơi của bạn sẽ trở nên đầy thú vị và kịch tính hơn bao giờ hết.</li>
+                    <li>Không chỉ đem đến những trò chơi đánh bài như Baccarat, Roulette, Tài xỉu (Sicbo), Blackjack.</li>
+                </ul>
+                <div class="blog_img">
+                    <img src="/image/10038.jpg" alt="">
+                    <figure class="text-center italic">Game bài uy tín</figure>
+                </div>
+                <p>Điều này đảm bảo tính công bằng giữa các người chơi và giúp bạn yên tâm hơn khi trải nghiệm các trò chơi casino tại đây. Hãy đến với Goal123 và tận hưởng những phút giây thư giãn đầy thú vị cùng các Dealer xinh đẹp nhé!</p>
+                <h3>Slot game nổ hũ uy tín</h3>
+                <p>Trò chơi Slot nổ hũ tại Goal123 – Kho báu đang chờ đón Không chỉ là một nhà cái cá cược bóng đá đáng tin cậy, Goal123 còn là một thiên đường cho những tín đồ yêu thích trò chơi Slot nổ hũ.</p>
+                <p>Tại đây, bạn sẽ có cơ hội thỏa sức tận hưởng trải nghiệm thú vị và kiếm tiền nhờ chơi game đơn giản, nhưng lại vô cùng kịch tính.</p>
+                <p>Với một nền tảng cá cược chuyên nghiệp, Goal123 luôn đảm bảo tính bảo mật và công bằng cho người chơi.</p>
+                <div class="blog_img">
+                    <img src="/image/10039.jpg" alt="">
+                    <figure class="text-center italic">Slot game nổ hũ uy tín</figure>
+                </div>
+                <p>Bạn sẽ được trải nghiệm những trò chơi nổ hũ tốt nhất từ các nhà cung cấp danh tiếng như OW, PG, SG, GPI,…</p>
+                <p>Các chương trình khuyến mãi và ưu đãi cực kỳ hấp dẫn sẽ được cập nhật thường xuyên, giúp bạn có thể kiếm được nhiều tiền hơn khi chơi game.</p>
+                <h3>Mini game, slot quay hấp dẫn</h3>
+                <p>Nếu bạn đang tìm kiếm những giải pháp đơn giản và tiết kiệm thời gian để tham gia cá cược, thì những tựa game mini tại Goal123 chắc chắn sẽ là sự lựa chọn hoàn hảo cho bạn.</p>
+                <p>Với các cách chơi dễ dàng và kết quả được xác định nhanh chóng, các mini game này cung cấp cho bạn những trải nghiệm đầy vui vẻ và cơ hội nhận được khoản thưởng hấp dẫn.</p>
+                <p>Một trong những mini game đáng chú ý tại nhà cái là:</p>
+                <ul>
+                    <li>Tài xỉu online, một trò chơi đánh bài phổ biến với cách chơi đơn giản nhưng đầy thử thách.</li>
+                    <li>Ngoài ra, nhà cái còn cung cấp hai trò chơi khác là Bầu cua và Xóc đĩa, hai tựa game đặc trưng của Việt Nam, sẽ mang đến cho bạn những trải nghiệm đặc biệt và cũng không kém phần hấp dẫn.</li>
+                </ul>
+                <p>Với tỷ lệ ăn thưởng cực cao và các cơ hội nhận được nhiều phần quà hấp dẫn, hãy đăng ký ngay tại nhà cái Goal123 để trải nghiệm những mini game đầy thú vị này.</p>
+                <h3>Bắn cá ăn tiền</h3>
+                <p>Trò chơi bắn cá đổi thưởng tại Goal123v là điểm đến lý tưởng cho những ai yêu thích thế giới cá và muốn có những giây phút giải trí thư giãn.</p>
+                <div class="blog_img">
+                    <img src="/image/10040.jpg" alt="">
+                    <figure class="text-center italic">Bắn cá ăn tiền</figure>
+                </div>
+                <p>Với giao diện bắt mắt, hình ảnh chân thực như đang đứng giữa đại dương thật sự, âm thanh sống động và tính năng vô cùng đa dạng, trò chơi này đem lại cho người chơi những trải nghiệm khó quên.</p>
+                <p>Bạn sẽ được thỏa sức khám phá kho vũ khí đa dạng và sử dụng chúng để tiêu diệt những chú cá đầy màu sắc và đa dạng.</p>
+                <p>Nếu bạn may mắn săn được chú Boss, bạn sẽ được thưởng rất nhiều tiền. Đây chính là mục tiêu chính của người chơi khi tham gia trò chơi này.</p>
+                <p>Với tính năng đổi thưởng, bạn có thể chơi trò chơi bắn cá để kiếm tiền thật và rút tiền một cách nhanh chóng và tiện lợi. Đừng bỏ lỡ cơ hội tham gia trò chơi bắn cá đổi thưởng tại Goal123v và trải nghiệm những giây phút giải trí tuyệt vời nhất.</p>
+                <h3>Goal123 nhà cái bóng đá nhiều khuyến mại nhất thị trường.</h3>
+                <p>Mở rộng tài khoản với chương trình khuyến mãi cực hấp dẫn tại Goal123 Với cam kết bảo vệ quyền lợi của người chơi, Goal123 luôn nỗ lực mang đến những ưu đãi hấp dẫn nhất cho các hội viên.</p>
+                <div class="blog_img">
+                    <img src="/image/10041.jpg" alt="">
+                    <figure class="text-center italic">Bắn cá ăn tiền</figure>
+                </div>
+                <ul>
+                    <li>Đặc biệt, những người mới gia nhập sẽ được nhận ngay 100% giá trị thẻ nạp trong lần nạp tiền đầu tiên tại nhà cái.</li>
+                    <li>Ngoài ra, khi tham gia cá cược tại sảnh thể thao, các hội viên còn được nhận thêm thưởng nạp 10% mỗi ngày.</li>
+                    <li>Goal123 cũng tổ chức các sự kiện quay số may mắn và tặng thưởng tiền cược miễn phí lên đến 50k đồng cho các hội viên may mắn.</li>
+                    <li>Nếu bạn yêu thích quay hũ, đừng bỏ lỡ cơ hội nhận phần thưởng 150% với giá trị lên tới 2 triệu đồng.</li>
+                </ul>
+                <p>Đừng chần chờ, đăng ký tài khoản ngay hôm nay để nhận ngay những ưu đãi đặc biệt tại Goal123!</p>
+                <h3>Goal123 có phải là nhà cái uy tín không?</h3>
+                <p>Có, Goal123 là nhà cái được cấp phép bởi PAGCOR tại Việt Nam và đã có nhiều năm kinh nghiệm trong lĩnh vực cá cược bóng đá.</p>
+                <h3>Goal123 có hỗ trợ khách hàng không?</h3>
+                <p>Có, Goal123 có bộ phận chăm sóc khách hàng 24/7 để hỗ trợ người chơi trong mọi vấn đề.</p>
+                <h3>Goal123 có cung cấp các trò chơi khác ngoài bóng đá không?</h3>
+                <p>Có, Goal123 cung cấp nhiều trò chơi giải trí khác như bắn cá, sòng bài và cá cược thể thao điện tử.</p>
+                <h3>Goal123 có chương trình khuyến mãi không?</h3>
+                <p>Có, Goal123 có nhiều chương trình khuyến mãi hấp dẫn cho người chơi, bao gồm cả khuyến mãi đăng ký, khuyến mãi nạp tiền và các chương trình hoàn tiền.</p>
+            </div>
+        </div> 
+
+    </section>
+
+    <!-- footer -->
+    <section>
+        <div class="footer max-w-6xl m-auto py-5 px-4 lg:px-0">
+            <div class="box_footer">
+                <a href="/index.html"><img src="/image/10004.png"></a>
+                <p class="mt-5"><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                <div class="text_a pt-3 ">
+                    <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                    <a href="">|</a>
+                    <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                </div>
+            </div>
+            <div class="box_footer">
+                <ul>
+                    <li><a href="/index.html">Goal123</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                </ul>
+            </div>
+            <div class="box_footer">
+                <h3>RECENT POSTS</h3>
+                <ul>
+                    <li>
+                        <div class="footer_img">
+                            <img src="/image/555-300x225.webp" alt="">
+                            <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="footer_img">
+                            <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                            <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="footer_img">
+                            <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                            <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3 text-center" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+<script src="/script.js"></script>
+</html>

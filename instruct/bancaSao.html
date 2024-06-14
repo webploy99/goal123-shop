@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">BẮN CÁ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Tải Game Bắn Cá 5 Sao Chất Lượng 5 SAO</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href=""> JULY 6, 2023  </a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/game-ban-ca-5-sao.jpg" alt="">
+                    </div>  
+                    <p class="pt-2"><a class="text-blue-400 font-normal hover:text-black"> Bắn cá 5 sao</a> là một tựa game nổi tiếng không chỉ bởi có giao diện đẹp mắt, nhiều tính năng mới lạ, đi kèm với các chương trình khuyến mãi hấp dẫn. Mà còn được biết đến với tỷ lệ ăn tiền cao, tạo cơ hội cho người chơi có thể kiếm được rất nhiều tiền. Liệu bắn cá online có thực sự toàn diện như vậy không hay chỉ là lời quảng cáo? Hãy cùng chúng tôi tìm hiểu chi tiết trong bài viết dưới đây nhé.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Thông tin giới thiệu về game bắn cá 5 sao</h3>
+                    <p class="pb-3">Bắn cá 5 sao là một tựa game có mặt ở nhiều quốc gia trên thế giới. Trước khi đến Việt Nam nó đã đặt chân đến nhiều đất nước khác và đều được người yêu game ở những nơi đó đánh giá rất cao. Sự mới lạ độc đáo của nó đã tạo nên một cơn sốt đối với thị trường game online Việt Nam trong một thời gian dài. Và đến nay số lượt tải game trên các nền tảng công nghệ khác nhau vẫn đạt được con số đáng ngưỡng mộ.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-5-sao.jpg" alt="">
+                        <p class="text-sm italic">Bắn cá 5 sao đẳng cấp tinh tế</p>
+                    </div>
+                    <p class="pb-3">Cổng game bắn cá 5 sao bao gồm rất nhiều trò chơi hấp dẫn: Đại dương, thủy cung, chiến thần, ven biển, tài xỉu, mini poker, nhân phẩm. Mỗi sảnh game đều có nét đặc trưng riêng. Tạo nên một tổng thể đặc sắc, khiến người chơi không bao giờ cảm thấy nhàm chán.</p>
+                    <p class="pb-3">Với cổng game này người chơi có thể chơi online hay offline ngay trên điện thoại di động của mình. Hiện game đã cho phép cài đặt trên cả PC, laptop, điện thoại di động (IOS và Android).</p>
+                    <h3 class="my-2 text-2xl font-bold">Những đặc điểm nổi bật của bắn cá 5sao</h3>
+                    <p class="pb-3">Bắn cá là một trò chơi có nhiều phiên bản nhất hiện nay. Nhưng không phải chất lượng của các phiên bản này là như nhau. Người chơi nên lựa chọn game cs chất lượng cao, uy tín nhất là những game đổi thưởng thì càng phải cân nhắc kỹ lưỡng. Hãy cùng xem bắn cá 5 sao có những ưu điểm gì để có thể trở thành sự lựa chọn hàng đầu của nhiều game thủ nhé.</p>
+                    <h4 class="my-2 text-xl font-bold">Giao diện đẹp đỉnh cao</h4>
+                    <p class="pb-3">Một điểm không thể không thừa nhận đó chính là giao diện của bắn cá 5 sao đẹp xuất sắc. Các thiết kế trong game đều mang tính độc quyền. Vì vậy người chơi có thể dễ dàng nhận thấy sự khác biệt của bắn cá 5 sao với những phiên bản khác. Màu sắc chủ đạo là tông màu xanh dương nhẹ nhàng, dịu mắt, các nhân vật được thiết kế rất ngộ nghĩnh. Kết hợp với hệ thống âm thanh vui nhộn. Đã tạo nên một sức hút vô cùng mới lạ.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-5-sao.jpg" alt="">
+                        <p class="text-sm italic">Đồ hoạ trong game bắn cá 5 sao đẳng cấp</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Hệ thống nhân vật đặc sắc cùng nhiều loại vũ khí đa dạng</h4>
+                    <p class="pb-3">Với hơn 40 loài cá và thủy sinh, được tạo hình đặc sắc trông vô cùng ngộ nghĩnh. Không chỉ tăng thêm sự phong phú cho game mà còn tạo cơ hội để người chơi có thể kiếm được nhiều tiền. Càng tiêu diệt được nhiều cá đặc biệt là cá to thì số tiền thu về càng lớn.</p>
+                    <p class="pb-3">Tương ứng với các loài cá sẽ là những loại vũ khí phù hợp. Với hơn 10 loại súng, đều có tính sát thương cao. Việc của người chơi là lựa chọn loại súng có tính năng phù hợp với mỗi con mồi để nâng cao hiệu quả ngắm bắn. Ngoài ra, người chơi có thể tích lũy điểm để mua thêm nhiều loại vũ khí tối tân khác.</p>
+                    <h4 class="my-2 text-xl font-bold">Cách chơi đơn giản, dễ hiểu, dễ chơi</h4>
+                    <p class="pb-3">Không chỉ là luật chơi đơn giản, dễ hiểu dễ chơi mà còn rất dễ thắng nữa. Bốc cục của game được thiết kế thông mình rất thuận lợi cho người chơi thao tác. Việc cần làm là lựa chọn vũ khí, ngắm bắn thật chuẩn, rồi nhấn nút nhả đạn. Cố gắng tiêu diệt được nhiều cá nhất có thể, để số tiền thưởng được tăng lên theo cấp số nhân.</p>
+                    <h4 class="my-2 text-xl font-bold">Xuất hiện nhiều trò chơi mới lạ</h4>
+                    <p class="pb-3">Tham gia chơi bắn cá 5 sao người chơi có thể lựa chọn chơi lần lượt 7 phòng game khác nhau. Mỗi một phòng sẽ có các cấp độ khác nhau, từ dễ đến khó. Nếu là người mới chơi hãy làm quen với những cấp độ thấp cho phép chơi thử mà không cần đặt cược. Khi trình độ khá hơn có thể bắt đầu đặt cược với mức cược thấp nhất và dần nâng cao.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-5-sao-3.jpg" alt="">
+                        <p class="text-sm italic">Giao diện chính của game bắn cá phiên bản 5 sao</p>
+                    </div>
+                    <p class="pb-3">Không chỉ có game bắn cá, hệ thống mini game trong bắn cá 5 sao còn mang đến những game bài thú vị. Cách thức tính điểm, đổi thưởng trong những game mini này cũng không kém phần hấp dẫn so với game chính. Đây chính là cơ hội để người chơi cọ xát và nâng cao điểm thưởng.</p>
+                    <h4 class="my-2 text-xl font-bold">Tích hợp nhiều tính năng độc đáo</h4>
+                    <div class="*:pb-3">
+                        <p>Nhiều tính năng mới xuất hiện trong game là chủ ý của các nhà điều hành, tạo nên nét mới lạ độc đáo. Vì hiện nay số lượng game online xuất hiện mới nhiều không kể xiết. Nếu không thật sự hấp dẫn và có màu sắc riêng thì không thể thu hút được người chơi.</p>
+                        <p>Hơn nữa những tính năng mới này sẽ làm cho người chơi không cảm thấy nhàm chán, tập trung chơi game, tập trung cày tiền. Đây chính là sự sáng tạo mà ít có cổng game nào có thể so sánh được.</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Mang đến nhiều cơ hội giao lưu kết bạn</h4>
+                    <p class="pb-3">Tính năng chat trong phòng chơi, cho phép người chơi có thêm cơ hội kết bạn, giao lưu với những người có cùng đam mê. Ngoài ra người chơi còn có quyền bình luận khi theo dõi phần chơi của những game thủ khác. Cơ hội kết bạn bốn phương chưa bao giờ dễ dàng như thế và chỉ có ở bắn cá 5 sao.</p>
+                    <h4 class="my-2 text-xl font-bold">Hỗ trợ khách hàng nhiệt tình, tận tâm</h4>
+                    <p class="pb-3">Không chỉ chú trọng phát triển nội dung game. Công tác hỗ trợ khách hàng của cổng game bắn cá 5 sao cũng được đặc biệt chú ý, góp phần tạo sự yên tâm cho khách hàng khi tham gia chơi. Ngoài việc đảm bảo tuyệt mật mọi thông tin cá nhân. Cổng game này còn thực hiện chương trình hỗ trợ, chăm sóc khách hàng 24/7. Vì thế, người chơi có thể liên hệ để nhận sự hỗ trợ từ nhân viên chăm sóc khách hàng bất cứ lúc nào.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-5-sao-2.jpg" alt="">
+                        <p class="text-sm italic">Ngôn ngữ hỗ trợ trong 5 sao bắn cá mới nhất</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Chương trình khuyến mãi độc quyền</h3>
+                    <p class="pb-3">Nếu các bạn chưa biết đến các chương trình khuyến mãi hấp dẫn của bắn cá 5 sao thì hãy tham khảo thông tin ở phía dưới đây nhé.</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Tặng ngay tiền vào tài khoản cho người chơi đăng ký mới thành công. Nhân đôi giá trị thẻ nạp đầu tiên cho các tân binh.</li>
+                        <li>Tham gia mini game “đố ai, ai cũng có” để nhận ngay code 100k.</li>
+                        <li>Khuyến mãi 50% cho tất cả người chơi tham gia các sảnh game bắn cá đổi thưởng.</li>
+                        <li>Điểm danh vào khung giờ vàng mỗi ngày từ 21-24h để nhận nhiều phần quà hấp dẫn. </li>
+                        <li>Đăng nhập mỗi ngày để nhận xu, chơi càng nhiều, càng lâu, phần thưởng càng lớn.</li>
+                    </ul>
+                    <h3 class="my-2 text-2xl font-bold">Hướng dẫn tải game bắn cá 5 sao</h3>
+                    <div class="*:pb-3">
+                        <p>Hiện nay trò chơi bắn cá 5 sao đã có mặt trên các nền tảng Android, IOS và bạn có thể thoải mái tải game hoàn toàn miễn phí về điện thoại di động. Từ đó việc tham gia chơi game sẽ không gặp những rào cản về mặt không gian và thời gian. Người chơi có thể chơi mọi lúc mọi nơi nếu muốn.</p>
+                        <p>Người chơi có thể chơi trực tuyến với các nhà cái nhưng phải lưu ý chọn nhà cái uy tín để tham gia. Hoặc có thể tải game về máy để có thể chơi cả online và offline.</p>
+                        <p>Nếu tải về máy tính thì phải tải game qua một trình giả lập Android có thể là Bluestacks, GameLoop, LDPlayer…</p>
+                        <p>Còn nếu tải game về điện thoại di động thì chỉ cần truy cập vào CHPlay (với hệ điều hành Android) hoặc Appstore (với hệ điều hành IOS). Sau đó thực hiện lệnh tìm kiếm game “bắn cá 5 sao”. Việc cài đặt sẽ được điện thoại của bạn thực hiện hoàn toàn tự động chỉ trong vài phút.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-5-sao-cho-android-ios.jpg" alt="">
+                        <p class="text-sm italic">5 sao tài lộc bắn cá cho điện thoại android</p>
+                    </div>
+                    <div class="*:pb-3">
+                        <p>Ngay sau khi tải game thành công người chơi có thể đăng ký tài khoản, đăng nhập và nạp tiền để sẵn sàng với cuộc chơi đầy lý thú.</p>
+                        <p>Nếu như những thông tin chúng tôi đưa ra ở phần trên đã làm bạn cảm thấy thích thú với cổng game 365, thì hãy ngay lập tức nhấc điện thoại lên và tải game ngay thôi nào. Còn nếu bạn thấy chưa hài lòng hãy để lại ý kiến để chúng tôi hoàn thiện hơn ở những bài viết sau nhé. Cảm ơn các bạn đã quan tâm theo dõi.</p>
+                        <p>Phiên bản game bắn cá 5 sao hỗ trợ tốt nhiều phiên bản nhưng phổ biến nhất vẫn là android và giả lập android PC. Anh em tìm ngay phiên bản phù hợp với thiết bị của mình nhé. Cần trợ giúp cứ ới cho <a class="text-blue-400 font-normal hover:text-black"> Goal123.shop</a> ngay nha!</p>
+                    </div>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

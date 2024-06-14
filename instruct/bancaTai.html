@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">BẮN CÁ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Tải Game Bắn Cá Phá Hũ Núi Tiền Thưởng Đang Chờ</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">  JULY 9, 2023 </a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/game-ban-ca-pha-hu-2.jpg" alt="">
+                    </div>  
+                    <p class="pt-2"><a class="text-blue-400 font-normal hover:text-black"> Bắn cá phá hũ</a> là trò chơi đổi thưởng chưa bao giờ ngừng hot. Đây là một game mà người chơi có thể thoải mái săn cá kiếm điểm thưởng và quy đổi thành tiền mặt. Chính vì vậy người chơi đến với cổng game này không chỉ đơn thuần là giải trí mà còn để kiếm thêm thu nhập. Nếu bạn đang tò mò muốn tìm hiểu chi tiết hơn về game bắn cá phá hũ thì hãy theo dõi bài viết dưới đây của chúng tôi nhé.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Giới thiệu về game bắn cá phá hũ</h3>
+                    <p class="pb-3">Bắn cá phá hũ là tựa game được chính thức ra mắt vào năm 2019. Trải qua rất nhiều lần cập nhật và sửa đổi, đến nay đây vẫn là một trong những game đổi thưởng thu hút được số lượng người tham gia chơi đông đảo nhất. Có thể nói, cổng game này có lối chơi rất đơn giản, dễ hiểu, dễ thao tác. Với các game thủ chuyên nghiệp và cả người mới chơi, muốn kiếm được tiền từ cổng game này là điều không hề khó.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-pha-hu-2.jpg" alt="">
+                        <p class="text-sm italic">Game bắn cá phá hũ online tinh tế đẹp mắt đồ hoạ miễn chê</p>
+                    </div>
+                    <p class="pb-3">Không chỉ nổi bật với cơ chế đổi thưởng hấp dẫn, bắn cá phá hũ còn được biết đến với tính giải trí cao, đồ họa đẹp mắt, nhiều chương trình ưu đãi hấp dẫn… Đặc biệt uy tín với cơ chế bảo mật tuyệt đối mọi thông tin của khách hàng.</p>
+                    <h3 class="my-2 text-2xl font-bold">Những ưu điểm nổi bật của bắn cá phá hũ</h3>
+                    <p class="pb-3">Ra đời chưa lâu nhưng thật sự rất khó có thể tìm thấy một game nào lại có sức hút mạnh mẽ như bắn cá phá hũ. Hãy cùng chúng tôi giải mã sức hút này ở phần dưới đấy.</p>
+                    <h4 class="my-2 text-xl font-bold">Đột phá mới về nội dung game</h4>
+                    <p class="pb-3">Để tìm một một game online để vừa giải trí vừa kiếm tiền thì không thể bỏ qua cái tên “Bắn cá phá hũ’. Đây là một game mà yếu tố may mắn không thể quyết định được tất cả. Người chơi muốn thành công phải có một có mắt quan sát tinh tường cùng tư duy chiến thuật tốt. Những thử thách trong game đưa ra sẽ được tăng dần về độ khó. Thích hợp cho cả người chơi chuyên và không chuyên tham gia.</p>
+                    <h4 class="my-2 text-xl font-bold">Hình ảnh đẹp mắt, âm thanh sống động</h4>
+                    <p class="pb-3">Hấp dẫn người chơi ngay từ lần đầu tiên với những hình ảnh vô cùng bắt mắt đi kèm hệ thống âm thanh sống động. Không gian chính của game được lấy cảm hứng từ đại dương xanh biếc, mênh mông rộng lớn. Có rất nhiều loài thủy sinh và thủy quái sinh sống. Đây cũng chính là địa bàn chính để người chơi thực hiện các cuộc săn cá của mình.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-pha-hu-1.jpg" alt="">
+                        <p class="text-sm italic">Bắn cá phá hũ nổ hũ siêu khổng lồ</p>
+                    </div>
+                    <p class="pb-3">Rất hiếm có cổng game nào lại đầu tư lớn về mặt hình ảnh như bắn cá phá hũ. Tạo cho người chơi cảm giác chân thật chưa từng có. Với một giao diện đẹp long lanh, được thiết kế chỉn chu tỉ mỉ, chắc chắn sẽ làm hài lòng ngay cả những người chơi khó tính nhất.</p>
+                    <h4 class="my-2 text-xl font-bold">Cơ chế đổi thưởng ưu việt</h4>
+                    <p class="pb-3">Nếu nói về ưu điểm của cổng game bắn cá phá hũ mà không nhắc tới cơ chế đổi thưởng thì đúng là một thiếu sót lớn. Đáp ứng mong mỏi của người chơi về một quy trình đổi thưởng an toàn, sòng phẳng và nhanh gọn. Cổng game này đã thực hiện rút ngắn các khâu kiểm duyệt phức tạp, áp dụng cơ chế tự động hóa cho các lệnh rút tiền. Vì vậy người chơi chỉ cần mất vài phút là đã có thể đổi tiền trong game thành tiền mặt. Hơn nữa tỷ lệ đổi thưởng cũng vôc ùng hấp dẫn 1:1. Tức là người chơi sẽ không phải chịu bất cứ chi phí nào khi đổi thưởng và nhận tiền về tài khoản.</p>
+                    <h4 class="my-2 text-xl font-bold">Luật chơi vô cùng hấp dẫn</h4>
+                    <div class="*:pb-3">
+                        <p>Cách chơi bắn cá phá hũ khá đơn giản cộng thêm sự ra đời của những tính năng mới càng làm tăng thêm sức hấp dẫn cho game. Người chơi chủ yếu là thực hiện nhiệm vụ săn cá. Càng săn được nhiều cá đặc biệt tiêu diệt được đại boss thì càng kiếm được nhiều tiền. Người chơi chỉ cần nhắn thật chính xác vào mục tiêu sau đó nhấn nút nhả đạn là đã có thẻ tiêu diệt được con mồi.</p>
+                        <p>Để chơi trò chơi này được thuận lợi, người chơi hãy nắm bắt thật tốt những tính năng mới như: Spin, Respin hay Autoplay…</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Cơ hội kiếm tiền chưa bao giờ dễ như thế với bắn cá phá hũ</h3>
+                    <p class="pb-3">Muốn giành chiến thắng người chơi cần xác định cho mình một chiến thuật cụ thể. Tìm hiểu thật kỹ về luật chơi, các loại vũ khí có trong game, những tính năng cơ bản nhất. Sau đó phải xác định được mục tiêu cơ bản nhất, tính toán sử dụng tiền, vàng thật cẩn thận để có thể duy trì được cuộc chơi lâu nhất có thể.</p>
+                    <div class="text-center">
+                        <img src="/image/game-chien-than-ban-ca-1.jpg" alt="">
+                        <p class="text-sm italic">Nhiều màn chơi hấp dẫn trong bắn cá phá hũ online</p>
+                    </div>
+                    <div class="*:pb-3">
+                        <p>Người chơi hãy duy trì cho mình một trạng thái thật thoải mái và tỉnh táo để đưa ra được những quyết định phù hợp. Bất cứ trò chơi đổi thưởng nào cũng vậy, người chiến thắng đều là người có bản lính và sự kiên nhẫn nhất định. Nếu bạn là người mới thì đừng nóng vội tham gia các thử thách lớn và đặt cược nhiều. Hãy trải nghiệm và luyện tay nghề với những vòng chơi miễn phí. Có thể hơi nhàm chán nhưng đây chính là cơ hội để bạn rèn luyện bản thân, chuẩn bị thật tốt cho những cuộc chinh chiến gay cấn về sau.</p>
+                        <p>Ngoài mạch game chính, người chơi còn có cơ hội tham gia những cuộc đua top, hàng ngày hàng tuần, hàng tháng. Giành thắng lợi ở những cuộc đua này không chỉ mang lại những số tiến lớn mà còn tạo được lợi thế lớn cho người chơi ở những chặng đua về sau.</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Bí kíp chơi bắn cá phá hũ luôn thắng</h3>
+                    <p class="pb-3">Chơi bắn cá phá hũ không khó. Nhưng để chơi có được tỷ lệ thắng cao cần nắm rõ những bí kíp sau.</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Điều đầu tiên và cũng là cơ bản nhất đòi hỏi người chơi phải nắm rõ luật chơi. Không chỉ áp dụng với bắn cá phá hũ mà với tất cả các game online khác, nhất là game đổi thưởng.</li>
+                        <li>Chơi đẹp,chơi mình bạch, không thực hiện những hành vi gian lận. Sân chơi chuyên nghiệp không có chỗ cho những hành vi lừa đảo, gian dối. Bắn cá phá hũ xây dựng một cộng đồng game thủ lớn mạnh rất văn minh. Vì vậy nếu xuất hiện một thành viên có biểu hiện chơi xấu sẽ bị đào thải thậm chí là xử phạt nặng.</li>
+                        <li>Có kế hoạch tài chính cụ thể. Tốt nhất là nên tham gia chơi thử ở những vòng không đặt cược cho quen tay. Sau này khi bắt đầu cuộc thì cũng cược tư số tiền nhỏ, sau mới tăng dần khi đã nhận thức được trình độ của mình đã cao hơn. Đặt cược nhỏ và dàn trải, không nên đòn hết tiền một lần , nếu thua bạn sẽ mất trắng.</li>
+                        <li>Kiểm soát tốt bản thân. Không nên quá đam mê làm ảnh hưởng đến sức khỏe tâm thần và thể chất. Ảnh hưởng đến công việc, người thân và xã hội. Nên biết dừng lại đúng lúc nếu chơi thua . Đừng để xảy ra những thiệt hại nặng về mặt kinh tế.</li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-79-1.jpg" alt="">
+                        <p class="text-sm italic">Thoả sức các loại cá khác nhau cho người chơi trải nghiệm</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Cách tải game bắn cá phá hũ đơn giản, dễ dàng nhất</h3>
+                    <div class="*:pb-3">
+                        <p>Game bắn cá phá hũ hỗ trợ cài đặt trên nhiều nền tảng Android, IOS và bạn có thể thoải mái tải game hoàn toàn miễn phí về điện thoại di động. Sự ra đời của app bắn cá phá hũ đã mở ra một phong cách chơi game hoàn toàn mới. Giờ đây chỉ cần thực hiện vài thao tác đơn giản là đã có thể tải game về thiết bị di động của mình. Đồng nghĩa với việc người chơi có thể tham gia chơi ở bất cứ không gian và thời gian nào.</p>
+                        <p>Nếu chơi trực tuyến, người chơi có thể chơi với các nhà cái nhưng phải lưu ý chọn nhà cái nổi tiếng, có uy tín để tham gia. Hoặc có thể tải game về máy thật nhanh gọn chỉ với vài bước như sau:</p>
+                        <p>Nếu tải về máy tính thì phải tải game qua một trình giả lập Android có thể là Bluestacks, GameLoop, LDPlayer…</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-79-2-1.jpg" alt="">
+                        <p class="text-sm italic">Giao diện đồ hoạ đẹp của game bắn cá phá hũ</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Cách tải game bắn cá phá hũ đơn giản, dễ dàng nhất</h3>
+                    <div class="*:pb-3">
+                        <p>Còn nếu tải game về điện thoại di động thì chỉ cần truy cập vào CHPlay (với hệ điều hành Android) hoặc Appstore (với hệ điều hành IOS). Sau đó thực hiện lệnh tìm kiếm game “bắn cá phá hũ”. Việc cài đặt sẽ được điện thoại của bạn thực hiện hoàn toàn tự động chỉ trong vài phút.</p>
+                        <p>Ngay sau khi tải game thành công người chơi có thể đăng ký tài khoản, đăng nhập và nạp tiền để bắt đầu trải nghiệm những thử thách đầy thú vị.</p>
+                        <p>Những thông tin chúng tôi đưa ra ở trên đã giúp các bạn hiểu được vì sao bắn cá phá hũ lại nổi tiếng và được yêu thích đến như vậy. Bạn yêu game và muốn kiếm được nhiều tiền từ game thì không nên bỏ qua cổng game đổi thưởng hấp dẫn, độc đáo này. Chúc các bạn luôn có những giờ phút vui chơi thoải mái và có thật nhiều trải nghiệm đặc sắc.</p>
+                        <p>Game bắn cá phá hũ quá hay tới từ nhà cái online. Hoặc nếu không thích hãy lựa chọn thêm nhiều tựa game hay hấp dẫn khác được giới thiệu bởi <a class="text-blue-400 font-normal hover:text-black"> Goal123.shop</a> nhé!</p>
+                    </div>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">ĐÁ GÀ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Những Điều Có Thể Bạn Chưa Biết Về Gà Cò</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">  MAY 30, 2024</a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/510.png" alt="">
+                    </div>  
+                    <p class="pt-2">Hiện nay, có nhiều anh em vẫn bị nhầm lẫn giữa “ gà cò” và “gà cổ cò”. Đây không phải là tên gọi chung của một loại gà đá mà là 2 loại gà khác nhau. Một loại là gọi theo dáng đứng dáng ngủ, một loại là gọi tên theo hình dáng cổ. Nếu như trước đây chúng tôi đã có dịp giới thiệu với các bạn về gà chọi cổ cò thì trong bài viết dưới đây chúng ta sẽ cùng  <a class="text-blue-400 font-normal hover:text-black">tìm hiểu về gà cò</a>. Để các bạn có thể phân biệt 2 loại gà này một cách dễ dàng hơn nhé.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Gà cò là gà gì?</h3>
+                    <div class="*:pb-3">
+                        <p>Gà cò thực chất chính là loại gà có thói quen đứng bằng một chân, nhất là khi ngủ. Đặc tính này giống với loài cò nên mới có tên gọi là gà cò.  </p>
+                        <p>Chúng ta hãy cùng nhau tìm hiểu chi tiết hơn về hiện tượng gà chọi đứng một chân trong phần dưới đây:</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Hiện tượng gà chọi đứng 1 chân.</h4>
+                    <div class="*:pb-3">
+                        <p>Không chỉ riêng gà mà đa số các loại có lông vũ đều có khả năng làm việc này. Có nhiều người hiểu sai về hiện tượng gà chọi đứng 1 chân. Đứng 1 chân ở đây không có nghĩa là gà co một chân rồi nhưng vẫn chạy nhảy hoạt động bình thường. Mà là gà đứng im đầu rủ xuống và co một chân lên gần ngực. Gà đứng một chân là lúc này gà chỉ đang lim dim, không ngủ say và sâu giấc, chỉ cần có tác động nhẹ cũng dễ dàng làm gà tỉnh giấc. </p>
+                        <p>Không phải con gà nào từ khi sinh ra cũng đã đứng một chân. Hiện tượng này cũng không phải tự nhiên xảy ra. Đó chính là kết quả của sự biến đổi mà cụ thể sự biến đổi này là gì thì phải cần chúng ta khám phá.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex justify-center items-center">
+                            <img  class="w-1/2" src="/image/509.jpg" alt="">
+                        </div>
+                        <p class="text-sm italic">Gà cò khác với gà cổ cò</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Gà cò đứng bằng một chân là tốt hay xấu?</h4>
+                    <div class="*:pb-3">
+                        <p>Những con gà chọi có thể đứng một chân là những con gà nhanh nhẹn. Khả năng quan sát rất tốt, có thể nhận diện các mối đe dọa xung quanh. Một chân có thể chống đỡ được toàn bộ cơ thể còn cho thấy hệ xương, gân cốt và cơ bắp của gà rất chắc chắn, dẻo dai. </p>
+                        <p>Trong hàng trăm con gà mới xuất hiện 1 hoặc 2 con có thể đứng ngủ bằng 1 chân. Chúng chắc chắn là gà hiếm, còn quý hay không thì còn phải tùy vào tài năng của từng con. Nhưng dù sao đây cũng là dấu hiệu cho thấy được sự đặc biệt nổi trội của loại gà này. </p>
+                        <p>Trong kinh kê cũng đã nhắc đến loại gà đứng một chân, chính là gà cò nếu đi kèm với sự độc đáo về đòn lối thì cũng được coi là linh kê. Chúng sẽ mang lại may mắn, thuận lợi cho chủ nhân. Những người sở hữu loại gà này rất quý trọng chúng. Họ thường nâng niu, chăm sóc và áp dụng chế độ nuôi dưỡng, huấn luyện tốt nhất.</p>
+                        <p>Với gà chọi có khả năng tiềm ẩn thì tốt nhất anh em nên tìm hiểu những phương pháp nuôi dưỡng theo khoa học, hiện đại tiên tiến. Để tạo cơ hội cho gà phát huy hết tiềm năng vốn có.</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Nguyên nhân gây ra hiện tượng đứng một chân ở gà cò</h3>
+                    <p class="pb-3">Nếu như gà tự nhiên đứng được bằng một chân như đã nói ở trên thì là tín hiệu đáng mừng. Nhưng ngược lại nếu vì bị một tác động nào đó mà khiến chúng không thể đứng được bằng 2 chân bình thường thì sẽ là vấn đề đáng lo ngại. Việc của các chủ kê lúc này là phải tìm ra nguyên nhân chính xác. Từ đó có biện pháp khắc phục cũng như hạn chế sự lặp lại của hiện tượng này.</p>
+                    <h4 class="my-2 text-xl font-bold">Đứng một chân có thể do cơ thể gà bị thương</h4>
+                    <div class="*:pb-3">
+                        <p>Gà một loài vật có xương nhỏ và khá dễ gãy. Chỉ cần vô tình vướng vào hàng rào hoặc không cẩn thận trong quá trình hoạt động gà đều có thể bị tổn thương. Nếu phần bị thương là chân gà thì rất dễ hiểu tại sao gà lại co một chân lên. Mặc dù chúng ta đều biết xương gà rất dễ lành nhưng cũng không thể chủ quan. Cần có biện pháp xử lý kịp thời nếu không muốn ảnh hưởng đến khả năng thi đấu sau này của gà.</p>
+                        <p>Hoặc cũng có thể chân gà là phần tiếp xúc trực tiếp nhiều nhất với đất. Bị các loại vi khuẩn bám vào khiến ngứa ngáy khó chịu dẫn đến việc đứng bằng một chân.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex justify-center items-center">
+                            <img class="w-1/2" src="/image/508.jpg" alt="">
+                        </div>
+                        <p class="text-sm italic">Gà đứng một chân có phải dấu hiệu của gà tài?</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Do thể trạng yếu hoặc gà gà đang sợ hãi</h4>
+                    <p class="pb-3">Nếu gà lựa chọn đứng ngủ một chân trên cành cây hay thành tường. Là do gà cảm giác được sự nguy hiểm và đang hết sức cảnh giác. Nếu thấy điều này bạn nên quan tâm và tìm hiểu gà đang lo sợ thứ gì. Bạn có thể đưa gà về chuồng và kiểm tra che chắn để gà cảm thấy yên tâm hơn.</p>
+                    <h4 class="my-2 text-xl font-bold">Gà đứng một chân để cơ thể được giữ ấm</h4>
+                    <p class="pb-3">Như đã nói ở trên gà là một loại thuộc họ chim. Họ hàng các loài lông vũ thường có thói quen thu người, co mình dưới bộ lông dày để giữ ấm cơ thể. Theo như giải thích về hiện tượng đứng 1 chân của các nhà khoa học. Việc đứng một chân là do chúng không muốn thân nhiệt bị giảm. Rút một chân lên làm chậm quá trình phát tán nhiệt độ ra môi trường đồng thời cũng làm giảm mức độ tiêu hao năng lượng. Hơn nữa ngủ một chân gà vẫn giữ được độ tỉnh táo nhất định, có thể tự vệ trước những mối đe dọa.</p>
+                    <div class="text-center">
+                            <img src="/image/510.png" alt="">
+                        <p class="text-sm italic">Gà đứng một chân để cơ thể được giữ ấm</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Gà cò đá có hay không?</h3>
+                    <div class="*:pb-3">
+                        <p>Với một con người, dáng đi, đứng, ngủ có thể phản ánh về sức khỏe nhưng không nói lên được gì về phẩm chất và tài năng của con người đó. Nhưng đôi khi có những người xuất hiện một số điểm dị biệt và được cho là dấu hiệu của một thiên tài. Ở gà chiến cũng thế, dáng đứng hay ngủ không cho chúng ta thấy kỹ năng, phẩm chất của gà. Không thể chỉ nhìn vào dáng đứng, cách ngủ mà biết được con gà ấy có tài hay không.</p>
+                        <p>Trường hợp của gà cò, nếu chúng sợ hữu sự nhạy bén, bản năng tự nhiên tốt, đòn lối độc đáo có thể là hàng kỳ tài thần kê. Nhưng nói chung tỷ lệ xuất hiện loại gà cò như vậy cực hiếm. </p>
+                        <p class="pt-3">Hy vọng với những chia sẻ ở phần trên của  <a class="text-blue-400 font-normal hover:text-black"> Goal123</a>  đã giúp các bạn hiểu hơn về gà cò. Đây là giống gà đặc biệt, khá hiếm gặp phải hữu duyên mới sở hữu được. Anh em có trong tay gà cò thì tốt nhất nên tìm hiểu nguyên nhân vì sao chiến kê của mình có dáng đứng kỳ lạ như vậy để có biện pháp chăm sóc, huấn luyện cho phù hợp nhé. /p>
+                    </div>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

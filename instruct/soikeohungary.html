@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">HƯỚNG DẪN</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Soi kèo Hungary vs Thụy Sĩ – 20h00 15/06/2024 – UEFA Euro 2024</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href=""> JUNE 11, 2024 </a> BY <a class=" text-blue-400 hover:text-black"  href="">ĐINH HÙNG</a></p>
+                    <div>
+                        <img src="/image/Hungary-vs-Thuy-Sy-3.jpg" alt="">
+                    </div>
+                    <p class="pt-5"><strong>Soi kèo Hungary vs Thụy Sĩ </strong>Soi kèo Hungary vs Thụy Sĩ<strong>Hungary vs Thụy Sĩ:</strong>Trận đấu hấp dẫn trong khuôn khổ UEFA Euro 2024 giữa <strong> Hungary </strong> và <strong>Thụy Sĩ</strong> sẽ diễn ra vào lúc 20h00 ngày 15/06/2024.<a href="" class=" text-blue-400 hover:text-black font-bold"> Goal123.shop  </a>– dự đoán đây là trận đấu mà cả hai đội đều có cơ hội chia điểm, tạo nên một cuộc đối đầu mãn nhãn cho người hâm mộ.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-5 text-2xl font-bold">Soi kèo Hungary vs Thụy Sĩ – Kèo Tài xỉu</h3>
+                    <p class="pb-2"> <strong>Soi kèo Hungary vs Thụy Sĩ:</strong>Trận đấu giữa  <strong> Hungary</strong>  và <strong>Thụy Sĩ</strong> vào lúc 20h00 ngày 15/06/2024 tại UEFA Euro 2024 hứa hẹn sẽ là một cuộc so tài đáng chú ý. <strong> Hungary</strong>vừa có chiến thắng ba sao trước Israel sau thất bại trước CH Ireland, trong khi  <strong>Thụy Sĩ</strong> là đối thủ cạnh tranh trực tiếp vé đi tiếp tại bảng A.</p>
+                    <div class="text-center">
+                        <img src="/image/Hungary-vs-Thuy-Sy-5.jpg" alt="">
+                        <p class="text-sm italic">Soi kèo Hungary vs Thụy Sĩ – Kèo Tài xỉu</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Phong độ hiện tại của Hungary</h4>
+                    <p class="pb-2"> <strong>Hungary</strong>đã thể hiện phong độ ấn tượng trong chiến dịch vòng loại Euro 2024. Dù không có nhiều cầu thủ xuất sắc, đội bóng của HLV Marco Rossi đã ghi được 16 bàn trong 8 trận tại bảng G, trung bình 2 bàn/trận. Cầu thủ nổi bật Szoboszlai cũng đã ghi bốn bàn trong hai trận giao hữu trước khi hành quân đến Đức. <strong>Hungary </strong> sẽ tiếp tục dựa vào phong độ tốt này để tìm kiếm kết quả tích cực trong trận đấu tới.</p>
+                    <h4 class="my-2 text-xl font-bold">Phong độ hiện tại của Thụy Sĩ</h4>
+                    <p class="pb-2"> <strong>Thụy Sĩ </strong>cũng không hề kém cạnh khi ghi được 22 bàn thắng sau 10 trận ở vòng loại. Đội bóng từ xứ đồng hồ sẽ là thách thức lớn cho <strong>Hungary </strong> khi sở hữu nhiều cầu thủ chất lượng trong đội hình và phong độ ổn định.</p>
+                    <p class="pb-2">Một trong những yếu tố quan trọng trong trận đấu này là khả năng ghi bàn của cả hai đội. Với <strong>Hungary </strong>ghi trung bình 2 bàn/trận và <strong> Thụy Sĩ </strong>cũng không kém phần ấn tượng với 22 bàn sau 10 trận, trận đấu này hứa hẹn sẽ có nhiều bàn thắng. Nhà đầu tư có thể tự tin chọn tài với tỷ lệ 2.5, khi khả năng có ít nhất ba bàn thắng được ghi là rất cao.</p>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Chọn tài 1 (H1)</strong></li>
+                        <li class="pt-2 text-[16px]"><strong>Chọn tài 2.5 (Full Time)</strong></li>
+                    </ul>
+                    <h3 class="my-5 text-2xl font-bold">Soi kèo châu Á: Hungary vs Thụy Sĩ</h3>
+                    <p class="pb-2"><strong>Hungary</strong> đã gặt hái được thành công tại vòng bảng VCK Euro 2020. Đội bóng dưới sự dẫn dắt của HLV Marco Rossi tiếp tục để lại ấn tượng mạnh mẽ trong chiến dịch Nations League, khiến các đối thủ lớn như Anh, Đức và Italia phải đối mặt với nhiều khó khăn. Suýt chút nữa, <strong>Hungary</strong> đã giành vé vào vòng Playoff để cạnh tranh danh hiệu. Với năm chiến thắng và ba trận hòa tại bảng G trong chuyến đi đến Đức, <strong>Hungary</strong> đã thể hiện sự tiến bộ không ngừng. Đây sẽ là một 90 phút khó khăn cho <strong>Thụy Sĩ</strong>, đội được đánh giá cao hơn, và có khả năng <strong>Hungary</strong> sẽ mang về điểm số đầu tiên.</p>
+                    <div class="text-center">
+                        <img src="/image/Hungary-vs-Thuy-Sy-4.jpg" alt="">
+                        <p class="text-sm italic">Soi kèo châu Á: Hungary vs Thụy Sĩ</p>
+                    </div>
+                    <p class="pb-2"><strong>Thụy Sĩ</strong> cũng không hề kém cạnh khi vừa đánh bại “đàn em” Estonia với 4 bàn không gỡ và hòa 1-1 với ĐT Áo trong loạt trận giao hữu tháng 6. Dưới sự chỉ huy của HLV Murat Yakin, <strong>Thụy Sĩ</strong> đã có màn trình diễn khá ổn trước khi hành quân đến Đức, ngoại trừ việc họ chỉ đứng thứ hai trong vòng loại. Với sự tham gia của Romania, Belarus, Kosovo, Israel và Andorra, bảng đấu này đã giành được 4 chiến thắng, 5 trận hòa và 1 trận thua. Mặc dù <strong>Thụy Sĩ</strong> được đánh giá cao hơn, nhưng kết quả này không đủ thuyết phục.</p>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Chọn tài (H1)</strong></li>
+                        <li class="pt-2 text-[16px]"><strong>Chọn Hungary +1/2 Full Time</strong></li>
+                    </ul>
+                    <h4 class="my-5 text-xl font-bold">Bảng tỷ lệ kèo bóng đá trận đấu</h4>
+                    <div class="text-center">
+                        <img src="/image/Hungary-vs-Thuy-Sy-1.jpg" alt="">
+                        <p class="text-sm italic">Bảng tỷ lệ kèo bóng đá trận đấu</p>
+                    </div>
+                    <h4 class="my-5 text-xl font-bold">Soi kèo châu Âu: Hungary đối đầu với Thụy Sĩ</h4>
+                    <p class="pb-2"><strong>Tỷ lệ kèo châu Âu</strong> cho thấy nhà cái đánh giá cao <strong>Thụy Sĩ</strong>. Tuy nhiên, đây được dự đoán là một lựa chọn có nhiều rủi ro. Đoàn quân dưới sự dẫn dắt của HLV Marco Rossi đang rất hưng phấn và có hàng công chất lượng, rất khó đánh bại ở thời điểm này.</p>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Chọn hòa (toàn thời gian)</strong></li>
+                    </ul>
+                    <h4 class="my-2 text-xl font-bold">Soi kèo Hungary vs Thụy Sĩ</h4>
+                    <p class="pb-2">Giới chuyên môn cho rằng trận đấu giữa <strong>Hungary</strong> và <strong>Thụy Sĩ</strong> sẽ diễn ra cởi mở và kịch tính. Cả hai đội đều có mục tiêu giành ba điểm, nên một trận cầu có tỷ số hấp dẫn với hàng công thăng hoa là điều mong đợi. Mặc dù không dễ để dự đoán chính xác kết quả cuối cùng, nhưng bữa tiệc tấn công mãn nhãn là điều người hâm mộ có thể kỳ vọng.</p>
+                    <h4 class="my-2 text-xl font-bold">Dự đoán tỷ số Hungary vs Thụy Sĩ</h4>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Hiệp 1: Hungary </strong> 1-0 <strong>Thụy Sĩ</strong></li>
+                        <li class="pt-2 text-[16px]"><strong>Toàn trận: Hungary</strong> thua  <strong> Thụy Sĩ </strong>  trong toàn bộ thời gian.</li>
+                    </ul>
+                    <h4 class="my-2 text-xl font-bold">Đội hình dự kiến Hungary vs Thụy Sĩ</h4>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Hungary:</strong> Denes Dibusz; Adam Lang, Marton Dardai, Attila Szalai; Bendeguz Bolla, Adam Nagy, Callum Styles, Zsolt Nagy; Daniel Gazdag, Dominik Szoboszlai; Martin Adam.</li>
+                        <li class="pt-2 text-[16px]"><strong>Thụy Sĩ:</strong>Yann Sommer; Nico Elvedi, Manuel Akanji, Ricardo Rodriguez; Silvan Widmer, Dan Ndoye, Remo Freuler, Granit Xhaka; Steven Zuber, Ruben Vargas; Zeki Amdouni.</li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Lịch sử đối đầu Hungary vs Thụy Sĩ</h4>
+                    <div class="text-center">
+                        <img src="/image/Hungary-vs-Thuy-Sy-2.jpg" alt="">
+                        <p class="text-sm italic">Lịch sử đối đầu Hungary vs Thụy Sĩ</p>
+                    </div>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

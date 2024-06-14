@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">KHUYẾN MẠI</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Michael Ballack Goal123 Công Bố Đại Sứ Thương Hiệu Toàn Cầu 2023 – 2024</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">   OCTOBER 31, 2023</a> BY <a class=" text-blue-400 hover:text-black"  href="">ĐINH HÙNG</a></p>
+                    <div>
+                        <img class="w-full" src="/image/goal123-cua-thu-1.jpg" alt="">
+                    </div>  
+                    <p class="pt-2">🎉 Công Bố Đại Sứ Thương Hiệu Toàn Cầu: Chúng tôi vô cùng hân hạnh thông báo rằng cựu tiền vệ nổi tiếng của Đức, Michael Ballack, sẽ là Đại Sứ Thương Hiệu Toàn Cầu của <a class=" text-blue-400 hover:text-black"  href=""> Goal123</a> cho mùa giải 2023 – 2024.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-5 text-xl font-bold ">🌐 Giới Thiệu Về Goal123.shop:</h3>
+                    <p class="pb-3">Goal123.shop là trang web hàng đầu tại Việt Nam chuyên về cung cấp tin tức thể thao, cung cấp dịch vụ cá cược thể thao và bóng đá. Với đội ngũ chuyên nghiệp, chúng tôi luôn mang đến những thông tin nhanh nhất và chính xác nhất cho người hâm mộ.</p>
+                    <div class="text-center">
+                        <img src="/image/photo_2023-12-07_21-11-31.jpg" alt="">
+                        <p class="text-sm italic">Bình Chọn Đội Bóng Yêu Thích – Nhận 3 Triệu Đồng Nếu Đội Thắng</p>
+                    </div> 
+                    <div class="*:pb-3 pt-3">
+                        <p>Không chỉ là một cái tên mới trên thị trường cá cược, Goal123 đã nhanh chóng tạo dấu ấn bởi các dịch vụ và tính năng vượt trội. Với sứ mệnh xây dựng một sân chơi minh bạch và công bằng nhất, nhà cái này đã chinh phục được sự tín nhiệm của đông đảo cộng đồng game thủ.</p>
+                        <p>Chỉ trong thời gian ngắn, Goal123 đã trở thành một đối thủ đáng gờm của những sàn giải trí lâu năm. Hiện nay, tốc độ phát triển và sự phổ biến của nhà cái rất mạnh mẽ, thu hút được sự quan tâm của nhiều nhà đầu tư.</p>
+                        <p>Với nguồn tài chính dồi dào, Goal123 luôn cập nhật và trang bị hệ thống phần mềm công nghệ hiện đại, giúp người chơi có những trải nghiệm tuyệt vời và lý thú hơn bao giờ hết. Nếu bạn đang tìm kiếm một sàn giải trí trực tuyến đáng tin cậy và đầy thú vị, hãy đến với Goal123.</p>
+                    </div>
+                    <h3 class="my-5 text-xl font-bold">🌟 Về Michael Ballack:</h3>
+                    <div class="*:pb-3">
+                        <p>Michael Ballack là một trong những cầu thủ xuất sắc nhất của Đức. Anh đã có một sự nghiệp lừng lẫy với nhiều danh hiệu và giải thưởng. Với tài năng và kinh nghiệm, Ballack chắc chắn sẽ mang lại nhiều giá trị cho Goal123.</p>
+                        <p>Michael Ballack là một cựu cầu thủ bóng đá chuyên nghiệp người Đức, được biết đến như một trong những tiền vệ tài năng nhất thế giới trong thập kỷ đầu của thế kỷ 21. Dưới đây là một số điểm nổi bật trong sự nghiệp của anh:</p>
+                    </div>
+                    <ul class=" pt-5  list-decimal pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li><strong>Sự nghiệp ở câu lạc bộ:</strong> Ballack đã thi đấu cho nhiều câu lạc bộ hàng đầu châu Âu, bao gồm Bayer Leverkusen, Bayern Munich và Chelsea. Anh đã giành được nhiều danh hiệu quốc nội và châu Âu, bao gồm Bundesliga, DFB-Pokal và Premier League.</li>
+                        <li><strong>Đội tuyển quốc gia Đức:</strong> Trong sự nghiệp quốc tế của mình, Ballack đã đại diện cho Đức trong hơn 90 trận đấu và ghi được 42 bàn thắng. Anh đã giúp đội tuyển Đức đạt được vị trí á quân tại Cúp thế giới FIFA 2002 và châu Âu UEFA 2008.</li>
+                        <li><strong>Phong cách chơi:</strong> Ballack nổi tiếng với khả năng kiểm soát bóng tốt, tầm nhìn sân bãi rộng lớn và khả năng sút bóng mạnh mẽ. Anh cũng được biết đến như một cầu thủ có tinh thần chiến đấu cao và khả năng lãnh đạo trên sân.</li>
+                        <li><strong>Sau sự nghiệp cầu thủ:</strong> Sau khi giải nghệ, Ballack đã tham gia vào lĩnh vực truyền hình và trở thành một bình luận viên bóng đá. Anh cũng tham gia vào nhiều hoạt động từ thiện và là một trong những đại sứ thương hiệu nổi tiếng trên thế giới.</li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="/image/goal123-cua-thu-1.jpg" alt="">
+                        <p class="text-sm italic">Về Michael Ballack</p>
+                    </div> 
+                    <h3 class="my-5 text-xl font-bold">💬 Chất Lượng Dịch Vụ:</h3>
+                    <p class="pb-3">Tại Goal123.shop, chúng tôi tự hào về chất lượng dịch vụ của mình. Với hệ thống an ninh cao, giao diện thân thiện và đội ngũ hỗ trợ 24/7, chúng tôi cam kết mang đến trải nghiệm tốt nhất cho người chơi.</p>
+                    <h3 class="my-5 text-xl font-bold">🎁 Khuyến Mại Đặc Biệt:</h3>
+                    <h3 class="my-5 text-xl font-bold">Khuyến mại 100% giá trị nạp tiền lần đầu cho người mới đăng ký tài khoản tại Goal123.shop.</h3>
+                    <div class="text-center">
+                        <img src="/image/photo_2023-10-26_13-45-08.jpg" alt="">
+                        <p class="text-sm italic">🎁 Khuyến Mại Đặc Biệt:</p>
+                    </div>
+                    <div class="*:pb-3 pt-3">
+                        <p>Goal123.shop, một trong những trang web hàng đầu về cá cược trực tuyến, vừa công bố một chương trình khuyến mại đặc biệt với sự hỗ trợ của Đại sứ thương hiệu nổi tiếng – Michael Ballack. Đây là một cơ hội tuyệt vời để người chơi trải nghiệm dịch vụ của Goal123.shop và nhận được nhiều ưu đãi hấp dẫn.</p>
+                        <p>Khi bạn tham gia và nạp tiền lần đầu tiên tại Goal123.shop, bạn sẽ nhận được một ưu đãi khuyến mại đặc biệt: 100% giá trị số tiền bạn nạp. Điều này có nghĩa là, nếu bạn nạp 1 triệu đồng, bạn sẽ nhận được thêm 1 triệu đồng vào tài khoản của mình, tổng cộng 2 triệu đồng để bạn sử dụng trên trang web.</p>
+                    </div>
+                    <h3 class="my-5 text-xl font-bold">Hoàn tiền 1% cho tất cả giao dịch</h3>
+                    <div class="*:pb-3">
+                        <p>Không chỉ có vậy, Goal123.shop còn mang đến cho người chơi một chương trình hoàn tiền độc đáo. Với mỗi giao dịch bạn thực hiện trên trang web, bạn sẽ được hoàn lại 1% giá trị giao dịch đó. Điều này giúp bạn có thêm cơ hội để tham gia nhiều trò chơi hơn và tăng cơ hội chiến thắng.</p>
+                        <p>Hoàn tiền 1% cho tất cả các giao dịch.</p>
+                    </div>
+                    <h3 class="my-5 text-xl font-bold">📅 Thời Gian Khuyến Mại:</h3>
+                    <p class="pb-3">Chương trình bắt đầu từ ngày 10/10/2023 và kết thúc vào ngày 10/12/2023.</p>
+                    <div class="text-center">
+                        <img src="/image/goal123-cua-thu-2.jpg" alt="">
+                        <p class="text-sm italic">Thời Gian Khuyến Mại:</p>
+                    </div>
+                    <h3 class="mt-5 text-xl font-bold">📜 Điều Khoản Và Chính Sách:</h3>
+                    <ul class=" pt-5  list-decimal pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Khuyến mại chỉ áp dụng cho người chơi mới đăng ký tài khoản tại Goal123.shop.</li>
+                        <li>Mỗi tài khoản chỉ được nhận khuyến mại một lần.</li>
+                        <li>Số tiền hoàn trả sẽ được tính dựa trên tổng số tiền giao dịch trong thời gian khuyến mại.</li>
+                        <li>Goal123.shop có quyền thay đổi hoặc kết thúc chương trình mà không cần thông báo trước.</li>
+                    </ul>
+                    <p class="pb-3">Hãy nhanh tay đăng ký và tham gia chương trình khuyến mại để nhận nhiều ưu đãi hấp dẫn từ Goal123.shop!</p>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

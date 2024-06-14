@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">BẮN CÁ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Bắn Cá ZingPlay Siêu Hấp Dẫn Đồ Hoạ Quá Sắc Nét</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">  JULY 6, 2023</a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/ban-ca-zing-play-1.jpg" alt="">
+                    </div>  
+                    <p class="pt-2"><a class="text-blue-400 font-normal hover:text-black"> Game bắn cá Zingplay</a>  là sân chơi giải trí thuần túy. Nơi người chơi có thể thoải mái hòa mình vào với đại dương, tham gia những cuộc phiêu lưu kỳ thú mà không cần lo phải nạp thẻ. Với lối chơi đơn giản, dễ hiểu đây chính là tựa game thu hút được nhiều sự chú ý nhất trong những năm gần đây. Hãy cùng theo dõi bài viết dưới đây để biết thêm nhiều thông tin cũng như cách chơi bắn cá Zingplay nhé.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Giới thiệu và game bắn cá</h3>
+                    <p class="pb-3">Chính thức ra mắt từ tháng 10 năm 2015, đã gần 10 năm trôi qua, rất nhiều cổng game mới ra đời với nhiều đột phá. Nhưng ICá bắn cá Zingplay vẫn là cái tên được yêu thích nhất. Không chỉ bởi đây là một game chơi phép chơi hoàn toàn miễn phí mà còn có rất nhiều yếu tố khác tạo nên sự hấp dẫn cho ICA. Như: Cách chơi đơn giản, giao diện game đẹp đỉnh cao cùng sự xuất hiện của rất nhiều tính năng mới.</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Nếu game nhạt nhòa sẽ ngay lập tức chìm nghỉm vì lúc này mọi người có rất nhiều thời gian để mang một tựa game mới ra phân tích, mổ xẻ và so sánh.</li>
+                        <li>Nếu game mang đến màu sắc mới lạ, độc đáo thì rất nhanh chóng thu hút được lượng người chơi khủng. Vì nhu cầu tìm game giải trí của con người thời điểm này là rất lớn.
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="/image/ban-ca-zing-play-1.jpg" alt="">
+                        <p class="text-sm italic">Tải game bắn cá zingplay</p>
+                    </div>
+                    <p class="pb-3">Những người yêu thích chơi game bắn cá có thể tải ICA về máy để chơi trực tuyến thay vì phải đến chơi máy bắn ở siêu thị. Game hỗ trợ cài đặt trên nhiều thiết bị khác nhau như máy tính, laptop với điện thoại di động. Sự ra đời của app ICA đã tạo nên bước đột phá về mặt công nghệ. Đưa đến cho người chơi một phương thức chơi game mới vô cùng tiện lợi.</p>
+                    <h3 class="my-2 text-2xl font-bold">Những điểm nổi bật của bắn cá zingplay</h3>
+                    <p class="pb-3">Bắn cá Zingplay không có yếu tố đổi thưởng nhưng vẫn đặc biệt hấp dẫn, thu hút được số lượng tham gia đông đảo. Tất cả là do game này đã hội tụ đủ những điểm ưu tú nhất mà một game online cần có.</p>
+                    <h4 class="my-2 text-xl font-bold">Đồ họa 3D sắc nét, đẹp mắt</h4>
+                    <div class="*:pb-3">
+                        <p>Điểm cộng đầu tiên của ICA chính là phần hình ảnh được đầu tư kỹ lượng với những thiết kế chỉn chu. Với công nghệ 3D tiên tiến đã mang lại một giao diện đẹp mắt, sắc nét và rất có chiều sâu. Màu sắc sử dụng trong game được cân đối hài hòa, không làm rối mắt người chơi. Kết hợp với những hiệu ứng như bọt nước, sự chuyển động nhẹ nhàng của các loại thủy sinh làm cho không gian game trở nên vô cùng chân thực.</p>
+                        <p>Đặc biệt, cách bố trí giao diện của ICA được đánh giá rất thông minh với thiết kế trực quan. Người chơi có thể dễ dàng quan sát cũng như thao tác một cách nhanh gọn.</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Hệ thống âm thanh nổi sống động</h4>
+                    <p class="pb-3">Người chơi bắn cá Zingplay tỏ ra rất hài lòng với việc sử dụng âm thanh trong game. Âm thanh nổi vô cùng sống động. Được lồng ghép phù hợp với từng thời điểm như: Tiếng súng nổ, âm thanh báo hiệu sự nguy hiểm sắp đến, tiếng tiền rơi, âm thanh chiến thắng…Làm cho người chơi thích thú. Âm thanh được sử dụng với tần suất trung bình, không quá dồn dập, liên tục, không làm người chơi cảm thấy khó chịu.</p>
+                    <div class="text-center">
+                        <img src="/image/ban-ca-zing-play-2.jpg" alt="">
+                        <p class="text-sm italic">Game bắn cá zingplay nhiều màn chơi hấp dẫn</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Chơi miễn phí không lo hết tiền</h4>
+                    <div class="*:pb-3">
+                        <p>Bắn cá zingplay là game là game cho phép tải và chơi hoàn toàn miễn phí. Người chơi chỉ sử dụng vàng và xu để thực hiện các giao dịch trong game. Hết vàng với tiền thì sẽ “game over”. Nhưng điều đó sẽ không xảy ra vì mỗi lượt đăng nhập hàng ngày người chửi sẽ nhận được rất nhiều xu do hệ thống gửi tặng. Vượt qua một cửa ải sẽ có thêm nhiều tiền vàng, tích lũy cho những thử thách tiếp theo. Game có tính năng kết nối facebook, người chơi có thể mời thêm bạn bè cùng tham gia chơi. Mỗi một lượt mời thành công cũng sẽ được nhận nhiều phần thưởng có giá trị.</p>
+                        <p>Tuy nhiên vì đây là game chơi miễn phí nên người chơi sẽ phải xem hơi nhiều quảng cáo một chút. Sẽ làm cho cuộc chơi bị gián đoạn nhưng cũng phải chấp nhận vì đây là nguồn thu chính của game mà.</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Kho vũ khí độc đáo</h4>
+                    <p class="pb-3">Kho vũ khí trong bắn cá Zingplay gồm 12 loại súng khác nhau, với thiết kế độc đáo và tính năng nổi bật. Mỗi một lại súng lại có công dụng khác nhau tương ứng với từng con mồi cụ thể. Ngoài súng, kho vũ khí còn có nhiều loại xu khí phụ trợ khác nhau: Bom, mìn, thuốc nổ, pháo…Đây là những loại vũ khí người chơi sẽ phải dùng tiền kiếm được trong game để mua về. Hãy nhanh chóng nâng trình độ của mình lên hàng đại gia để tiếp cận được nhiều hơn các loại vũ khí hiện đại.</p>
+                    <h4 class="my-2 text-xl font-bold">Đa dạng nhiều loại cá và đại boss</h4>
+                    <p class="pb-3">ICA có rất nhiều loại cá hấp dẫn, được thiết kế đẹp mắt và có phần ngộ nghĩnh. Từ cá bé đến cá lớn và các boss đều có màu sắc rất bắt mắt. Ngoài ra còn có sự xuất hiện của: Rùa xanh, rồng vàng và nàng tiên cá, để tăng thêm độ hấp dẫn cho game.</p>
+                    <div class="text-center">
+                        <img src="/image/ban-ca-zing-play-3.jpg" alt="">
+                        <p class="text-sm italic">Quay thưởng trong bắn cá Zingplay</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Hướng dẫn chơi bắn cá zingplay</h3>
+                    <p class="pb-3">Cách chơi bắn cá Zingplay khá đơn giản, không khác nhiều so với game bắn cá trong siêu thị. Mà còn có phần dễ chơi hơn do game được thiết kế thông minh, các nút điều khiển bố trí hợp lý.</p>
+                    <ul class=" pb-3  list-decimal pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Người chơi chơi trên điện thoại chỉ cần xoay ngang màn hình, nhấn giữ màn hình sau đó sử dụng các đầu ngón tay để chơi game rất dễ dàng.</li>
+                        <li>Người chơi mới bắt đầu sẽ được tặng: Buff 25% vàng, nhắm bắn, đạn đôi, đóng băng, bom quét sạch toàn bộ. Hết tiền cuộc chơi sẽ phải tạm dừng. Cho đến khi đủ điều kiện, hệ thống sẽ gửi tặng thêm 500 vàng để tiếp tục chơi. Càng kiếm được nhiều tiền thì càng mua được nhiều vũ khí lợi hại, khả năng chiến thắng càng cao. Người chơi có thể mua nhiều vật phẩm hữu ích tại cửa hàng của bắn cá ZIngplay. Ví dụ súng có số 30 tức là bạn phải mất 30 vàng để mua. Hãy cân nhắc số tiền mà bạn đang có để mua sắm cho hợp lý.</li>
+                        <li>Hết vàng để chơi người chơi có thể tham gia mini game để kiếm thêm vàng. Kết nối mời bạn bè cùng chơi để được thưởng.</li>
+                        <li>Trong game có tính năng chat giữa người chơi, để tăng thêm tính tương tác. Game cho phép người chơi chụp màn hình để chia sẻ những khoảnh khắc đáng nhớ với bạn bè, người thân hoặc những người có cùng đam mê.</li>
+                        <li>Phần thưởng kim cương sẽ dành cho những ai thực sự xuất sắc. Kim cương có giá trị rất cao, bạn nên cố gắng tích lũy thật nhiều để phục vụ cho những màn chơi khó hơn. Các cơ hội đẻ người chơi nhận thêm kim cương là: Điểm danh hàng ngày, thực hiện nhiệm vụ khó, tham gia Xạ thủ đại dương.</li>
+                        <li>Còn rất nhiều ưu đãi lớn khác, các bạn có thể tham khảo thêm trên page của bắn cá Zingplay.</li>
+                    </ul>
+                    <div class="text-center ">
+                        <div class="flex items-center justify-center">
+                            <img src="/image/ban-ca-zing-play-4.jpg"  alt="">
+
+                        </div>
+                        <p class="text-sm italic">Hệ thống đạn trong game bắn cá Zingplay</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Cách tải game bắn cá Zingplay</h3>
+                    <p class="pb-3">Game bắn cá cá Zingplay cho phép cài đặt trên nhiều ứng dụng khác nhau. Người chơi muốn tải game về thiết bị của mình hãy làm theo các bước hướng dẫn ở phần dưới đây:</p>
+                    <h4 class="my-2 text-xl font-bold">Hướng dẫn tải game về điện thoại di động</h4>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Bước 1: Truy cập vào mục CH Play (đối với điện thoại chạy hệ điều hành Android) hoặc App Store (đối với điện thoại chạy hệ điều hành IOS).</li>
+                        <li>Bước 2: Search “ICa bắn cá Zingplay”, chọn kết quả hiển thị đầu tiên và nhấn “cài đặt”.</li>
+                        <li>Bước 3: Việc cài đặt được thực hiện tự động. Khi thấy biểu tượng game xuất hiện trên màn hình, hãy nhấn vào và đăng ký tài khoản là đã có thể bắt đầu chơi.</li>
+                    </ul>
+                    <h4 class="my-2 text-xl font-bold">Hướng dẫn tải game về PC và laptop</h4>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Bước 1:Truy cập vào trang web cung cấp game trực tuyến và search “ICA bắn cá Zingplay” .</li>
+                        <li>Bước 2: Nhấp chuột  vào đường link của game mà bạn lựa chọn sau đó thực hiện download thông qua trình giả lập Android (trước đó người chơi cần tải trình giả lập android về máy).</li>
+                        <li>Bước 3: Quá trình download sẽ mất một vài phút. Sau khi game được tải hoàn tất là có thể tạo tài khoản và bắt đầu chơi.</li>
+                    </ul>
+                    <div class="text-center  ">
+                        <div class="flex items-center justify-center">
+                            <img src="/image/ban-ca-zing-play-5.jpg" alt="">
+                        </div>
+                        <p class="text-sm italic">Phiên bản bắn cá Zingplay quá hấp dẫn</p>
+                    </div>
+                    <div class="*:pb-3">
+                        <p>Nội dung chính của bài viết đã cung cấp cho các bạn những thông tin chi tiết nhất về game bắn cá Zingplay. Đây là một game có tính giải trí cao tạo cho người chơi một không gian vui chơi lành mạnh, bổ ích. Hãy nhanh tay tải game về máy để những giây phút nghỉ ngơi của bạn trở không bao giờ bị nhàm chán nhé.</p>
+                        <p>Chuyên mục<a class="text-blue-400 font-normal font-semibold hover:text-black"> game bắn cá đổi quà </a> vẫn còn nhiều tựa game khác nhau cực hấp dẫn. Anh em hãy cùng <a class="text-blue-400 font-normal hover:text-black"> Goal123v com  </a> tìm đến những tựa game này và xem game nào phù hợp với nhu cầu của mình nhé!</p>
+                    </div>
+                    
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

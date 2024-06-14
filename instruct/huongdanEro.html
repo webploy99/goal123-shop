@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">HƯỚNG DẪN</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Euro là giải bóng đá gì?</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href=""> MAY 8, 2024 </a> BY <a class=" text-blue-400 hover:text-black"  href="">  DINH THANG</a></p>
+                    <div>
+                        <img class="w-full" src="/image/euro-la-giai-dau-gi-.jpg" alt="">
+                    </div>
+                    <p class="pt-5"> Euro là giải bóng đá gì? Euro được tổ chức ở đâu? Bao lâu Euro tổ chức 1 lần? Giải bóng đá Euro được rất nhiều bạn đọc quan tâm. Cùng tìm hiểu giải Euro là giải bóng đá gì với Goal123v.com để hiểu rõ hơn về giải bóng đá này nhé.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-5 text-2xl font-bold">Euro là giải bóng đá gì?</h3>
+                    <p class="pb-2">Giải bóng đá Euro là gì? EURO là giải đấu bóng đá vô địch châu Âu, được tổ chức bởi Liên đoàn bóng đá châu Âu (UEFA). Đây là giải đấu quan trọng nhất dành cho các đội tuyển quốc gia tại châu Âu và thường được gọi là UEFA EURO. Giải đấu này tạo ra một sân chơi quan trọng để các đội bóng hàng đầu tại châu Âu cạnh tranh và thể hiện tài năng của mình.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/euro-la-giai-bong-da-gi.jpg" alt="">
+                        <p class="text-sm italic">Euro là giải bóng đá gì? Bao lâu Euro tổ chức 1 lần?</p>
+                    </div>
+                    <p class="pb-2">Giải đấu EURO được lần đầu tiên tổ chức tại Pháp vào năm 1960 theo ý tưởng của Henri Delaunay, tổng thư ký Liên đoàn bóng đá Pháp đã được đề cử từ năm 1927, nhưng không được chấp thuận cho đến năm 1958 mới được thông qua. Mùa giải đầu tiên của Euro được tổ chức vào năm 1960, tại Pháp, và đội Liên Xô đã trở thành nhà vô địch đầu tiên. Kể từ đó, Euro đã trở thành một giải đấu quan trọng được tổ chức hàng năm, với chu kỳ 4 năm một lần, và nằm trong hệ thống các giải vô địch quốc gia được quản lý bởi FIFA.</p>
+                    <h4 class="my-3 text-xl font-bold">Euro được tổ chức bao năm 1 lần?</h4>
+                    <div class="*:pb-3">
+                        <p>Giống như các giải đấu đội tuyển lớn khác, Euro được tổ chức theo chu kỳ 4 năm một lần. Khoảng thời gian này cho phép các đội bóng có thời gian để thay đổi và cải thiện đội hình của mình, bằng cách đưa vào đội tuyển những cầu thủ trẻ và loại bỏ những cầu thủ già cỗi. Euro cũng được tổ chức cách đợt tổ chức World Cup 2 năm, giải đấu vô địch bóng đá thế giới, cũng diễn ra 4 năm một lần.</p>
+                        <p>Tuy nhiên, việc đại dịch COVID-19 bùng phát vào năm 2020, giải đấu Euro đã phải chịu sự hoãn lần đầu tiên và sẽ được tổ chức vào năm tiếp theo là 2021. Điều này có nghĩa là chúng ta sẽ được chứng kiến Euro 2021 vào năm sau, và World Cup 2022 vào năm tiếp theo. Khoảng thời gian dự tính ban đầu cho Euro 2020 sẽ được sử dụng để các đội tuyển hoàn thành mùa giải và đá các trận bù (do đã bị hoãn trong thời gian dài do dịch bệnh).</p>
+                        <p>Mỗi quốc gia sẽ thay nhau đăng cai tổ chức Euro, có thể lặp lại lượt tổ chức đăng cai. Giải Euro 2024 sẽ được tổ chức tại Đức, dự kiến từ tháng 6 đến tháng 7 năm 2024. Đó là một số câu trả lời cho bài viết Euro là giải bóng đá gì? Bao lâu Euro tổ chức 1 lần?</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Euro là giải bóng đá gì? Số lượng đội bóng tham gia là bao nhiêu?</h4>
+                    <p class="pb-2">Euro là giải bóng đá gì? Số lượng đội bóng tham gia là bao nhiêu? Dưới đây Goal123v.com sẽ giúp bạn trả lời câu hỏi này. Vào năm 1960, kỳ Euro đầu tiên đã được tổ chức, với sự tham gia của 4 đội bóng trong vòng chung kết. Ban đầu, số lượng đội bóng tham gia chỉ có 17 trong vòng bảng. Thể thức thi đấu với 4 đội trong vòng chung kết được duy trì từ năm 1960 đến 1976.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/euro-la-giai-dau-gi-.jpg" alt="">
+                        <p class="text-sm italic">Số lượng đội bóng tham dự giải bóng đá Euro là 24</p>
+                    </div>
+                    <div class="*:pb-3">
+                        <p>Trong giai đoạn từ năm 1980 đến 1992, số lượng đội bóng tham gia vào vòng chung kết Euro đã tăng lên 8. Điều này cho thấy sự phát triển mạnh mẽ của giải đấu, vì chỉ trong một thời gian ngắn, số đội bóng tham dự đã tăng đáng kể. Điều này đã giúp thương hiệu của giải đấu lan tỏa ra toàn cầu.</p>
+                        <p>Từ kỳ Euro 1996 đến 2012, số đội bóng tham gia vào vòng chung kết tăng lên 16. Tuy nhiên, kể từ Euro 2016, số lượng đội bóng tham gia đã được mở rộng lên 24. Điều này đã mang đến nhiều thay đổi đáng kể trong cách thức tổ chức và thi đấu của giải đấu này.</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Euro là giải bóng đá gì? Giải Euro có hấp dẫn người xem bóng đá không?</h4>
+                    <p class="pb-2">Euro là giải bóng đá gì? Giải Euro có hấp dẫn người xem bóng đá không? Euro là giải bóng đá quy tụ những đội bóng mạnh và chất lượng nhất Châu Âu. Sự cạnh tranh khốc liệt giữa các đội bóng hàng đầu tạo ra một môi trường thi đấu hấp dẫn và kịch tính. Khán giả và người hâm mộ có cơ hội chứng kiến những trận đấu đẳng cấp, những pha bóng đẹp mắt và những bàn thắng mãn nhãn. Cảm xúc sôi động, náo nhiệt và căng thẳng trên sân cỏ mang lại cho người hâm mộ những khoảnh khắc đáng nhớ và không thể diễn tả bằng lời. Euro là một sự kiện thể thao quan trọng và thu hút sự quan tâm và lòng đam mê của hàng triệu người trên khắp thế giới.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/giai-bong-da-euro-la-giai-gi.jpg" alt="">
+                        <p class="text-sm italic">Euro là giải bóng đá gì? Có hấp dẫn không?</p>
+                    </div>
+                    <div class="*:pb-3">
+                        <p>Euro không chỉ là một giải đấu bóng đá hàng đầu Châu Âu, mà còn là một sự kiện có bề dày lịch sử và ngày càng hoàn thiện về luật lệ và tổ chức. Những cải tiến này đã tạo ra một môi trường thi đấu hấp dẫn, kịch tính và không thể bỏ qua cho người hâm mộ. Mỗi trận đấu trong Euro mang đến những cảm xúc sôi động, từ những bàn thắng đẹp mắt cho đến những pha tranh chấp quyết liệt trên sân cỏ.</p>
+                        <p>Sự hình thành của Euro cũng đi đôi với sự hiện diện của những ngôi sao hàng đầu thế giới. Những cầu thủ xuất sắc này không chỉ mang đến tài năng và kỹ thuật chơi bóng đỉnh cao, mà còn truyền cảm hứng và tạo thêm sức hút cho giải đấu. Sự cạnh tranh giữa các đội bóng hàng đầu và sự hiện diện của những ngôi sao nổi tiếng đã thu hút sự quan tâm và đam mê của người hâm mộ bóng đá trên toàn thế giới. Euro là một cuộc thi thể thao đáng chú ý, mang đến những khoảnh khắc đáng nhớ và không thể bỏ qua cho cả người chơi và khán giả.</p>
+                        <p>Hiện tại, Cristiano Ronaldo là cầu thủ ghi nhiều bàn thắng nhất trong lịch sử của giải đấu. Điều đáng chú ý là Ronaldo không chỉ là một cầu thủ vĩ đại mà còn trở thành một huyền thoại của Euro. Theo nhiều nguồn tin thì CR7 vẫn sẽ góp mặt tại Euro 2024, một nỗ lực đáng khâm phục của cầu thủ 39 (tính đến kỳ Euro 2024) người Bồ Đào Nha.</p>
+                        <p>Trên đây là những thông tin về câu hỏi Euro là giải bóng đá gì? Hi vọng bài bài viết của <a class=" text-blue-400 hover:text-black"  href="">Goal123.shop </a> sẽ mang đến những thông tin quý báu về giải bóng đá euro là gì cho các bạn. Đừng quên theo dõi chúng tôi để cập nhật những thông tin và hình ảnh mới nhất nhé.</p>
+                    </div>
+                </div>
+
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">ĐÁ GÀ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Cách Làm Gà Chọi Tăng Cân Bằng Phương Pháp Tự Nhiên</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href="">  MAY 29, 2024</a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/506.jpg" alt="">
+                    </div>  
+                    <p class="pt-2">Gà chọi thấp bé nhẹ cân sẽ không đáp ứng đủ nhu cầu về tập luyện và thi đấu. Cần tìm <a class="text-blue-400 font-normal hover:text-black">cách làm gà chọi tăng cân</a>  nhưng vẫn phải đảm bảo yếu tố tự nhiên, tức là không cần đến sự can thiệp của thuốc hay thực phẩm chức năng. Quá trình tăng cân cũng không làm cho gà chọi bị giữ nước, tích mỡ, nặng nề, kém linh hoạt. Nếu như bạn đang quan tâm đến vấn đề này thì đừng bỏ qua bài viết dưới đây nhé.  </p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Vì sao cần cho gà chọi tăng cân?</h3>
+                    <div class="*:pb-3">
+                        <p>Gà chọi khác với những loại gà nuôi lấy thịt lấy trứng, chúng cần có một nền tảng thể lực tốt để tập luyện và chiến đấu. Ngay từ khi còn nhỏ gà chọi đã cần có một sức khỏe tốt, cân nặng đạt chuẩn thì khi lớn mới có khả năng phát triển toàn diện và trở thành gà đá chuyên nghiệp.</p>
+                        <p>Gà chọi có cân nặng tốt mới có đủ sức ra đòn mạnh, hiểm hóc, hạ gục được đối thủ nhanh gọn. Cùng khả năng chiến đấu bền bỉ, có sức chịu đòn tốt. Đây là một lợi thế rất lớn trong thi đấu. Khi ra sàn đấu gà có thân hình cao lớn, lực lưỡng cũng đã đủ để át vía đối thủ ngay từ khi chưa giao đấu. </p>
+                        <p>Gà chọi gầy gò yếu ớt, không đủ sức để tham gia vào các bài huấn luyện với cường độ cao, các bài vần hơi vần đòn. Khả năng thì đấu được thì lại càng khó.</p>
+                        <p>Để giúp gà có một sức đề kháng tốt, chống chọi lại được bệnh tật thì trước tiên cần phải cho gà có 1 nền tảng thể lực tốt, một cân nặng đủ để cơ thể khỏe mạnh và vững chãi. </p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/505.jpg" alt="">
+                        <p class="text-sm italic">Gà còi cọc, chậm lớn không đủ lực để thi đấu</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Cách làm gà chọi tăng cân an toàn tự nhiên</h3>
+                    <p class="pb-3">Nguyên tắc cơ bản nhất khi làm cho gà tăng cân đó là đảm bảo không ảnh hưởng tới sức khỏe của gà. Gà tăng cân nhưng không được tích mỡ, tích nước, cơ thể phải có độ săn chắc. Muốn làm được điều đó anh em cần nắm vững các bước thực hiện sau.</p>
+                    <h4 class="my-2 text-xl font-bold">Thực hiện chế độ dinh dưỡng đảm bảo, hợp lý</h4>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Điều cơ bản đầu tiên cần nắm được trong chế độ dinh dưỡng cho gà đó là cho gà ăn đúng và ăn đủ. Tăng cân không có nghĩa là ép gà ăn nhiều ăn toàn đồ bổ. Như thế là phản khoa học và rất hại gà. Cho gà ăn đúng vào một giờ quy định với thành phần chất dinh dưỡng đã được định lượng trước.</li>
+                        <li>Ngoài các thành phần như thóc, đạm thì phải cho gà ăn bổ sung thêm rau xanh. Rau xanh giúp hệ tiêu hóa của gà hoạt động tốt hơn. Tiêu hóa tốt gà mới hấp thụ được dinh dưỡng từ trong thức ăn.</li>
+                        <li>Một số loại thức ăn giúp gà tăng cân mà không tích mỡ: Giun, dế, lươn trạch, tôm, cá, thịt bò, lòng đỏ trứng… Ngoài ra cần bổ sung thêm vitamin và khoáng chất cho gà. </li>
+                        <li>Thời điểm thích hợp nhất để vỗ béo cho gà là mùa đông. Cũng giống như con người mùa đông là thời điểm ăn uống thấy ngon hơn, không bị mất sức nhiều. Có thể trộn vào thức ăn của gà 1 số loại rau củ gia vị để kích thích ăn như: Tỏi, gừng… Lưu ý là chỉ cho với 1 lượng nhỏ, cho nhiều sẽ phản tác dụng, làm gà đầy hơi, nóng trong.</li>
+                        <li>1 ngày nên cho gà ăn 2 bữa. Bữa sáng vào lúc 8 đến 9h, bữa chiều là từ 14 đến 17h. Sau đó không nên cho gà ăn thêm, để tránh gà bị khó tiêu.</li>
+                    </ul>
+                    <h4 class="my-2 text-xl font-bold">Chi tiết cách chăm gà chọi tăng cân qua từng thời kỳ</h4>
+                    <ul class=" pb-3  list-decimal pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Gà chọi dưới 6 tháng tuổi: Cho gà ăn thóc, tốt nhất là ngâm qua đêm hoặc nấu chín mới cho gà ăn. Bổ sung thêm cá đã được nấu chín vào thành phần thức ăn cho gà, giúp gà tăng cân và lớn nhanh hơn. Lưu ý chọn cho gà loại thóc tốt, hạt to mẩy, loại bỏ hạt lép, hạt mốc.</li>
+                        <li>Gà chọi trưởng thành: Từ 6 tháng trở lên cho gà ăn nhiều rau như cà chua, xà lách, chuối, rau muống…Ngoài ra cứ cách 1 ngày lại cho gà ăn thêm: Giun, dế, lươn, trạch…để gà tăng cân nhanh nhưng không bị béo phì.</li>
+                        <li>Một số loại thức ăn giúp gà tăng cân mà không tích mỡ: Giun, dế, lươn trạch, tôm, cá, thịt bò, lòng đỏ trứng… Ngoài ra cần bổ sung thêm vitamin và khoáng chất cho gà. </li>
+                        <li>Gà chọi đủ điều kiện tham gia chiến đấu: Đây là thời điểm gà cần bổ sung dinh dưỡng để có 1 sức khỏe thật tốt. Đồng thời cơ thể gà phải săn chắc, có sức mạnh và đặc biệt không có mỡ thừa. Do đó thời gian biểu về ăn uống của gà chọi giai đoạn này cũng có sự khác biệt với các giai đoạn khác. Mỗi ngày cho gà ăn 0,25 kg thóc đã ngâm nước, chia làm thành 2 bữa. 100gr rau thay đổi loại theo ngày và có thể cho gà ăn loại mà gà thích. Bổ sung khoảng 100gr đạm động vật cho gà như: Giun, thịt bò, lòng đỏ trứng…</li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="flex justify-center items-center">
+                            <img src="/image/506.jpg" alt="">
+                        </div>
+                        <p class="text-sm italic">Muốn gà tăng cân khỏe mạnh phải có chế độ dinh dưỡng riêng</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Những điều cần lưu ý khi thực hiện tăng cân cho gà chọi</h3>
+                    <p class="pb-3">Để việc tăng cân cho gà đạt hiệu quả cao và an toàn, anh em cần lưu ý một số điểm sau:</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Cho gà ăn đúng bữa, đúng giờ.</li>
+                        <li>Đảm bảo gà không bị ốm, không mắc bệnh. Nếu ốm cần chữa khỏi cho gà sau đó mới thực hiện chế độ tăng cân.</li>
+                        <li>Theo dõi hệ tiêu hóa của gà, nếu có dấu hiệu lạ cần điều chỉnh thức ăn. Tốt nhất là phải tẩy giun định kỳ cho gà. </li>
+                        <li>Đảm bảo thức ăn mà bạn cho gà ăn có chất lượng tốt, không hỏng mốc, ôi thiu.</li>
+                        <li>Nếu cho gà ăn theo chế độ mà không tăng được cân thì cần kiểm tra lại nguồn thức ăn mà bạn cung cấp. Đồng thời kiểm tra xem gà có gặp vấn đề gì về sức khỏe không mà không hấp thụ được dinh dưỡng từ thức ăn.</li>
+                        <li>Cho gà ăn uống để tăng cân cần kết hợp với một chế độ tập luyện tốt để cơ thể gà được săn chắc, giảm mỡ.</li>
+                    </ul>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/507.jpg" alt="">
+                        <p class="text-sm italic">Sâu worm giúp gà tăng cân khỏe mạnh</p>
+                    </div>
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

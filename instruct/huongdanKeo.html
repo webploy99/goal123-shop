@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">HƯỚNG DẪN</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Kèo other là gì? Cách chơi kèo Other như thế nào?</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href=""> MAY 8, 2024 </a> BY <a class=" text-blue-400 hover:text-black"  href="">  DINH THANG</a></p>
+                    <div>
+                        <img class="w-full" src="/image/keo-other.jpg" alt="">
+                    </div>
+                    <p class="pt-5">Kèo other là gì? Cách chơi kèo Other như thế nào? Nếu bạn quan tâm tới kèo Other thì đây là bài viết mà Goal123v.com muốn chia sẻ tới bạn. Các thông tin dưới đây sẽ giúp bạn có được kiến thức về kèo cược bóng đá điển hình là kèo other.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-5 text-2xl font-bold">Khái niệm kèo other là gì?</h3>
+                    <p class="pb-2">Kèo Other là một loại kèo cá cược tỷ số trong trận đấu bóng đá, được sử dụng để biểu thị tỷ lệ bàn thắng giữa hai đội thi đấu trên sân cỏ. Người chơi được yêu cầu dự đoán tỷ số của trận đấu trong những phút thi đấu sắp tới, bao gồm đội chiến thắng và tỷ số cụ thể.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/keo-other.jpg" alt="">
+                        <p class="text-sm italic">Kèo other là gì? Cách chơi kèo Other như thế nào?</p>
+                    </div>
+                    <p class="pb-2">Hiện nay, các nhà cái uy tín cung cấp nhiều mức tỷ lệ cược khác nhau cho kèo Other, để người chơi có thể lựa chọn theo ý thích. Điều này nhằm tạo ra sự đa dạng và phù hợp với các đối tượng cược thủ khác nhau. Bảng tỷ lệ cược cung cấp các mức tiền thưởng tương ứng, do đó, người chơi cần nghiên cứu kỹ trước khi đặt cược.</p>
+                    <h4 class="my-3 text-xl font-bold">Cách đánh kèo Other khi chơi cá độ bóng đá</h4>
+                    <p class="pb-2">Hiện nay các chuyên gia soi kèo của Goal123v.com thấy được các nhà cái cá độ bóng đá đang cung cấp một loạt các kèo cá cược cho người chơi có thể lựa chọn thoải mái. Trong số đó, kèo Other hiện đang được ưa chuộng với ba loại kèo tỷ số phổ biến nhất mà nhiều người chơi tham gia. Các loại kèo đó bao gồm:</p>
+                    <h4 class="my-3 text-xl font-bold">Kèo Other: Kèo tỷ số cả trận </h4>
+                    <p class="pb-2">Kèo tỷ số cả trận dựa trên kết quả tỷ số cuối cùng của trận đấu, bao gồm cả hai hiệp thi đấu chính thức, tức là 90 phút chính thức cộng thêm thời gian bù giờ. Kèo tỷ số Other cả trận không tính đến hiệp phụ và lượt đá luân lưu penalty (nếu có). Trong trường hợp trận đấu bị dừng lại, hủy bỏ hoặc gặp gián đoạn không lường trước, toàn bộ đơn cá cược của người chơi sẽ bị hủy bỏ.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/kinh-nghiem-choi-keo-other.jpg" alt="">
+                        <p class="text-sm italic">Cách đánh kèo Other khi chơi cá độ bóng đá là cực kỳ quan trọng cho người mới</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Kèo Other: Kèo tỷ số hiệp đấu 1</h4>
+                    <p class="pb-2">Kèo tỷ số trận đấu Other của hiệp 1 là kết quả được xác định trong hiệp 1 của trận đấu. Kết quả này bao gồm tỷ số của hiệp đấu thứ nhất được diễn ra chính thức, bao gồm thời gian đá bù giờ. Tương tự như trên, nếu kết quả của hiệp 1 bị thay đổi do quyết định từ ban tổ chức, đơn cược sẽ bị hủy. Tiền cược sẽ được hoàn lại ngay lập tức thông qua tài khoản cá cược của người chơi.</p>
+                    <h4 class="my-3 text-xl font-bold">Kèo Other: Kèo tỷ số hiệp đấu phụ</h4>
+                    <p class="pb-2">Kèo Other này dựa trên kết quả của hiệp thi đấu phụ trong trận đấu. Do đó, tỷ lệ kèo này không tính đến kết quả của trận đấu trong 90 phút chính thức vừa diễn ra. Mỗi hiệp phụ có thời gian diễn ra là 15 phút, vì vậy tổng thời gian thi đấu của cả hai hiệp phụ sẽ là 30 phút.</p>
+                    <h3 class="my-5 text-2xl font-bold">Lưu ý khi chơi Kèo Other trong cá độ bóng đá</h3>
+                    <p class="pb-2">Bạn đã có thông tin về các nguyên tắc “5 không” của kèo Other chưa? Nếu chưa, hãy xem ngay nội dung bên dưới để cập nhật thông tin và áp dụng vào các ván cược Other của bạn.</p>
+                    <h4 class="my-3 text-xl font-bold">Tâm trạng soi kèo phải tốt</h4>
+                    <p class="pb-2">Đúng như chúng ta đã biết, việc phân tích và đánh giá trận đấu trước khi đặt cược có tác động trực tiếp đến lợi ích tài chính của người chơi. Vì vậy, chỉ nên tham gia vào việc phân tích khi ở trạng thái thoải mái, tỉnh táo và sáng suốt nhất. Bởi vì tâm lý bị mất cân bằng, hấp tấp và thiếu khách quan chỉ sẽ dẫn đến mất tiền khi tham gia cá cược.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/cach-danh-keo-other.jpg" alt="">
+                        <p class="text-sm italic">Lưu ý khi chơi Kèo Other trong cá độ bóng đá</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Hiểu rõ trận đấu bạn muốn tham gia</h4>
+                    <p class="pb-2">Các nhà cái cập nhật kèo Other hàng ngày để người chơi theo dõi và tham gia đặt cược. Tuy nhiên, không phải trận đấu nào bạn cũng có đủ hiểu biết và thông tin để đặt cược. Do đó, rất quan trọng là không nên liều lĩnh đặt tiền vào những trận đấu mà bạn không hiểu rõ. Đặc biệt, dưới đây là những dấu hiệu mà người chơi nên tránh được các chuyên gia của Goal123v.com chia sẻ:</p>
+                    <ul class=" italic  list-disc pl-5 text-lg *:pt-2 *:text[16px]">
+                        <li >Trận đấu diễn ra với sự tham gia của hai đội mà ít người biết đến.</li>
+                        <li >Tỷ lệ cược odd liên tục thay đổi trước và trong khi trận đấu diễn ra.</li>
+                        <li>Tỷ lệ odds không thay đổi, đứng yên một chỗ.</li>
+                        <li>Trận đấu bị hoãn lịch ban đầu, nhưng sau đó lại được tiến hành.</li>
+                        <li>Kèo chấp có tỷ lệ quá cao, từ 3 trái trở lên.</li>
+                        <li>Kèo Tài Xỉu có tỷ lệ cược quá lớn, từ 4 trái trở lên.</li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Đơn thương độc mã</h4>
+                    <p class="pb-2">Một nguyên tắc quan trọng khác trong việc đặt cược kèo Other mà người chơi cần nắm rõ là không theo số đông. Khi thấy một kèo có tỷ lệ hấp dẫn, và tất cả các người chơi đều nhảy vào đặt tiền, đây có thể là một chiêu trò của nhà cái để lừa đảo tiền của người chơi. Vì vậy, hãy đặt cược dựa trên hiểu biết và dự đoán của chính bạn, không nên phụ thuộc vào số đông hãy chơi theo phong cách đơn thương độc mã bạn tự làm chủ cuộc chơi của mình nhé.</p>
+                    <h4 class="my-3 text-xl font-bold">Gấp thếp thông minh</h4>
+                    <p class="pb-2">Một số người chơi chia sẻ mẹo đặt cược gấp thếp hiệu quả. Tuy nhiên, sau khi Goal123v.com tìm hiểu, phương pháp này thực tế là một cách nhanh chóng làm mất tiền của người chơi. Khi sử dụng phương pháp này, nếu bạn thua trong một ván cược, bạn sẽ đặt cược gấp đôi số tiền trong ván trước. Tuy nhiên, bạn không biết được bạn sẽ cần phải đặt cược gấp đôi đến khi nào, và tiền cược của bạn có thể không đủ để theo kịp. Kết quả là, người chơi thường sẽ từ bỏ và mất toàn bộ số tiền đã đặt cược, chuyển về tay nhà cái.</p>
+                    <h4 class="my-3 text-xl font-bold">Đặt cược kèo Other tập chung</h4>
+                    <p class="pb-2">Một số người chơi chia sẻ mẹo đặt cược gấp thếp hiệu quả. Tuy nhiên, sau khi Goal123v.com tìm hiểu, phương pháp này thực tế là một cách nhanh chóng làm mất tiền của người chơi. Khi sử dụng phương pháp này, nếu bạn thua trong một ván cược, bạn sẽ đặt cược gấp đôi số tiền trong ván trước. Tuy nhiên, bạn không biết được bạn sẽ cần phải đặt cược gấp đôi đến khi nào, và tiền cược của bạn có thể không đủ để theo kịp. Kết quả là, người chơi thường sẽ từ bỏ và mất toàn bộ số tiền đã đặt cược, chuyển về tay nhà cái.</p>
+                    <ul class=" italic  list-disc pl-5 text-lg *:pt-2 *:text[16px]">
+                        <li >Giới hạn số trận đấu tham gia trong mỗi khung giờ, không vượt quá 3 trận.</li>
+                        <li >Thường xuyên kiểm tra số dư trong tài khoản trước khi đặt cược.</li>
+                        <li>Không nên cho rằng chỉ có mình bạn nhận ra kèo thơm mà người khác không biết.</li>
+                        <li>Sử dụng linh hoạt kinh nghiệm soi kèo để đưa ra nhận định chính xác về trận đấu.</li>
+                        <li>Trước khi đặt cược, nên tìm hiểu các mẹo cá độ và cách soi kèo từ những người chơi có kinh nghiệm.</li>
+                        <li>Nên từ bỏ kèo ngay khi nhận thấy cơ hội thắng quá thấp.</li>
+                    </ul>
+                    <div class="*:pb-3">
+                        <p>Tổng kết:</p>
+                        <p>Trên đây nhà cái Goal123v.com đã chia sẻ tới bạn kèo other là gì? các lưu ý khi chơi kèo other. Hy vọng nội dung này giúp bạn có được góc nhìn về thể loại kèo cược này. Chúc bạn chơi game vui vẻ.</p>
+                    </div>
+                </div>
+
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">BẮN CÁ</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Tải Game Chiến Thần Bắn Cá Hừng Hực Khí Thế</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href=""> JULY 6, 2023 </a> BY <a class=" text-blue-400 hover:text-black"  href="">GOAL123 SUPPORT</a></p>
+                    <div>
+                        <img class="w-full" src="/image/game-chien-than-ban-ca-1.jpg" alt="">
+                    </div>  
+                    <p class="pt-2"> Trong thời điểm các gamer đang cảm thấy chán nản với nhiều phiên bản game online đã cũ không có sự đổi mới, các game mới ra đời thì đều na ná giống nhau. Thì sự xuất hiện của <a class="text-blue-400 font-normal hover:text-black"> game chiến thần bắn cá</a>  đã mang lại một làn gió mới cho thị trường game online Việt Nam. Đưa người chơi đến với những cung bậc cảm xúc mới lạ và đặc biệt là những cơ hội kiếm được rất nhiều tiền. Hãy cùng phân tích xem những điểm gì đã tạo nên sức hấp dẫn của cổng game này trong phần dưới đây nhé.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-2 text-2xl font-bold">Bạn biết gì về chiến thần bắn cá?</h3>
+                    <p class="pb-3">Chiến thần bắn cá ra mắt người hâm mộ Việt Nam vào tháng 4 năm 2021. Đây là một thời điểm khá nhạy cảm khi dịch bệnh Covid đang hoành hành trên toàn cầu. Việt Nam cũng không nằm ngoài tầm ảnh hưởng của đại dịch này. Chọn thời điểm này để ra mắt game là một quyết định liễu lĩnh của các nhà điều hành. Bởi vì giai đoạn này mọi người chủ yếu ở nhà và làm việc qua mạng, sẽ có rất nhiều thời gian lên mạng vui chơi, giải trí. Sẽ có 2 trường hợp có thể xảy ra.</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Nếu game nhạt nhòa sẽ ngay lập tức chìm nghỉm vì lúc này mọi người có rất nhiều thời gian để mang một tựa game mới ra phân tích, mổ xẻ và so sánh.</li>
+                        <li>Nếu game mang đến màu sắc mới lạ, độc đáo thì rất nhanh chóng thu hút được lượng người chơi khủng. Vì nhu cầu tìm game giải trí của con người thời điểm này là rất lớn.
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="/image/game-chien-than-ban-ca-1.jpg" alt="">
+                        <p class="text-sm italic">Game chiến thần bắn cá mới nhất</p>
+                    </div>
+                    <p class="pb-3">Và tất nhiên Chiến thần bắn cá đã làm được điều thứ 2. Người chơi đã hoàn toàn bị thuyết phục về cả mặt hình ảnh, nội dung và các tính năng mới trong game. Số lượng người tải nhanh chóng cán mốc hàng chục ngàn lượt. Đưa tựa game bắn cá lọt top những game online có lượng người tải lớn nhất trong lịch sử.</p>
+                    <h3 class="my-2 text-2xl font-bold">Chiến thần bắn cá hấp dẫn ở điểm gì?</h3>
+                    <p class="pb-3">Để tạo nên sức hấp dẫn cho một tựa game đòi hỏi những người thiết kế game phải vô cùng sáng tạo. Đưa vào đây rất nhiều những điểm độc đáo, mới lạ nhưng không làm mất đi những nét cơ bản của game bắn cá nói chung. Hãy cùng điểm lại những ưu điểm nổi bật của game chiến thần bắn cá ở phần dưới đây nhé.</p>
+                    <h4 class="my-2 text-xl font-bold">Sự đổi mới đến từ giao diện và cả nội dung</h4>
+                    <div class="*:pb-3">
+                        <p>Giao diện được thực hiện trên nền đồ họa 3D đẹp mắt, màu sắc hài hòa không rối mắt, hình ảnh mang tính chân thực cao. Đi kèm với chất lượng hình ảnh 4K vô cùng sắc nét. Sử dụng hệ thống âm thanh nổi kết hợp các hiệu ứng tinh tế. Đưa người chơi chìm đắm vào đại dương bao la, rộng lớn với những cuộc săn đuổi đầy thú vị.</p>
+                        <p>Điểm đặc biệt của game chiến thần bắn cá là đề cao tinh thần đồng đội. Người chơi giờ đây không còn đơn độc vì đã có thể rủ bạn bè lập thành một team để cũng đi săn. Thành tích cá nhân của từng người vẫn được ghi nhận nhưng nếu tổng thành tích của cả team đạt thứ hạng cao thì số tiền mang về không hề nhỏ chút nào.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/image/game-chien-than-ban-ca-2.jpg" alt="">
+                        <p class="text-sm italic">Nhiều boss siêu khủng khi tham gia bắn cá chiến thần</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Cổng game đề cao sự uy tín và minh bạch</h4>
+                    <p class="pb-3">Không như nhiều người nghĩ về game đổi thưởng là cờ bạc trá hình, hoạt động chui. Chiến thần bắn cá là game chính thống, có đăng ký bản quyền và được cấp phép phát hành bởi các tổ chức có uy tín. Game đề cao tinh thần fair play, đảm bảo luật chơi luôn minh bạch. Đây là game có nguồn gốc xuất xứ và các thông số rõ ràng. Tạo cho người chơi một không gian giải trí lành mạnh và cơ hội kiếm tiền dễ hơn bao giờ hết.</p>
+                    <h4 class="my-2 text-xl font-bold">Bảo mật tuyệt đối mọi thông tin của người chơi</h4>
+                    <p class="pb-3">Thông tin cá nhân, tài khoản của người chơi được đặt trong vòng bảo mật tuyệt đối. Cơ chế tự động mã hóa thông tin đã giúp người chơi an tâm hơn khi mọi dữ liệu cá nhân của mình đang được bảo vệ ở mức tốt nhất. Chiến thần bắn cá luôn tự hào là một cổng game thực hiện rất nghiêm túc mọi quy trình bảo mật. Thường xuyên kiểm tra, nâng cấp hệ thống đảm bảo không để xảy ra hiện tượng hack nick, hack tài khoản.</p>
+                    <h4 class="my-2 text-xl font-bold">Dung lượng game nhẹ thích hợp với nhiều loại máy</h4>
+                    <p class="pb-3">Cổng game này đã được cài đặt đồng bộ nên có dung lượng khá nhẹ so với nhiều game online có cùng cấu hình khác. Giờ đây việc tải game đã trở nên dễ dàng hơn cho các dòng máy đời thấp. Và nhất là người chơi có thể chơi game trong thời gian dài mà không lo nóng máy, tốn pin.</p>
+                    <h4 class="my-2 text-xl font-bold">Cơ chế nạp rút tiền linh hoạt</h4>
+                    <p class="pb-3">Tâm lý chung của người chơi đều lo ngại quy trình nạp rút tiền phức tạp, mất thời gian. lúc nạp thì muốn nhanh chóng được hệ thống ghi nhận, để có thể chơi ngay. Lúc rút thì sợ thủ tục lằng nhằng, mất phí, thậm chí không rút được tiền. Hiểu được lo lắng này của người chơi, các nhà điều hành game đã cho xây dựng một hệ thống giao dịch tài chính đơn giản nhanh gọn nhưng vẫn đảm bảo sự uy tín và sòng phẳng. Người chơi chỉ mất từ 3 đến 5 phút để nạp hay rút tiền mà không phải chịu bất cứ khoản phí nào.</p>
+                    <div class="text-center">
+                        <img src="/image/game-ban-ca-chien-than.jpg" alt="">
+                        <p class="text-sm italic">Đồ hoạ lung linh của chiến thần bắn cá</p>
+                    </div>
+                    <h4 class="my-2 text-xl font-bold">Cơ chế chăm sóc khách hàng chuyên nghiệp nhất</h4>
+                    <p class="pb-3">Người chơi có thể liên hệ với hệ thống chăm sóc khách hàng của  cổng game chiến thần bắn cá 24/7. Thông qua các kênh liên lạc: Hotline, email,, zalo, chat trực tuyến…đội ngũ nhân viên chăm sóc khách hàng chuyên nghiệp sẽ hướng dẫn tận tình và giúp người chơi giải quyết sự cố một cách nhanh nhất.</p>
+                    <h3 class="my-2 text-2xl font-bold">Sự khác biệt của chiến thần bắn cá so với các game online khác</h3>
+                    <p class="pb-3">Nếu bạn đã từng tham gia nhiều cổng game bắn cá khác nhau chắc chắn bạn sẽ nhận ra sự khác biệt của Chiến thần bắn cá. Dưới đây là một vài điểm khác biệt mà chúng tôi đã tổng hợp được.</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Cơ chế đổi thưởng nhanh chóng và cực ký chất lượng. Người chơi không phải chờ lâu như ở nhiều game khác. Cổng game chiến thần bắn cá có sự liên kết với các nhà mạng lớn do đó sẽ không hạn chế số lượt rút thẻ trong người ngày của người chơi.</li>
+                        <li>Thực hiện 2 lớp mật mã OTP cho mỗi giao dịch. Như vậy nhằm bảo mật tuyệt đối cho mọi thông tin của khách hàng</li>
+                        <li>Có rất nhiều chương trình khuyến mại lớn và ưu đãi độc quyền. Đặc biệt là những chính sách áp dụng cho các tân binh hấp dẫn hơn bao giờ hết..</li>
+                        <li>Đây là cổng game đầu tiên trên thị trường xác nhận hình thức giao dịch qua đại lý game ủy quyền. Người chơi giờ đây đã có thêm một hình thức rút nạp tiền khác đó là giao dịch qua đại lý.</li>
+                        <li>Hệ thống đại lý game chiến thần bắn cá trải dọc trên toàn quốc nhằm phục vụ tốt hơn nhu cầu của khách hàng ở mọi vùng miền.</li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="/image/game-chien-than-ban-ca-3.jpg" alt="">
+                        <p class="text-sm italic">Chiến thần bắn cá với Boss Lý Thiên Vương</p>
+                    </div>
+                    <h3 class="my-2 text-2xl font-bold">Hướng dẫn tải game chiến thần bắn cá</h3>
+                    <p class="pb-3">Về cơ bản cách tải game về điện thoại di động hay PC, laptop đều rất đơn giản, Chỉ có đôi chút khác biệt những người chơi không cần phải lo lắng. Vì quá trình cài đặt game đều được diễn ra tự động. Nên việc của người chơi cần làm là thực hiện 1 vài thao tác theo hướng dẫn dưới đây:</p>
+                    <ul class=" pb-3  list-disc pl-5 text-lg *:pt-2 *:text-[16px]">
+                        <li>Bước 1: Truy cập vào App Store (với hệ điều hành IOS) hoặc CHPlay (với hệ điều hành Android).</li>
+                        <li>Bước 2: Điền vào ô tìm kiếm “Chiến thần bắn cá”.</li>
+                        <li>Bước 3: Ngay sau khi tìm thấy kết quả phù hợp hãy ấn vào cài đặt, thiết bị của bạn sẽ tự động tải game xuống.</li>
+                        <li>Bước 4: Chờ trong ít phút để quá trình cài đặt được hoàn tất. Ngay sau đó bạn có thể tham gia chơi bằng các đăng ký tài khoản, đăng nhập và nạp tiền.</li>
+                    </ul>
+                    <div class="*:pb-3">
+                        <p>Ngoài ra người chơi cũng có thể tải game về PC hay laptop với sự hỗ trợ của các trình giả lập Android. Có rất nhiều trình giả lập khác nhau. Các bạn có thể tham khảo một số cái tên nổi bật như: Nox App Player, Bluestacks, LDPlayer, Game Loop…</p>
+                        <p>Trong một thế giới game online đa sắc màu, đa thể loại, Chiến thần bắn cá vẫn nổi bật lên như một tựa game có phong cách riêng, lối chơi riêng. Đã để lại ấn tượng rất tốt đẹp với những người đã tham gia chơi. Hãy cùng trải nghiệm đại dương bao la, kỳ thú với muôn vàn trải nghiệm bất ngờ và đáng nhớ bằng cách tải game về máy nhé. Chúc tôi tin bạn sẽ không bao giờ phải thất vọng.</p>
+                        <p>Chiến thần bắn cá tựa game hay mà<a class="text-blue-400 font-normal font-semibold hover:text-black"> Goal123.shop</a> giới thiệu với anh em. Bổ xung vào <a class="text-blue-400 font-normal hover:text-black"> game bắn cá  </a> các tựa của mình chuyên mục phù hợp nhất nhé! Anh em nào chưa tải được hãy nhanh chóng tham gia goal123V để tìm hiểu nhé!</p>
+                    </div>
+                    
+                </div>
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html> 

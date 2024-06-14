@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/10046.png">
+    <title>Goal123 - Trang chủ nhà cái bóng đá </title>
+    <link rel="stylesheet" href="/instruct/instruct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="full_header w-full">
+        <!-- header screen -->
+        <header class="bg-[#0d0f31] z-40 shadow shadow-gray-600 w-full z-50">
+            <div class="max-w-6xl m-auto md:px-2 md:py-1.5">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-white relative">
+                    <!-- open nav -->
+                    <div class="menu-icon absolute left-3 top-4 md:hidden text-2xl text-gray-50" onclick="OpenNav()">
+                        <ion-icon name="menu" class="bg-blue-500 p-1 rounded-md shadow-inner"></ion-icon>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo max-w-[268px] cursor-pointer py-3">
+                        <a href="../index.html"><img src="/image/10004.png "></a>
+                    </div>
+        
+                    <!-- sign in -->
+                    <div class="bg-gray-800 md:bg-transparent w-full md:w-auto text-white *:w-28 flex gap-1 py-1.5 justify-center items-center text-[15px] font-[500] tracking-wide *:md:py-1.5 *:py-1 *:rounded *:shadow *:border-2 *:border-gray-400 *:shadow *:duration-300">
+                        <button onclick="url()" class="bg-[#ffd60a] text-gray-600 hover:bg-white">Đăng Ký</button>
+                        <button onclick="url()" class="bg-[#d33] hover:bg-white hover:text-yellow-600">Đặng Nhập</button>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation screen -->
+             <nav id="Nav" class="z-40 bg-[#036] fixed top-0 left-0 w-0 md:w-auto h-full overflow-x-hidden md:relative md:h-auto duration-300">
+                <div class="md:hidden flex justify-end text-3xl text-white p-2 font-bold w-full h-full bg-gray-600 opacity-80">
+                    <ion-icon onclick="CloseNav()" name="close"></ion-icon>
+                </div>
+                <div class="h-full opacity-100 md:relative absolute top-0 flex flex-col bg-gray-50 md:bg-transparent">
+                    <!-- search -->
+                    <div class="mt-10 md:hidden p-4 border-b">
+                        <div class="flex justify-center items-center">
+                            <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner border text-gray-800" placeholder="Tiềm Kiếm ..." required />
+                            <button class="bg-red-500 text-white py-2 px-3 rounded">
+                                <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- menu item -->
+                    <div class="max-w-6xl md:m-auto">
+                        <ul class="flex flex-col md:flex-row font-[600] md:text-[14px] lg:text-[15px] *:lg:tracking-wide text-gray-700 divide-y md:divide-y-0 *:p-4 *:duration-300 *:cursor-pointer md:p-3 *:md:px-4 *:md:py-1.5 md:text-gray-700 *:md:border-x *:md:border-slate-400 *:md:bg-slate-100">
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="../index.html" class="flex items-center md:justify-center gap-1"><ion-icon name="home-outline" class="text-xl"></ion-icon>GOAL123</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./khuyenmai.html">KHUYẾN MẠI</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./banca.html">BẮN CÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./daga.html">ĐÁ GÀ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./xoso.html">XỔ SỐ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./soikeo.html">SOI KÈO BÓNG ĐÁ</a></li>
+                            <li class="hover:bg-gray-500 hover:bg-slate-500 hover:rounded-md hover:text-white"><a href="./huongdan.html">HƯỚNG DẪN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- main -->
+    <section>
+        <div class="main  max-w-6xl m-auto mt-1">
+            <div class="grid grid-cols-12">
+                <div class="box_main pl-0 md:px-10  col-span-12 md:col-span-10 w-full  ">
+                    <a class="text-xs text-blue-400 hover:text-black" href="">HƯỚNG DẪN</a>
+                    <h1 class="font-semibold text-3xl font-bold ">Soi kèo ManUtd vs Arsenal – 22h30 12/05/2024 – soi kèo Anh</h1>
+                    <p class="text-xs my-7">POSTED ON <a class=" text-blue-400 hover:text-black"  href=""> MAY 10, 2024 </a> BY <a class=" text-blue-400 hover:text-black"  href=""> ĐINH HÙNG</a></p>
+                    <div>
+                        <img class="w-full" src="/image//manchester-united-vs-arsenal-5-300x178.webp" alt="">
+                    </div>
+                    <p class="pt-5"> <strong>Soi kèo ManUtd vs Arsenal –</strong> <a href="" class=" text-blue-400 hover:text-black italic"> Goal123  </a>nhận định, đây là đỉnh Cao Ngoại Hạng Anh. Cuộc so tài giữa <strong>ManUtd</strong> và <strong>Arsenal</strong> luôn thu hút sự quan tâm đông đảo của người hâm mộ. Vào lúc 22h30 ngày 12/05/2024, trận đấu này sẽ diễn ra và được dự đoán là một trận đấu nhiều căng thẳng và kịch tính.</p>
+                    <p class="pt-5">Trong khi <strong>ManUtd</strong> đã cho thấy sự vững mạnh qua từng trận đấu, <strong>Arsenal</strong> cũng không kém cạnh với những chiến thắng thuyết phục. Cả hai đội bóng đều có những chiến lược rõ ràng và mục tiêu chiến thắng trong mỗi trận đấu. <strong>Soi kèo ManUtd vs Arsenal </strong>là cơ hội để người hâm mộ có cái nhìn sâu sắc hơn vào đội hình, chiến thuật và phong độ của hai đội. Điều này giúp người xem có những lựa chọn thông minh khi tham gia cá cược.</p>
+                    <p class="font-semibold mt-3 py-3 flex justify-center items-center border border-black w-36">TÓM TẮT  [<a class="text-blue-400 font-normal hover:text-black">HIỆN</a>]</p>
+                    <h3 class="my-5 text-2xl font-bold">Soi Kèo ManUtd vs Arsenal – Dự Đoán Tài Xỉu</h3>
+                    <p class="pb-2"><strong>Hàng thủ của ManUtd</strong> đang trải qua những khó khăn lớn, đặc biệt sau khi Harry Maguire dính chấn thương. Hiện tại, <strong>ManUtd</strong> chỉ còn một trung vệ là Jonny Evans, lão tướng 36 tuổi. Casemiro, người được điều chuyển xuống chơi ở vị trí trung vệ, đang mắc phải nhiều sai sót nghiêm trọng. Trong trận đấu gần nhất, <strong>ManUtd</strong> đã để thua tới bốn bàn trước Crystal Palace.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/manchester-united-vs-arsenal-3.jpg" alt="">
+                        <p class="text-sm italic">Soi Kèo ManUtd vs Arsenal – Dự Đoán Tài Xỉu</p>
+                    </div>
+                    <p class="pb-2"> Trong bối cảnh đó, <strong>Arsenal</strong> – đội bóng đang có phong độ cao nhất tại Premier League mùa này, sẽ là một thách thức lớn cho hàng thủ yếu ớt của <strong>ManUtd</strong>. Khả năng phòng ngự hiện tại của <strong>ManUtd</strong> cho thấy họ có thể sẽ tiếp tục nhận thêm nhiều bàn thua trong trận đấu sắp tới.</p>
+                    <h4 class="my-3 text-xl font-bold">Dự Đoán Tài Xỉu:</h4>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"> <strong>Chọn Tài 1 1/2 (Hiệp 1):</strong>Xét về tình hình hiện tại, khả năng cao trận đấu sẽ có ít nhất hai bàn thắng trong hiệp đầu.</li>
+                        <li class="pt-2 text-[16px]"><strong>Chọn Tài 3 1/2 (Toàn Trận):</strong> Với tỷ lệ tài xỉu là 3 1/2 trái, và xét đến phong độ hiện tại của hai đội, đặc biệt là khả năng ghi bàn của <strong>Arsenal</strong> và sự bất ổn trong hàng phòng ngự của <strong>ManUtd</strong>, cược tài cho toàn trận là một lựa chọn hợp lý.</li>
+                    </ul>
+                    <p class="pb-2">Trận đấu giữa <strong>ManUtd</strong> và <strong>Arsenal</strong> hứa hẹn sẽ là một cuộc so tài hấp dẫn, với nhiều diễn biến không lường trước được. <strong>Soi kèo ManUtd vs Arsenal</strong> không chỉ là một trải nghiệm thú vị cho người hâm mộ mà còn cung cấp cái nhìn chi tiết về cách thức đặt cược hiệu quả.</p>
+                    <h3 class="my-5 text-2xl font-bold">Soi kèo châu Á, Man United đấu với Arsenal</h3>
+                    <p class="pb-2"><strong>ManUtd</strong> hiện đang trong giai đoạn khó khăn, với thành tích kém cỏi khi chỉ thắng được 1 trong 8 trận gần nhất. Đội bóng đã để thua thảm 0-4 trước Crystal Palace trong trận đấu gần nhất. Rõ ràng, ManUtd đang đối mặt với nhiều thách thức từ chấn thương đến khủng hoảng lực lượng, khiến họ không thể hiện được phong độ tốt nhất.</p>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/manchester-united-vs-arsenal-4.jpg" alt="">
+                        <p class="text-sm italic">Soi kèo châu Á, Man United đấu với Arsenal</p>
+                    </div>
+                    <p class="pb-2">Ngược lại, <strong>Arsenal</strong> vẫn đang thể hiện sức mạnh ổn định và tiếp tục cuộc đua cho chức vô địch Premier League mùa này. Với bốn chiến thắng trong các vòng đấu gần đây, hàng công của <strong>Arsenal</strong> cho thấy sự linh hoạt và sức mạnh vượt trội. Dự đoán trong trận đấu sắp tới, <strong>Arsenal</strong> sẽ có chiến thắng đậm đà trước <strong>ManUtd </strong> đang suy yếu.</p>
+                    <h4 class="my-3 text-xl font-bold">Các Lựa Chọn Kèo Đấu:</h4>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Chọn Arsenal -1/2 (Hiệp 1): </strong> Xét về sự chênh lệch hiện tại giữa hai đội, <strong>Arsenal</strong> có khả năng sẽ dẫn trước trong hiệp đầu.</li>
+                        <li class="pt-2 text-[16px]"><strong>Chọn Arsenal -1 1/2 (Toàn Trận):</strong>Với lợi thế về mặt phong độ và sức mạnh đội hình, <strong>Arsenal</strong> được dự đoán sẽ có chiến thắng rõ ràng, vượt qua tỷ lệ kèo chấp cả trận.</li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Kèo bóng đá trận đấu Manchester United vs Arsenal</h4>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/manchester-united-vs-arsenal-1.jpg" alt="">
+                        <p class="text-sm italic">Kèo bóng đá trận đấu Manchester United vs Arsenal</p>
+                    </div>
+                    <h4 class="my-3 text-xl font-bold">Soi Kèo Châu Âu ManUtd vs Arsenal: Arsenal Ưu Thế Vượt Trội</h4>
+                    <p class="pb-2">Theo tỷ lệ cược hiện tại, <strong>Arsenal</strong> được đánh giá cao hơn hẳn so với <strong>ManUtd</strong>. Sự khác biệt trong phong độ và kỹ năng giữa hai đội là rất lớn. <strong>ManUtd</strong> hiện thể hiện phong độ tồi tệ và bạc nhược, trong khi đó <strong>Arsenal</strong> tỏ ra hoàn toàn vượt trội. Với tình hình hiện tại, cửa trên cho <strong>Arsenal</strong> là lựa chọn hợp lý cho người chơi cá cược.</p>
+                    <li><strong>Lựa chọn: Arsenal</strong> (Toàn thời gian)</li>
+                    <h4 class="my-3 text-xl font-bold">Soi Kèo Tỉ Số ManUtd vs Arsenal</h4>
+                    <p class="pb-2"><strong>ManUtd</strong> đang trải qua một cuộc khủng hoảng về hàng thủ, và phong độ tổng thể của họ cũng không mấy khả quan. Những sơ hở thường xuyên trong phòng ngự làm tăng thêm khó khăn cho đội bóng này. Ngược lại, <strong>Arsenal</strong> vẫn thể hiện sự hiệu quả và khả năng tấn công mạnh mẽ. Dự đoán cho trận đấu này là Arsenal sẽ giành chiến thắng với tỷ số 3-1 trước <strong>ManUtd</strong>.</p>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"> <strong>Dự đoán tỉ số H1: ManUtd </strong> 2-0 <strong>Arsenal</strong></li>
+                        <li class="pt-2 text-[16px]"><strong>Dự đoán tỉ số cuối trận: ManUtd </strong> <strong>ManUtd</strong> 1-3 <strong>Arsenal</strong></li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Lịch sử đối đầu của Manchester United vs Arsenal</h4>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/manchester-united-vs-arsenal-2.jpg" alt="">
+                        <p class="text-sm italic">Lịch sử đối đầu của Manchester United vs Arsenal</p>
+                    </div>
+
+
+
+
+                   
+                    <div class="text-center">
+                        <img class="w-full" src="/image/aston-villa-vs-liverpool-5.jpg" alt="">
+                        <p class="text-sm italic">Kèo Châu Âu – Dự đoán Liverpool thắng Full Time</p>
+                    </div>
+                    <h3 class="my-5 text-2xl font-bold">Dự đoán kết quả trận đấu trước trận</h3>
+                    <h4 class="my-3 text-xl font-bold">Hiệp 1: Aston Villa 0-2 Liverpool</h4>
+                    <p class="pb-2"> Dự đoán tỉ số 0-2 cho Liverpool ở hiệp đầu cho thấy sự khởi đầu mạnh mẽ và áp đảo từ phía Liverpool. Điều này phản ánh niềm tin vào khả năng tấn công sớm và hiệu quả của Liverpool, một đội bóng có lối chơi tấn công nhanh và quyết liệt ngay từ những phút đầu của trận đấu. Việc dẫn trước 2 bàn không chỉ giúp Liverpool giảm áp lực mà còn đặt Aston Villa vào tình thế khó khăn, buộc họ phải mở trận đấu hơn trong hiệp hai để tìm kiếm bàn thắng, điều này có thể tạo ra nhiều khoảng trống cho Liverpool khai thác.</p>
+                    <h4 class="mt-3 text-xl font-bold">Full Time: Aston Villa 1-3 Liverpool</h4>
+                    <p class="pb-2"> Dự đoán tỉ số cuối trận 1-3 nghiêng về Liverpool cho thấy trận đấu có thể có thêm bàn thắng được ghi trong hiệp hai, với Aston Villa có thể ghi được một bàn danh dự. Điều này cho thấy một sự cố gắng từ phía Aston Villa để phục hồi sau hiệp một khó khăn, nhưng Liverpool vẫn giữ được lợi thế và khả năng kiểm soát trận đấu, cuối cùng giành chiến thắng với cách biệt hai bàn. Tỉ số này phản ánh sự chênh lệch về phong độ và chất lượng giữa hai đội, với Liverpool là đội bóng mạnh hơn và có nhiều kinh nghiệm hơn ở những trận đấu quan trọng.</p>
+                    <h4 class="mt-3 text-xl font-bold">Đội hình dự kiến Aston Villa vs Liverpool</h4>
+                    <ul class=" pt-5  list-disc pl-5 text-lg">
+                        <li class="text-[16px]"><strong>Aston Villa:</strong> Martinez, Digne, Diego Carlos, Konsa, Torres, Cash, Bailey, Douglas Luiz, McGinn, Diaby, Watkins.</li>
+                        <li class="pt-2 text-[16px]"><strong>Liverpool:</strong>Alisson, Alexander-Arnold, Quansah, van Dijk, Robertson, Elliott, Endo, MacAllister Salah, Gakpo, Diaz.</li>
+                    </ul>
+                    <h4 class="my-3 text-xl font-bold">Lịch sử đối đầu của Aston Villa vs Liverpool</h4>
+                    <div class="text-center">
+                        <img class="w-full" src="/image/aston-villa-vs-liverpool-2.jpg" alt="">
+                        <p class="text-sm italic">Lịch sử đối đầu của Aston Villa vs Liverpool</p>
+                    </div>
+                </div>
+
+                <div class="box_main1 col-span-12 md:col-span-2 mt-3 w-full ">
+                     <form class="border border-gray-800 w-full relative">
+                        <input class=" max-w-40 outline-none p-1 w-full" type="text" placeholder="Search.." >
+                        <button class="bg-blue-400 px-2 absolute top-0 right-0 w-[34px] h-[34px]" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                   
+                    <div class="">
+                        <div class="grid   md:grid-cols-1 ">
+                        <div class="mt-5"><img src="/image/10016.jpg" class="w-full "></div>
+                        <div class="mt-5"><img src="/image/10017.jpg" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10018.jpg" alt="" class="w-full"></div>
+                        <div class="mt-5"><img src="/image/10019.jpg" alt="" class="w-full"></div>
+                        </div>
+                        <p class=" py-5 font-bold ">DANH MỤC</p>
+                        <div>
+                            <select name="cat" id="cat" class="postform w-full p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                                <option value="-1">Select Category</option>
+                                <option class="level-0" value="9">Bắn cá</option>
+                                <option class="level-0" value="71">Blog bóng đá</option>
+                                <option class="level-0" value="8">Đá Gà</option>
+                                <option class="level-0" value="1">Hướng dẫn</option>
+                                <option class="level-0" value="6">Kèo Tây Ban Nha</option>
+                                <option class="level-0" value="10" selected="selected">Select Category</option>
+                                <option class="level-0" value="4">Soi kèo Anh</option>
+                                <option class="level-0" value="2">Soi kèo bóng đá</option>
+                                <option class="level-0" value="3">Soi kèo C1</option>
+                                <option class="level-0" value="5">Soi kèo Đức</option>
+                                <option class="level-0" value="7">Soi kèo Ý</option>
+                                <option class="level-0" value="80">Xổ số</option>
+                            </select>
+                        </div>
+                        <p class=" py-5 font-bold ">BÀI VIẾT MỚI</p>
+                    </div>
+                    
+                    <div class="text_content flex ">
+                        <img src="/image/10042.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10024.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                    <div class="text_content flex ">
+                        <img src="/image/10025.jpg"   alt=""> 
+                        <div class="text_p pl-3"><p>
+                            <a href="">Soi kèo Bồ Đào Nha vs Ireland – 01h45 12/06/2024 – Giao hữu quốc tế</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <div class=" mt-7">
+            <div class="footer max-w-6xl m-auto">
+                <div class="box_footer">
+                    <img src="/image/10004.png" alt="">
+                    <p><a href="">Goal123</a> là một nhà cái cá cược trực tuyến được cấp phép bởi Philippine Amusement and Gaming Corporation (PAGCOR) tại Việt Nam. Với nhiều năm kinh nghiệm trong lĩnh vực này, Goal123 đã trở thành một trong những nhà cái uy tín và được ưa chuộng nhất trên thị trường cá cược bóng đá.</p>
+                    <div class="text_a pt-3 ">
+                        <a class="text-blue-400 hover:text-gray-800" href="">Chính sách bảo mật </a>
+                        <a href="">|</a>
+                        <a class="text-blue-400 hover:text-gray-800" href=""> Liên hệ</a>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <ul>
+                        <li><a href="/index.html">Goal123</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/khuyenmai.html">Khuyến mại</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/banca.html">Bắn cá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/daga.html">Đá Gà</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/xoso.html">Xổ số</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/soikeo.html">Soi kèo bóng đá</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/instruct/huongdan.html">Hướng dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="box_footer">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/555-300x225.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer1.html">Soi kèo Czech vs Bắc Macedonia –  23h00 10/06/2024 – Giao hữu quốc tếHướng dẫn</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/Bo-Dao-Nha-vs-Ireland-5.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer2.html">Soi kèo Argentina vs Ecuador – 05h00 10/06/2024 – Giao hữu quốc tế</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="footer_img">
+                                <img src="/image/cuoc-tai-xiu-1.webp" alt="">
+                                <a class="pl-2" href="/instruct/footer3.html">Trong Lô Đề Tại Sao Chủ Lô Luôn Thắng?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-500">
+            <div class="copyright max-w-6xl m-auto text-gray-700">
+                <p class="py-3" >Copyright 2024 <strong> © Goal123.shop</strong></p>
+            </divc>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>
