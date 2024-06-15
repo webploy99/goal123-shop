@@ -8,7 +8,7 @@ function OpenNav() {
 
 // url
 function url() {
-    location.href = "https://www.hay8833.com/?inviteCode=3128320";
+    location.href = "https://www.hay88.one/?inviteCode=7780571";
   }
 
 var swiper = new Swiper(".mySwiper", {
